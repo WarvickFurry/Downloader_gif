@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>category_add_form</class>
+ <widget class="QWidget" name="category_add_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>503</width>
+    <height>52</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(39, 39, 42);
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>7</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	color: rgb(255, 255, 255);
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	color: rgb(255, 255, 255);
+	padding-bottom: 3px;
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>ввести тег категории</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Segoe UI&quot;;
+
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../icons/res.qrc">
+         <normaloff>:/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../icons/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_settings</class>
+ <widget class="QDialog" name="Dialog_settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Настройки</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(39, 39, 42);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane { /* Рамка виджета со вкладками */
+     /* border-top: 2px solid rgb(85, 123, 226); */
+}
+
+QTabWidget::tab-bar {
+    left: 6px; /* сдвигаем вправо на 5px */
+}
+
+QTabBar::tab {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+    min-width: 80px;
+	min-height: 10px;
+    padding: 2px;
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:first {
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top-left-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 2px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:last {
+    border-left: 0px solid rgb(85, 123, 226);
+	border-top-right-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-right: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+}
+QTabBar::tab:first:selected {
+    margin-left: 0; /* первая выбранная вкладка ничего не перекрывает слева от себя */
+	border-top-right-radius: 3px;
+}
+
+QTabBar::tab:last:selected {
+    margin-right: 0; /* последняя выбранная вкладка ничего не перекрывает справа от себя */
+	border-top-left-radius: 3px;
+}
+
+QTabBar::tab:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+
+QTabBar::tab:!selected {
+     margin-top: 2px; /* делаем невыбранные вкладки меньше */
+}
+
+QTabBar::tab:selected {
+	background-color: rgba(85, 123, 226, 130);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>   Настройки списка тегов   </string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>100</number>
+       </property>
+       <property name="rightMargin">
+        <number>100</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="add_list_button">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Добавить</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="tags_listWidget">
+           <property name="styleSheet">
+            <string notr="true"> QListView {
+   	border: 3px solid rgb(85, 123, 226);
+	border-color: rgb(85, 123, 226);
+	border-radius: 6px;
+ }
+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="clear_list_button">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Очистить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>  Разные тоглы  </string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_12">
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>12</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="maximumSize">
+              <size>
+               <width>380</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">	border: 0px solid rgb(85, 123, 226);</string>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>380</width>
+                <height>413</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QCheckBox" name="auto_swap_tab_checkBox">
+                 <property name="maximumSize">
+                  <size>
+                   <width>360</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                 </property>
+                 <property name="text">
+                  <string>Авто переключение окна</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="auto_swap_time_data_checkBox">
+                 <property name="maximumSize">
+                  <size>
+                   <width>360</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                 </property>
+                 <property name="text">
+                  <string>Авто переключение даты и времени</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="blur_token_checkBox">
+                 <property name="styleSheet">
+                  <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                 </property>
+                 <property name="text">
+                  <string>Заблюривание токена</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="verticalGroupBox">
+                 <property name="maximumSize">
+                  <size>
+                   <width>360</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+ QGroupBox {
+
+	 color: rgb(255, 255, 255);
+   	 border: 3px solid rgb(85, 123, 226);
+	 border-radius: 6px;
+	 font: 700 10pt &quot;Segoe UI&quot;;
+     margin-top: 1ex; /* оставляем пространство вверху для заголовка */
+ }
+ QGroupBox::title {
+	left: 6px;
+	border-radius: 0px;
+    border-right: 0px solid rgb(255, 255, 255);
+	border-top: 3px solid rgb(85, 123, 226);
+	border-left: 0px solid rgb(85, 123, 226);
+	border-bottom: 0px solid rgb(255, 255, 255);
+ }
+
+
+</string>
+                 </property>
+                 <property name="title">
+                  <string>Уведомления</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <property name="spacing">
+                   <number>10</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>24</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <widget class="QCheckBox" name="notifications_checkBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>360</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                    </property>
+                    <property name="text">
+                     <string>Уведомление после отложки</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="soun_end_download_checkBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>360</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                    </property>
+                    <property name="text">
+                     <string>Звук после скачки</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="infoBox_checkBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>360</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                    </property>
+                    <property name="text">
+                     <string>Инфоблок после отложки</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <item alignment="Qt::AlignmentFlag::AlignHCenter">
+            <widget class="QLabel" name="label_3">
+             <property name="styleSheet">
+              <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Добавление времени к списку</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignmentFlag::AlignHCenter">
+            <widget class="QSpinBox" name="spinBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="minimum">
+              <number>-99</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>287</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <attribute name="title">
+       <string>   Ввод данных авторизации   </string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item alignment="Qt::AlignmentFlag::AlignTop">
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>668</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SizeConstraint::SetMaximumSize</enum>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>71</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="sizeConstraint">
+              <enum>QLayout::SizeConstraint::SetMinAndMaxSize</enum>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Group token</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QLineEdit" name="token_group_lineEdit">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Segoe UI&quot;;
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+	
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
+</string>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::EchoMode::Normal</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Введите токен от своей группы вк</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignTop">
+           <widget class="QWidget" name="widget" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="sizeConstraint">
+              <enum>QLayout::SizeConstraint::SetMinAndMaxSize</enum>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <item alignment="Qt::AlignmentFlag::AlignBottom">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Access token</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QLineEdit" name="token_lineEdit">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Segoe UI&quot;;
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+	
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
+</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>(Не требуется вводить пока нет функционала на токен пользователя)</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignTop">
+           <widget class="QWidget" name="widget" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>71</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="sizeConstraint">
+              <enum>QLayout::SizeConstraint::SetMinAndMaxSize</enum>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignmentFlag::AlignBottom">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>id группы</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QLineEdit" name="id_group_lineEdit">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Segoe UI&quot;;
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
+</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Введите id руппы </string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>50</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="save_setings">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 10pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+              </property>
+              <property name="text">
+               <string>  Сохранить  </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clear_pole_pushButton">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 10pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+              </property>
+              <property name="text">
+               <string>  Очистить поля  </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
