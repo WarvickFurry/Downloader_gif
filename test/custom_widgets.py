@@ -17,3 +17,4 @@ class CustomWidgets(QWidget):
     def set_index(self, index):
         self.my_id = index
         self.ui.label_2.setText(str(self.my_id))
+
