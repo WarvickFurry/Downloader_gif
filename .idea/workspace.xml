@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd21ca6-b6c6-4f4c-b8dd-3e9be99e71fb" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6bd21ca6-b6c6-4f4c-b8dd-3e9be99e71fb" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +270,7 @@
       <workItem from="1724071834671" duration="351000" />
       <workItem from="1724072198876" duration="18000" />
       <workItem from="1724072312194" duration="37000" />
-      <workItem from="1724078543584" duration="1480000" />
+      <workItem from="1724078543584" duration="2967000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -314,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724071978471</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1724081137702</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081137702</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update">
+      <option name="closed" value="true" />
+      <created>1724081209369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081209369</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +351,8 @@
     </ignored-roots>
     <MESSAGE value="add file" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1723288285456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
@@ -348,6 +363,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$start_up.coverage" NAME="start_up Coverage Results" MODIFIED="1720788848008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$Doctests_in_vk_api.coverage" NAME="Doctests in vk_api Coverage Results" MODIFIED="1723225239060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/vk_api" />
     <SUITE FILE_PATH="coverage/pythonProject$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1723298548406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$str_to_json.coverage" NAME="str_to_json Coverage Results" MODIFIED="1724080186207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$tokenize.coverage" NAME="tokenize Coverage Results" MODIFIED="1720704628428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib" />
     <SUITE FILE_PATH="coverage/vk_download_py$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1724005669984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui/settings" />
     <SUITE FILE_PATH="coverage/pythonProject$add_window.coverage" NAME="add_window Coverage Results" MODIFIED="1720785637532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
