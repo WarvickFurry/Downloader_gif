@@ -138,7 +138,7 @@ class Ui_Dialog_settings(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 380, 412))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, -69, 363, 481))
         self.verticalLayout_8 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.auto_swap_tab_checkBox = QCheckBox(self.scrollAreaWidgetContents)
@@ -318,6 +318,112 @@ class Ui_Dialog_settings(object):
 
 
         self.verticalLayout_8.addWidget(self.verticalGroupBox)
+
+        self.verticalGroupBox_2 = QGroupBox(self.scrollAreaWidgetContents)
+        self.verticalGroupBox_2.setObjectName(u"verticalGroupBox_2")
+        self.verticalGroupBox_2.setMaximumSize(QSize(360, 16777215))
+        self.verticalGroupBox_2.setStyleSheet(u"\n"
+" QGroupBox {\n"
+"\n"
+"	 color: rgb(255, 255, 255);\n"
+"   	 border: 3px solid rgb(85, 123, 226);\n"
+"	 border-radius: 6px;\n"
+"	 font: 700 10pt \"Segoe UI\";\n"
+"     margin-top: 1ex; /* \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u043e \u0432\u0432\u0435\u0440\u0445\u0443 \u0434\u043b\u044f \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0430 */\n"
+" }\n"
+" QGroupBox::title {\n"
+"	left: 6px;\n"
+"	border-radius: 0px;\n"
+"    border-right: 0px solid rgb(255, 255, 255);\n"
+"	border-top: 3px solid rgb(85, 123, 226);\n"
+"	border-left: 0px solid rgb(85, 123, 226);\n"
+"	border-bottom: 0px solid rgb(255, 255, 255);\n"
+" }\n"
+"\n"
+"\n"
+"")
+        self.verticalLayout_11 = QVBoxLayout(self.verticalGroupBox_2)
+        self.verticalLayout_11.setSpacing(10)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalLayout_11.setContentsMargins(2, 24, 2, 6)
+        self.autosave_tab_settings_checkBox = QCheckBox(self.verticalGroupBox_2)
+        self.autosave_tab_settings_checkBox.setObjectName(u"autosave_tab_settings_checkBox")
+        self.autosave_tab_settings_checkBox.setMaximumSize(QSize(360, 16777215))
+        self.autosave_tab_settings_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	background-color: rgba(85, 123, 226, 200);\n"
+"}\n"
+"\n"
+" QCheckBox {\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"	font: 700 13pt \"Segoe UI\";\n"
+"	padding-bottom: 4px;\n"
+"	spacing: 0px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator {\n"
+"    width: 25px;\n"
+"    height: 25px;\n"
+"	left: 5px;\n"
+"	top: 2px;\n"
+" }")
+
+        self.verticalLayout_11.addWidget(self.autosave_tab_settings_checkBox)
+
+        self.autosave_tab_minewindow_checkBox = QCheckBox(self.verticalGroupBox_2)
+        self.autosave_tab_minewindow_checkBox.setObjectName(u"autosave_tab_minewindow_checkBox")
+        self.autosave_tab_minewindow_checkBox.setMaximumSize(QSize(360, 16777215))
+        self.autosave_tab_minewindow_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+" QCheckBox {\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"	font: 700 13pt \"Segoe UI\";\n"
+"	padding-bottom: 4px;\n"
+"	spacing: 0px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator {\n"
+"    width: 25px;\n"
+"    height: 25px;\n"
+"	left: 5px;\n"
+"	top: 2px;\n"
+" }")
+
+        self.verticalLayout_11.addWidget(self.autosave_tab_minewindow_checkBox)
+
+        self.autosave_keep_checkBox = QCheckBox(self.verticalGroupBox_2)
+        self.autosave_keep_checkBox.setObjectName(u"autosave_keep_checkBox")
+        self.autosave_keep_checkBox.setMaximumSize(QSize(360, 16777215))
+        self.autosave_keep_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+" QCheckBox {\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"	font: 700 13pt \"Segoe UI\";\n"
+"	padding-bottom: 4px;\n"
+"	spacing: 0px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator {\n"
+"    width: 25px;\n"
+"    height: 25px;\n"
+"	left: 5px;\n"
+"	top: 2px;\n"
+" }")
+
+        self.verticalLayout_11.addWidget(self.autosave_keep_checkBox)
+
+
+        self.verticalLayout_8.addWidget(self.verticalGroupBox_2)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
@@ -586,6 +692,10 @@ class Ui_Dialog_settings(object):
         self.notifications_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0423\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u043b\u0435 \u043e\u0442\u043b\u043e\u0436\u043a\u0438", None))
         self.soun_end_download_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0432\u0443\u043a \u043f\u043e\u0441\u043b\u0435 \u0441\u043a\u0430\u0447\u043a\u0438", None))
         self.infoBox_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0418\u043d\u0444\u043e\u0431\u043b\u043e\u043a \u043f\u043e\u0441\u043b\u0435 \u043e\u0442\u043b\u043e\u0436\u043a\u0438", None))
+        self.verticalGroupBox_2.setTitle(QCoreApplication.translate("Dialog_settings", u"\u0410\u0432\u0442\u043e \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u0432 \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0443\u044e \u0411\u0414", None))
+        self.autosave_tab_settings_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u0442\u0430\u0431 \u0432 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u0445", None))
+        self.autosave_tab_minewindow_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u0442\u0430\u0431 \u0432 \u0433\u043b\u0430\u0432\u043d\u043e\u043c \u043e\u043a\u043d\u0435", None))
+        self.autosave_keep_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0430\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435", None))
         self.label_3.setText(QCoreApplication.translate("Dialog_settings", u"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043a \u0441\u043f\u0438\u0441\u043a\u0443", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("Dialog_settings", u"  \u0420\u0430\u0437\u043d\u044b\u0435 \u0442\u043e\u0433\u043b\u044b  ", None))
         self.label_5.setText(QCoreApplication.translate("Dialog_settings", u"Group token", None))

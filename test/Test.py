@@ -6,6 +6,8 @@ from datetime import datetime, timedelta
 from PySide6.QtWidgets import QDialog, QApplication, QMessageBox, QListWidgetItem, QAbstractItemView, QLineEdit
 from PySide6.QtCore import Slot, Signal, Qt
 
+from SQLite import db_init
+
 from ui.settings.settings_dialog import Ui_Dialog_settings
 #from custom_widgets import CustomWidgets
 
@@ -15,12 +17,14 @@ class Dialog_settings(QDialog):
     def __init__(self, parent=None):
         super(Dialog_settings, self).__init__(parent)
 
+        self.db = db_init() #  init DB
+
         self.ui = Ui_Dialog_settings()
         self.ui.setupUi(self)
         self.setWindowFlag(Qt.WindowStaysOnTopHint, True)
 
-        if not os.path.exists("config.json"):
-            self.default_settings()
+        #if not os.path.exists("config.json"):
+        self.default_settings()
         self.load_settings()
 
         self.blur()
@@ -34,7 +38,9 @@ class Dialog_settings(QDialog):
 
         self.ui.blur_token_checkBox.stateChanged.connect(self.blur)
 
-
+        self.ui.autosave_tab_settings_checkBox.stateChanged.connect(self.save_checkbox)
+        self.ui.autosave_tab_minewindow_checkBox.stateChanged.connect(self.save_checkbox)
+        self.ui.autosave_keep_checkBox.stateChanged.connect(self.save_checkbox)
 
         #self.ui.spinBox.valueChanged.connect(self.auto_save_spinbox)
         #self.ui.spinBox.valueChanged.connect(self.on_spinbox_value_changed)
@@ -44,6 +50,27 @@ class Dialog_settings(QDialog):
         self.ui.save_setings.clicked.connect(self.save_settings)
         self.ui.save_setings.clicked.connect(self.emit_signal_save_button)
         self.ui.clear_pole_pushButton.clicked.connect(self.clear_pole)
+
+################################__DB__######################################
+
+        if self.ui.autosave_tab_settings_checkBox.isChecked():
+            self.ui.tabWidget.currentChanged.connect(self.save_cur_index)
+
+            #load settings
+            saved_index = self.db.load_setting("tab_index")
+            if saved_index is not None:
+                self.ui.tabWidget.setCurrentIndex(int(saved_index))
+
+
+    def save_cur_index(self,index):
+        self.db.save_setting("tab_index",index)
+
+
+
+
+
+
+######################################################################
 
         # код добавления виджета
     #     self.ui.add_list_button.clicked.connect(self.add_widget)
@@ -140,7 +167,10 @@ class Dialog_settings(QDialog):
                 "blur_token_checkBox": False,
                 "notifications_checkBox": False,
                 "sound_end_download_checkBox": True,
-                "infoBox_checkBox": False
+                "infoBox_checkBox": False,
+                "autosave_tab_settings": False,
+                "autosave_tab_minewindow": False,
+                "autosave_keep": False
             },
             "combobox": {
                 "0": "11:00",
@@ -153,7 +183,32 @@ class Dialog_settings(QDialog):
                 "7": "01:00"
             }
         }
-        self.write_data_to_json(config)
+        self.update_json_file(config)
+
+    def merge_dicts(self,target, source):
+        for key, value in source.items():
+            if isinstance(value, dict) and key in target:
+                self.merge_dicts(target[key], value)
+            elif key not in target:
+                target[key] = value
+
+    def update_json_file(self, new_data):
+        file_path = "config.json"
+        # Шаг 1: Прочитать существующий JSON файл
+        try:
+            data = self.load_data_from_json()
+        except FileNotFoundError:
+            # Если файла нет, создаем пустой словарь
+            data = {}
+
+        # Шаг 2: Добавить только новые данные
+        self.merge_dicts(data, new_data)
+
+        # Шаг 3: Сохранить обновленный JSON обратно в файл
+        self.write_data_to_json(data)
+
+
+
 
     def load_data_from_json(self):
         try:
@@ -184,6 +239,12 @@ class Dialog_settings(QDialog):
         self.ui.soun_end_download_checkBox.setChecked(config["settings"]["sound_end_download_checkBox"])
         self.ui.infoBox_checkBox.setChecked(config["settings"]["infoBox_checkBox"])
         self.ui.spinBox.setValue(int(config["settings"]["hour_add"]))
+        #auto save checkbox in db
+        self.ui.autosave_tab_settings_checkBox.setChecked(config["settings"]["autosave_tab_settings"])
+        self.ui.autosave_tab_minewindow_checkBox.setChecked(config["settings"]["autosave_tab_minewindow"])
+        self.ui.autosave_keep_checkBox.setChecked(config["settings"]["autosave_keep"])
+
+
 
     def save_settings(self):
         config = self.load_data_from_json()
@@ -202,6 +263,9 @@ class Dialog_settings(QDialog):
         config["settings"]["notifications_checkBox"] = self.ui.soun_end_download_checkBox.isChecked()
         config["settings"]["sound_end_download_checkBox"] = self.ui.notifications_checkBox.isChecked()
         config["settings"]["infoBox_checkBox"] = self.ui.infoBox_checkBox.isChecked()
+        config["settings"]["autosave_tab_settings"] = self.ui.autosave_tab_settings_checkBox.isChecked()
+        config["settings"]["autosave_tab_minewindow"] = self.ui.autosave_tab_minewindow_checkBox.isChecked()
+        config["settings"]["autosave_keep"] = self.ui.autosave_keep_checkBox.isChecked()
         self.write_data_to_json(config)
 
     def auto_save_spinbox(self):

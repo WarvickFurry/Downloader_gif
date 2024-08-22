@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bd21ca6-b6c6-4f4c-b8dd-3e9be99e71fb" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Downloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ui/mine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ui/mine.ui" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/mine.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ui/settings/settings_dialog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/settings/settings_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/settings/settings_dialog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ui/settings/settings_dialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/settings/settings_dialog.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +318,7 @@
       <workItem from="1724270570837" duration="3184000" />
       <workItem from="1724275013652" duration="3275000" />
       <workItem from="1724306174347" duration="10150000" />
-      <workItem from="1724329441086" duration="2197000" />
+      <workItem from="1724329441086" duration="23503000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -529,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724329624534</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update">
+      <option name="closed" value="true" />
+      <created>1724332021198</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1724332021198</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,10 +569,11 @@
     <SUITE FILE_PATH="coverage/pythonProject$gen_ui_to_py.coverage" NAME="gen_ui_to_py Coverage Results" MODIFIED="1720704613599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
     <SUITE FILE_PATH="coverage/pythonProject$test_bd.coverage" NAME="test_bd Coverage Results" MODIFIED="1720631091956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$post.coverage" NAME="post Coverage Results" MODIFIED="1722452657635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Downloader_gif$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1724330987227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1724349176943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui/settings" />
     <SUITE FILE_PATH="coverage/pythonProject$start_up.coverage" NAME="start_up Coverage Results" MODIFIED="1720788848008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$Doctests_in_vk_api.coverage" NAME="Doctests in vk_api Coverage Results" MODIFIED="1723225239060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/vk_api" />
     <SUITE FILE_PATH="coverage/pythonProject$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1723298548406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$test_bd.coverage" NAME="test_bd Coverage Results" MODIFIED="1724336368869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Downloader_gif$str_to_json.coverage" NAME="str_to_json Coverage Results" MODIFIED="1724080186207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$tokenize.coverage" NAME="tokenize Coverage Results" MODIFIED="1720704628428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib" />
     <SUITE FILE_PATH="coverage/vk_download_py$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1724005669984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui/settings" />
@@ -573,6 +581,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$vk_like_add.coverage" NAME="vk_like_add Coverage Results" MODIFIED="1722620360157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/vk_download_py$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1724006153517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$Ui_progressbar_widget.coverage" NAME="Ui_progressbar_widget Coverage Results" MODIFIED="1721039164731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$Test.coverage" NAME="Test Coverage Results" MODIFIED="1724353153134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Downloader_gif$custom_widgets.coverage" NAME="custom_widgets Coverage Results" MODIFIED="1724093387651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$message.coverage" NAME="message Coverage Results" MODIFIED="1722702915921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/pythonProject$testcode.coverage" NAME="testcode Coverage Results" MODIFIED="1723284965982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
@@ -583,7 +592,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$vk_download.coverage" NAME="vk_download Coverage Results" MODIFIED="1722028567940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="test Coverage Results" MODIFIED="1719572783532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1721057252084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Downloader_gif$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1724330992688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1724354519561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1720789055376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$camera.coverage" NAME="camera Coverage Results" MODIFIED="1722890128623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$Test.coverage" NAME="Test Coverage Results" MODIFIED="1723287735717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />

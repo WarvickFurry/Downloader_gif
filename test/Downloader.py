@@ -17,6 +17,8 @@ from PySide6.QtCore import QThread, Signal, QTimer, Qt
 from ui.mine import Ui_MainWindow
 from Test import Dialog_settings
 
+from SQLite import db_init
+
 
 class download_link(QThread):
     finished = Signal()
@@ -77,8 +79,10 @@ class MainWindow(QMainWindow):
         self.Dialog_settings = Dialog_settings()
         self.source_url = None
 
-
         self.load_time_in_set_combobox()
+        self.db = db_init()  # init DB
+
+
 
         if not os.path.exists("config.json"):
             self.Dialog_settings.default_settings()
@@ -89,6 +93,9 @@ class MainWindow(QMainWindow):
         self.ui.download_button.clicked.connect(self.g_link)
         self.ui.test_pushButton.clicked.connect(self.open_temp_folder)
         self.ui.keep.clicked.connect(self.toggle_always_on_top)
+
+
+
         self.ui.settings.clicked.connect(self.open_settings)
         self.ui.put_aside_pushButton.clicked.connect(self.posting)
         self.ui.set_date.setDate(date.today())
@@ -108,6 +115,41 @@ class MainWindow(QMainWindow):
         self.a = 0
 
         self.get_id()
+
+##########################__DB__#####################################
+
+        if self.Dialog_settings.ui.autosave_keep_checkBox.isChecked():
+            self.ui.keep.clicked.connect(self.save_cur_bool)
+
+            saved_bool = self.db.load_setting("mine_keep_bool")
+            if saved_bool is not None:
+                if saved_bool == "True":
+                    self.ui.keep.setChecked(True)
+                else:
+                    self.ui.keep.setChecked(False)
+
+        if self.Dialog_settings.ui.autosave_tab_minewindow_checkBox.isChecked():
+            self.ui.tabWidget.currentChanged.connect(self.save_cur_tab_index)
+
+            saved_index = self.db.load_setting("mine_tab_cur_index")
+            if saved_index is not None:
+                self.ui.tabWidget.setCurrentIndex(int(saved_index))
+
+
+
+    def save_cur_bool(self, s_boolian):
+        self.db.save_setting("mine_keep_bool", s_boolian)
+
+    def save_cur_tab_index(self, index):
+        self.db.save_setting("mine_tab_cur_index", index)
+
+
+
+
+
+
+#####################################################################
+
 
             ##################### данные для вк апи ##############################
     def get_id(self):

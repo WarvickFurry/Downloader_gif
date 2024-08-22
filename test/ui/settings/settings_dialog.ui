@@ -176,9 +176,9 @@ QTabBar::tab:selected {
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>0</y>
-                <width>380</width>
-                <height>412</height>
+                <y>-69</y>
+                <width>363</width>
+                <height>481</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -425,6 +425,161 @@ QCheckBox::indicator {
                     </property>
                     <property name="text">
                      <string>Инфоблок после отложки</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="verticalGroupBox_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>360</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+ QGroupBox {
+
+	 color: rgb(255, 255, 255);
+   	 border: 3px solid rgb(85, 123, 226);
+	 border-radius: 6px;
+	 font: 700 10pt &quot;Segoe UI&quot;;
+     margin-top: 1ex; /* оставляем пространство вверху для заголовка */
+ }
+ QGroupBox::title {
+	left: 6px;
+	border-radius: 0px;
+    border-right: 0px solid rgb(255, 255, 255);
+	border-top: 3px solid rgb(85, 123, 226);
+	border-left: 0px solid rgb(85, 123, 226);
+	border-bottom: 0px solid rgb(255, 255, 255);
+ }
+
+
+</string>
+                 </property>
+                 <property name="title">
+                  <string>Авто сохранение в локальную БД</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <property name="spacing">
+                   <number>10</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>24</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <widget class="QCheckBox" name="autosave_tab_settings_checkBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>360</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                    </property>
+                    <property name="text">
+                     <string>Текущий таб в настройках</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="autosave_tab_minewindow_checkBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>360</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                    </property>
+                    <property name="text">
+                     <string>Текущий таб в главном окне</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="autosave_keep_checkBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>360</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }</string>
+                    </property>
+                    <property name="text">
+                     <string>Закрепление</string>
                     </property>
                    </widget>
                   </item>
