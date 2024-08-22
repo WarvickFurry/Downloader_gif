@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Постер Гивок</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(39, 39, 42);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;
+QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 10pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonStyle::ToolButtonFollowStyle</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <item alignment="Qt::AlignmentFlag::AlignLeft">
+       <widget class="QPushButton" name="settings">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 8pt &quot;Segoe UI&quot;;
+	padding-bottom: 2px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	background-color: rgb(39, 39, 42);
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>  Настройки  </string>
+        </property>
+        <property name="icon">
+         <iconset resource="icons/res.qrc">
+          <normaloff>:/icon/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignmentFlag::AlignRight">
+       <widget class="QPushButton" name="keep">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>137</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 8pt &quot;Segoe UI&quot;;
+	padding-bottom: 2px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	background-color: rgb(39, 39, 42);
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Закрепить</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icons/res.qrc">
+          <normaloff>:/icon/keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>
+          <normalon>:/icon/keep_off_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normalon>:/icon/keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane { /* Рамка виджета со вкладками */
+     /* border-top: 2px solid rgb(85, 123, 226); */
+}
+
+QTabWidget::tab-bar {
+    left: 6px; /* сдвигаем вправо на 5px */
+}
+
+QTabBar::tab {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+    min-width: 80px;
+	min-height: 10px;
+    padding: 2px;
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:first {
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top-left-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 2px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:last {
+    border-left: 0px solid rgb(85, 123, 226);
+	border-top-right-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-right: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+}
+QTabBar::tab:first:selected {
+    margin-left: 0; /* первая выбранная вкладка ничего не перекрывает слева от себя */
+	border-top-right-radius: 3px;
+}
+
+QTabBar::tab:last:selected {
+    margin-right: 0; /* последняя выбранная вкладка ничего не перекрывает справа от себя */
+	border-top-left-radius: 3px;
+}
+
+QTabBar::tab:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+
+QTabBar::tab:!selected {
+     margin-top: 2px; /* делаем невыбранные вкладки меньше */
+}
+
+QTabBar::tab:selected {
+	background-color: rgba(85, 123, 226, 130);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Скачать gif</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QWidget" name="backgroud" native="true">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="leftMargin">
+                <number>72</number>
+               </property>
+               <property name="rightMargin">
+                <number>30</number>
+               </property>
+               <item alignment="Qt::AlignmentFlag::AlignBottom">
+                <widget class="QLineEdit" name="lineEdit_">
+                 <property name="minimumSize">
+                  <size>
+                   <width>606</width>
+                   <height>41</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;Segoe UI&quot;;
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	max-width: 1000px;
+	min-width: 600px;
+	color: rgb(255, 255, 255);
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
+</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Введите ссылку на  дерпибуру</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignBottom">
+                <widget class="QPushButton" name="download_button">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	height: 30px;
+	width: 130px;
+	max-height: 30px;
+	max-width: 130px;
+	min-height: 30px;
+	min-width: 130px;
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>скачать</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="icons/res.qrc">
+                   <normaloff>:/icon/download_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/download_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>24</width>
+                   <height>24</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignTop">
+              <widget class="QWidget" name="horizontalWidget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>660</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_8">
+                <property name="leftMargin">
+                 <number>30</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>30</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>42</number>
+                </property>
+                <property name="horizontalSpacing">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing">
+                 <number>5</number>
+                </property>
+                <item row="2" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+                 <widget class="QProgressBar" name="progressBar">
+                  <property name="minimumSize">
+                   <size>
+                    <width>600</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="sizeIncrement">
+                   <size>
+                    <width>600</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QProgressBar {
+     border: 3px solid rgb(85, 123, 226);
+     border-radius: 8px;
+     text-align: center;
+	color: rgb(255, 255, 255);
+}
+QProgressBar::chunk {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.323864 rgba(60, 143, 241, 255), stop:1 rgba(0, 81, 224, 255));
+	border-radius: 4px;
+	
+}
+</string>
+                  </property>
+                  <property name="value">
+                   <number>0</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
+                 <widget class="QLabel" name="label">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Скачивание</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Информация</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="textEdit">
+          <property name="styleSheet">
+           <string notr="true">	border: 0px solid rgb(85, 123, 226);
+</string>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Чтоб загрузить гифку нужно:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;1. В настройках сообщества включить сообщения (сообщения → Сообщения сообщества: Включены)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;2. В графе (работа с AIP) создаём ключ со всеми разрешениями, данный ключ в водим в приложение в раздел (ввод данных авторизации)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;3. В графе (разделы) включаем файлы&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;на этом настройка завершена&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::TextInteractionFlag::TextSelectableByMouse</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Ссылка на мой &lt;/span&gt;&lt;a href=&quot;https://github.com/WarvickFurry/Downloader_gif.git&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#297acc;&quot;&gt;GitHub&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>Постинг</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QWidget" name="gridWidget" native="true">
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QWebEngineView" name="webEngineView">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>600</width>
+                 <height>291</height>
+                </size>
+               </property>
+               <property name="url">
+                <url>
+                 <string>about:blank</string>
+                </url>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <property name="sizeConstraint">
+                <enum>QLayout::SizeConstraint::SetMinAndMaxSize</enum>
+               </property>
+               <property name="horizontalSpacing">
+                <number>6</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>0</number>
+               </property>
+               <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QPushButton" name="test_pushButton">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>172</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>172</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Открыть папку</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="icons/res.qrc">
+                   <normaloff>:/icon/folder_open_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/folder_open_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>24</width>
+                   <height>24</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QTextEdit" name="text_autTags">
+                 <property name="minimumSize">
+                  <size>
+                   <width>350</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>350</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="horizontalScrollBarPolicy">
+                  <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+                 </property>
+                 <property name="documentTitle">
+                  <string/>
+                 </property>
+                 <property name="lineWrapMode">
+                  <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+                 </property>
+                 <property name="tabStopDistance">
+                  <double>1000.000000000000000</double>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Список получаемых тегов</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>824</width>
+               <height>81</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>81</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <property name="leftMargin">
+               <number>1</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <property name="rightMargin">
+               <number>1</number>
+              </property>
+              <property name="bottomMargin">
+               <number>20</number>
+              </property>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="set_date">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>111</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>102</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="sizeIncrement">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="mouseTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    background-color: rgb(39, 39, 42); /* Обычный цвет фона (белый) */
+	alternate-background-color: rgb(39, 39, 42);
+    color: #FFFFFF; /* Обычный цвет текста (черный) */
+}
+QDateTimeEdit {
+	 min-width: 105px;
+    border: 3px solid rgb(85, 123, 226); 
+}
+QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {
+    qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка назад */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+}
+QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {
+    qproperty-icon: url(:/icon/arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка вперед */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+}
+
+</string>
+                </property>
+                <property name="accelerated">
+                 <bool>true</bool>
+                </property>
+                <property name="calendarPopup">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>150</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QPushButton" name="put_aside_pushButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>136</width>
+                  <height>41</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	height: 30px;
+	width: 130px;
+	max-height: 30px;
+	max-width: 130px;
+	min-height: 30px;
+	min-width: 130px;
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Отложить</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons/res.qrc">
+                  <normaloff>:/icon/publish_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/publish_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>150</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QComboBox" name="set_time">
+                <property name="minimumSize">
+                 <size>
+                  <width>99</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>99</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">
+QComboBox {
+border: 3px solid rgb(85, 123, 226); 
+font: 14pt &quot;Segoe UI&quot;;
+}</string>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+                <property name="frame">
+                 <bool>true</bool>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>11:00</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>13:00</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>15:00</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>17:00</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>19:00</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>21:00</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>23:00</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>01:00</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Теги</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icons/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

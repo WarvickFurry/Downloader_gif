@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>check_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>download_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>folder_open_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>keep_off_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>publish_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>remove_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+  </qresource>
+</RCC>

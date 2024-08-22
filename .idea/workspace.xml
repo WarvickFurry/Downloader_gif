@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6bd21ca6-b6c6-4f4c-b8dd-3e9be99e71fb" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/mine.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/mine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/mine.ui" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/mine.ui" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WarvickFurry&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/WarvickFurry/Downloader_gif.git&quot;,
+    &quot;accountId&quot;: &quot;4c959a55-2b8f-4c6a-8cb2-c1c4cf943167&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/test/Test.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="groupByToolId" value="true" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="sortByName" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2iV4cFw3moJ8dZY64M9k4MRqMex" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.Doctests in vk_api.executor": "Run",
+    "Python.Downloader.executor": "Run",
+    "Python.Test.executor": "Run",
+    "Python.Test2.executor": "Run",
+    "Python.Ui_progressbar_widget.executor": "Run",
+    "Python.add_window.executor": "Run",
+    "Python.camera.executor": "Run",
+    "Python.cat_widget.executor": "Run",
+    "Python.custom_widgets.executor": "Run",
+    "Python.decoder.executor": "Debug",
+    "Python.docrunner.executor": "Run",
+    "Python.eiifje.executor": "Run",
+    "Python.gen_ui_to_py.executor": "Debug",
+    "Python.generator_ui2py.executor": "Run",
+    "Python.main.executor": "Debug",
+    "Python.message.executor": "Run",
+    "Python.mine.executor": "Run",
+    "Python.post.executor": "Run",
+    "Python.start_up.executor": "Run",
+    "Python.str_to_json.executor": "Run",
+    "Python.temp.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test_bd.executor": "Run",
+    "Python.test_mine_window.executor": "Run",
+    "Python.testcode.executor": "Run",
+    "Python.tlist.executor": "Run",
+    "Python.tokenize.executor": "Run",
+    "Python.var.executor": "Run",
+    "Python.var1.executor": "Run",
+    "Python.vk_download.executor": "Run",
+    "Python.vk_like_add.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Warwick/Desktop/py/Downloader_gif",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.splitter.proportion": "0.2609582",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Warwick\Desktop\py\pythonProject\test" />
+      <recent name="C:\Users\Warwick\Desktop\py\pythonProject" />
+      <recent name="C:\Users\Warwick\Desktop\py\pythonProject\variable" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Downloader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Downloader gif" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/Downloader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Downloader" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
+        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Warwick\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bd21ca6-b6c6-4f4c-b8dd-3e9be99e71fb" name="Changes" comment="" />
+      <created>1719562489511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719562489511</updated>
+      <workItem from="1719562496532" duration="10158000" />
+      <workItem from="1719590715292" duration="2639000" />
+      <workItem from="1719598158449" duration="1030000" />
+      <workItem from="1719639682421" duration="327000" />
+      <workItem from="1719640020691" duration="109000" />
+      <workItem from="1719640954162" duration="10000" />
+      <workItem from="1719640968306" duration="3066000" />
+      <workItem from="1719658786470" duration="13881000" />
+      <workItem from="1719677701308" duration="1098000" />
+      <workItem from="1719689627332" duration="408000" />
+      <workItem from="1719773529340" duration="2682000" />
+      <workItem from="1719806798649" duration="265000" />
+      <workItem from="1719824443688" duration="451000" />
+      <workItem from="1719827177115" duration="6000" />
+      <workItem from="1719940287698" duration="480000" />
+      <workItem from="1719940780508" duration="586000" />
+      <workItem from="1719941381617" duration="2011000" />
+      <workItem from="1719954901948" duration="301000" />
+      <workItem from="1719993133653" duration="16922000" />
+      <workItem from="1720026424031" duration="6972000" />
+      <workItem from="1720035424325" duration="229000" />
+      <workItem from="1720087552265" duration="10252000" />
+      <workItem from="1720107937680" duration="15279000" />
+      <workItem from="1720126557966" duration="2306000" />
+      <workItem from="1720179890546" duration="1493000" />
+      <workItem from="1720289349961" duration="6000" />
+      <workItem from="1720345190612" duration="395000" />
+      <workItem from="1720423738527" duration="3242000" />
+      <workItem from="1720434178066" duration="1352000" />
+      <workItem from="1720462221022" duration="731000" />
+      <workItem from="1720464544276" duration="1330000" />
+      <workItem from="1720509601895" duration="1297000" />
+      <workItem from="1720623973702" duration="7002000" />
+      <workItem from="1720643595319" duration="4061000" />
+      <workItem from="1720680655183" duration="2400000" />
+      <workItem from="1720699913658" duration="3395000" />
+      <workItem from="1720719642377" duration="627000" />
+      <workItem from="1720781006253" duration="5913000" />
+      <workItem from="1720787701948" duration="1294000" />
+      <workItem from="1720789019619" duration="3864000" />
+      <workItem from="1720851326739" duration="14003000" />
+      <workItem from="1720891330792" duration="39000" />
+      <workItem from="1720909916796" duration="109000" />
+      <workItem from="1720911780193" duration="60000" />
+      <workItem from="1720948686052" duration="1810000" />
+      <workItem from="1720990507030" duration="525000" />
+      <workItem from="1721020419363" duration="1968000" />
+      <workItem from="1721027454796" duration="3297000" />
+      <workItem from="1721038462289" duration="3121000" />
+      <workItem from="1721048034557" duration="11809000" />
+      <workItem from="1721060967690" duration="269000" />
+      <workItem from="1721069684834" duration="8124000" />
+      <workItem from="1721112873108" duration="6329000" />
+      <workItem from="1721119288931" duration="1799000" />
+      <workItem from="1721122795903" duration="3825000" />
+      <workItem from="1721127744945" duration="111000" />
+      <workItem from="1721202269018" duration="435000" />
+      <workItem from="1721202892928" duration="10000" />
+      <workItem from="1721375980166" duration="101000" />
+      <workItem from="1721376946218" duration="101000" />
+      <workItem from="1721722093529" duration="960000" />
+      <workItem from="1721916697272" duration="5074000" />
+      <workItem from="1721928186444" duration="851000" />
+      <workItem from="1721929588075" duration="3955000" />
+      <workItem from="1721936973880" duration="6186000" />
+      <workItem from="1721943456369" duration="142000" />
+      <workItem from="1721978290271" duration="5114000" />
+      <workItem from="1721985054689" duration="30000" />
+      <workItem from="1721986771153" duration="314000" />
+      <workItem from="1721996722946" duration="253000" />
+      <workItem from="1721997034408" duration="1543000" />
+      <workItem from="1721999573162" duration="35000" />
+      <workItem from="1721999857827" duration="143000" />
+      <workItem from="1722002273431" duration="853000" />
+      <workItem from="1722003549873" duration="721000" />
+      <workItem from="1722015735461" duration="138000" />
+      <workItem from="1722022104904" duration="3677000" />
+      <workItem from="1722026505641" duration="2247000" />
+      <workItem from="1722066898925" duration="861000" />
+      <workItem from="1722072405045" duration="1361000" />
+      <workItem from="1722158708359" duration="1033000" />
+      <workItem from="1722173797303" duration="17799000" />
+      <workItem from="1722200620835" duration="1034000" />
+      <workItem from="1722232960274" duration="44000" />
+      <workItem from="1722321794166" duration="5000" />
+      <workItem from="1722355188371" duration="4667000" />
+      <workItem from="1722361691825" duration="1907000" />
+      <workItem from="1722363809715" duration="2108000" />
+      <workItem from="1722366257676" duration="1588000" />
+      <workItem from="1722446622958" duration="7099000" />
+      <workItem from="1722495753122" duration="2566000" />
+      <workItem from="1722506772767" duration="164000" />
+      <workItem from="1722523008150" duration="10953000" />
+      <workItem from="1722581879350" duration="328000" />
+      <workItem from="1722607392121" duration="8384000" />
+      <workItem from="1722616937357" duration="4375000" />
+      <workItem from="1722676657785" duration="2766000" />
+      <workItem from="1722681276060" duration="51000" />
+      <workItem from="1722681341232" duration="32107000" />
+      <workItem from="1722745873382" duration="3656000" />
+      <workItem from="1722838698099" duration="2284000" />
+      <workItem from="1722851735726" duration="1202000" />
+      <workItem from="1722887579396" duration="2643000" />
+      <workItem from="1723011020401" duration="3197000" />
+      <workItem from="1723183665139" duration="15732000" />
+      <workItem from="1723209226884" duration="21204000" />
+      <workItem from="1723262552939" duration="20636000" />
+      <workItem from="1723291238540" duration="7317000" />
+      <workItem from="1723380082794" duration="53000" />
+      <workItem from="1723382183662" duration="53000" />
+      <workItem from="1723620420620" duration="220000" />
+      <workItem from="1723986258356" duration="2114000" />
+      <workItem from="1723989888959" duration="726000" />
+      <workItem from="1723991204033" duration="669000" />
+      <workItem from="1723993163037" duration="1503000" />
+      <workItem from="1724005173008" duration="1135000" />
+      <workItem from="1724006460183" duration="173000" />
+      <workItem from="1724006644866" duration="59000" />
+      <workItem from="1724006709445" duration="12000" />
+      <workItem from="1724006783781" duration="183000" />
+      <workItem from="1724006978929" duration="1985000" />
+      <workItem from="1724008998137" duration="354000" />
+      <workItem from="1724059895623" duration="1406000" />
+      <workItem from="1724061321737" duration="67000" />
+      <workItem from="1724061394315" duration="1805000" />
+      <workItem from="1724063281089" duration="142000" />
+      <workItem from="1724063481806" duration="285000" />
+      <workItem from="1724066244676" duration="733000" />
+      <workItem from="1724068155549" duration="1263000" />
+      <workItem from="1724069440006" duration="252000" />
+      <workItem from="1724069703956" duration="2088000" />
+      <workItem from="1724071834671" duration="351000" />
+      <workItem from="1724072198876" duration="18000" />
+      <workItem from="1724072312194" duration="37000" />
+      <workItem from="1724078543584" duration="4335000" />
+      <workItem from="1724083545036" duration="595000" />
+      <workItem from="1724084190311" duration="19000" />
+      <workItem from="1724084227628" duration="1958000" />
+      <workItem from="1724178377309" duration="702000" />
+      <workItem from="1724179095142" duration="1984000" />
+      <workItem from="1724263250174" duration="2175000" />
+      <workItem from="1724270570837" duration="3184000" />
+      <workItem from="1724275013652" duration="3275000" />
+      <workItem from="1724306174347" duration="10150000" />
+      <workItem from="1724329441086" duration="69000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1724062828981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724062828981</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1724069005106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724069005106</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1724069144591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724069144591</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1724070034722</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724070034722</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1724071978471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724071978471</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1724081137702</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081137702</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update">
+      <option name="closed" value="true" />
+      <created>1724081209369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081209369</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <option name="closed" value="true" />
+      <created>1724082041323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724082041323</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <option name="closed" value="true" />
+      <created>1724082912235</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724082912235</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <option name="closed" value="true" />
+      <created>1724086904048</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724086904048</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <option name="closed" value="true" />
+      <created>1724087388616</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724087388616</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <option name="closed" value="true" />
+      <created>1724093554170</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724093554170</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update">
+      <option name="closed" value="true" />
+      <created>1724179012926</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724179012926</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update">
+      <option name="closed" value="true" />
+      <created>1724179179232</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1724179179232</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update">
+      <option name="closed" value="true" />
+      <created>1724179212034</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724179212034</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update">
+      <option name="closed" value="true" />
+      <created>1724179827723</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1724179827723</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update">
+      <option name="closed" value="true" />
+      <created>1724180313668</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1724180313668</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update">
+      <option name="closed" value="true" />
+      <created>1724181070436</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1724181070436</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update">
+      <option name="closed" value="true" />
+      <created>1724276032087</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1724276032088</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update">
+      <option name="closed" value="true" />
+      <created>1724276054027</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1724276054027</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update">
+      <option name="closed" value="true" />
+      <created>1724307128691</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1724307128691</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update">
+      <option name="closed" value="true" />
+      <created>1724311845055</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1724311845055</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update">
+      <option name="closed" value="true" />
+      <created>1724312365072</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1724312365072</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update">
+      <option name="closed" value="true" />
+      <created>1724312476374</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1724312476374</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update">
+      <option name="closed" value="true" />
+      <created>1724312612414</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1724312612414</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="add file" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1723288285456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
+    <SUITE FILE_PATH="coverage/pythonProject$var.coverage" NAME="var Coverage Results" MODIFIED="1723292102386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/variable" />
+    <SUITE FILE_PATH="coverage/pythonProject$gen_ui_to_py.coverage" NAME="gen_ui_to_py Coverage Results" MODIFIED="1720704613599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
+    <SUITE FILE_PATH="coverage/pythonProject$test_bd.coverage" NAME="test_bd Coverage Results" MODIFIED="1720631091956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$post.coverage" NAME="post Coverage Results" MODIFIED="1722452657635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1724313984364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
+    <SUITE FILE_PATH="coverage/pythonProject$start_up.coverage" NAME="start_up Coverage Results" MODIFIED="1720788848008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$Doctests_in_vk_api.coverage" NAME="Doctests in vk_api Coverage Results" MODIFIED="1723225239060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/vk_api" />
+    <SUITE FILE_PATH="coverage/pythonProject$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1723298548406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$str_to_json.coverage" NAME="str_to_json Coverage Results" MODIFIED="1724080186207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$tokenize.coverage" NAME="tokenize Coverage Results" MODIFIED="1720704628428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib" />
+    <SUITE FILE_PATH="coverage/vk_download_py$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1724005669984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui/settings" />
+    <SUITE FILE_PATH="coverage/pythonProject$add_window.coverage" NAME="add_window Coverage Results" MODIFIED="1720785637532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$vk_like_add.coverage" NAME="vk_like_add Coverage Results" MODIFIED="1722620360157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/vk_download_py$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1724006153517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$Ui_progressbar_widget.coverage" NAME="Ui_progressbar_widget Coverage Results" MODIFIED="1721039164731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$custom_widgets.coverage" NAME="custom_widgets Coverage Results" MODIFIED="1724093387651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$message.coverage" NAME="message Coverage Results" MODIFIED="1722702915921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/pythonProject$testcode.coverage" NAME="testcode Coverage Results" MODIFIED="1723284965982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$cat_widget.coverage" NAME="cat_widget Coverage Results" MODIFIED="1720786341345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_py$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1723989901262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$eiifje.coverage" NAME="eiifje Coverage Results" MODIFIED="1720426403475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$docrunner.coverage" NAME="docrunner Coverage Results" MODIFIED="1723225277792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/plugins/python/helpers/pycharm" />
+    <SUITE FILE_PATH="coverage/pythonProject$vk_download.coverage" NAME="vk_download Coverage Results" MODIFIED="1722028567940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="test Coverage Results" MODIFIED="1719572783532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1721057252084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1724313990670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1720789055376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$camera.coverage" NAME="camera Coverage Results" MODIFIED="1722890128623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$Test.coverage" NAME="Test Coverage Results" MODIFIED="1723287735717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$temp.coverage" NAME="temp Coverage Results" MODIFIED="1720853384218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$var1.coverage" NAME="var1 Coverage Results" MODIFIED="1723014232905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$decoder.coverage" NAME="decoder Coverage Results" MODIFIED="1722686687631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/json" />
+    <SUITE FILE_PATH="coverage/pythonProject$test_mine_window.coverage" NAME="test_mine_window Coverage Results" MODIFIED="1722196138837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/pythonProject$tlist.coverage" NAME="tlist Coverage Results" MODIFIED="1720088102947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$mine.coverage" NAME="mine Coverage Results" MODIFIED="1722450094035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
+  </component>
+</project>
