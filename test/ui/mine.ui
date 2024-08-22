@@ -14,15 +14,21 @@
    <string>Постер Гивок</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(39, 39, 42);
+   <string notr="true">QWidget {
+background-color: rgb(39, 39, 42);
 color: rgb(255, 255, 255);
 font: 10pt &quot;Segoe UI&quot;;
+}
+
 QPushButton {
 	color: rgb(255, 255, 255);
 	font: 700 10pt &quot;Segoe UI&quot;;
 	padding-bottom: 5px;
 	border: 3px solid rgb(85, 123, 226);
 	border-radius: 6px;
+	padding-right: 5px;
+	padding-left: 5px;
+	
 }
 QPushButton:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -87,7 +93,7 @@ QPushButton:pressed {
 }</string>
         </property>
         <property name="text">
-         <string>  Настройки  </string>
+         <string>Настройки</string>
         </property>
         <property name="icon">
          <iconset resource="icons/res.qrc">
@@ -752,7 +758,7 @@ QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {
                <widget class="QPushButton" name="put_aside_pushButton">
                 <property name="minimumSize">
                  <size>
-                  <width>136</width>
+                  <width>146</width>
                   <height>41</height>
                  </size>
                 </property>

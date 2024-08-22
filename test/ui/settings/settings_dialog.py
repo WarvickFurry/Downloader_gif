@@ -25,8 +25,28 @@ class Ui_Dialog_settings(object):
         if not Dialog_settings.objectName():
             Dialog_settings.setObjectName(u"Dialog_settings")
         Dialog_settings.resize(698, 461)
-        Dialog_settings.setStyleSheet(u"background-color: rgb(39, 39, 42);\n"
-"color: rgb(255, 255, 255);")
+        Dialog_settings.setStyleSheet(u"QWidget {\n"
+"background-color: rgb(39, 39, 42);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"Segoe UI\";\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 700 10pt \"Segoe UI\";\n"
+"	padding-bottom: 5px;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"	padding-right: 8;\n"
+"	padding-left: 8;\n"
+"	\n"
+"}\n"
+"QPushButton:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	background-color: rgba(85, 123, 226, 200);\n"
+"}")
         self.verticalLayout_6 = QVBoxLayout(Dialog_settings)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
@@ -118,7 +138,7 @@ class Ui_Dialog_settings(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 380, 413))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 380, 412))
         self.verticalLayout_8 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.auto_swap_tab_checkBox = QCheckBox(self.scrollAreaWidgetContents)
@@ -574,8 +594,8 @@ class Ui_Dialog_settings(object):
         self.token_lineEdit.setPlaceholderText(QCoreApplication.translate("Dialog_settings", u"(\u041d\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0432\u0432\u043e\u0434\u0438\u0442\u044c \u043f\u043e\u043a\u0430 \u043d\u0435\u0442 \u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u0430 \u043d\u0430 \u0442\u043e\u043a\u0435\u043d \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f)", None))
         self.label_2.setText(QCoreApplication.translate("Dialog_settings", u"id \u0433\u0440\u0443\u043f\u043f\u044b", None))
         self.id_group_lineEdit.setPlaceholderText(QCoreApplication.translate("Dialog_settings", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 id \u0440\u0443\u043f\u043f\u044b ", None))
-        self.save_setings.setText(QCoreApplication.translate("Dialog_settings", u"  \u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c  ", None))
-        self.clear_pole_pushButton.setText(QCoreApplication.translate("Dialog_settings", u"  \u041e\u0447\u0438\u0441\u0442\u0438\u0442\u044c \u043f\u043e\u043b\u044f  ", None))
+        self.save_setings.setText(QCoreApplication.translate("Dialog_settings", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
+        self.clear_pole_pushButton.setText(QCoreApplication.translate("Dialog_settings", u"\u041e\u0447\u0438\u0441\u0442\u0438\u0442\u044c \u043f\u043e\u043b\u044f", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Dialog_settings", u"   \u0412\u0432\u043e\u0434 \u0434\u0430\u043d\u043d\u044b\u0445 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u0430\u0446\u0438\u0438   ", None))
     # retranslateUi
 

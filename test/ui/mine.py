@@ -29,15 +29,21 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1024, 606)
-        MainWindow.setStyleSheet(u"background-color: rgb(39, 39, 42);\n"
+        MainWindow.setStyleSheet(u"QWidget {\n"
+"background-color: rgb(39, 39, 42);\n"
 "color: rgb(255, 255, 255);\n"
 "font: 10pt \"Segoe UI\";\n"
+"}\n"
+"\n"
 "QPushButton {\n"
 "	color: rgb(255, 255, 255);\n"
 "	font: 700 10pt \"Segoe UI\";\n"
 "	padding-bottom: 5px;\n"
 "	border: 3px solid rgb(85, 123, 226);\n"
 "	border-radius: 6px;\n"
+"	padding-right: 5px;\n"
+"	padding-left: 5px;\n"
+"	\n"
 "}\n"
 "QPushButton:hover {\n"
 "	background-color: rgba(85, 123, 226, 70);\n"
@@ -459,7 +465,7 @@ class Ui_MainWindow(object):
 
         self.put_aside_pushButton = QPushButton(self.widget)
         self.put_aside_pushButton.setObjectName(u"put_aside_pushButton")
-        self.put_aside_pushButton.setMinimumSize(QSize(136, 41))
+        self.put_aside_pushButton.setMinimumSize(QSize(146, 41))
         self.put_aside_pushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);\n"
 "	height: 30px;\n"
@@ -539,7 +545,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0441\u0442\u0435\u0440 \u0413\u0438\u0432\u043e\u043a", None))
         self.action.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0435\u0433\u0438", None))
-        self.settings.setText(QCoreApplication.translate("MainWindow", u"  \u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438  ", None))
+        self.settings.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", None))
         self.keep.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0440\u0435\u043f\u0438\u0442\u044c", None))
         self.lineEdit_.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u0441\u044b\u043b\u043a\u0443 \u043d\u0430  \u0434\u0435\u0440\u043f\u0438\u0431\u0443\u0440\u0443", None))
         self.download_button.setText(QCoreApplication.translate("MainWindow", u"\u0441\u043a\u0430\u0447\u0430\u0442\u044c", None))

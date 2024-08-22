@@ -94,6 +94,10 @@ class MainWindow(QMainWindow):
         self.ui.set_date.setDate(date.today())
         self.ui.set_date.setCalendarPopup(True)
 
+
+        self.ui.label_2.setOpenExternalLinks(True)
+
+
         # Переменная для хранения предыдущего выбранного времени
         self.previous_time = None
         # Переменная для отслеживания переключений дней
