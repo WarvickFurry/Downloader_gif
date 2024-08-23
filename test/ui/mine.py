@@ -315,19 +315,35 @@ class Ui_MainWindow(object):
 
         self.gridLayout_5.addWidget(self.textEdit, 0, 0, 1, 1)
 
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setSpacing(0)
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.horizontalLayout_5.setContentsMargins(-1, 0, 12, 6)
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer_5)
+
         self.label_2 = QLabel(self.tab_2)
         self.label_2.setObjectName(u"label_2")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Maximum, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
+        self.label_2.setSizePolicy(sizePolicy)
 
-        self.gridLayout_5.addWidget(self.label_2, 1, 0, 1, 1)
+        self.horizontalLayout_5.addWidget(self.label_2)
+
+
+        self.gridLayout_5.addLayout(self.horizontalLayout_5, 2, 0, 1, 1)
 
         self.tabWidget.addTab(self.tab_2, "")
         self.tab_3 = QWidget()
         self.tab_3.setObjectName(u"tab_3")
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.tab_3.sizePolicy().hasHeightForWidth())
-        self.tab_3.setSizePolicy(sizePolicy)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.tab_3.sizePolicy().hasHeightForWidth())
+        self.tab_3.setSizePolicy(sizePolicy1)
         self.gridLayout_6 = QGridLayout(self.tab_3)
         self.gridLayout_6.setSpacing(0)
         self.gridLayout_6.setObjectName(u"gridLayout_6")
@@ -343,8 +359,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.webEngineView = QWebEngineView(self.gridWidget)
         self.webEngineView.setObjectName(u"webEngineView")
-        sizePolicy.setHeightForWidth(self.webEngineView.sizePolicy().hasHeightForWidth())
-        self.webEngineView.setSizePolicy(sizePolicy)
+        sizePolicy1.setHeightForWidth(self.webEngineView.sizePolicy().hasHeightForWidth())
+        self.webEngineView.setSizePolicy(sizePolicy1)
         self.webEngineView.setMinimumSize(QSize(600, 291))
         self.webEngineView.setUrl(QUrl(u"about:blank"))
 
@@ -358,11 +374,11 @@ class Ui_MainWindow(object):
         self.test_pushButton = QPushButton(self.gridWidget)
         self.test_pushButton.setObjectName(u"test_pushButton")
         self.test_pushButton.setEnabled(True)
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.test_pushButton.sizePolicy().hasHeightForWidth())
-        self.test_pushButton.setSizePolicy(sizePolicy1)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.test_pushButton.sizePolicy().hasHeightForWidth())
+        self.test_pushButton.setSizePolicy(sizePolicy2)
         self.test_pushButton.setMinimumSize(QSize(172, 35))
         self.test_pushButton.setMaximumSize(QSize(172, 35))
         self.test_pushButton.setStyleSheet(u"QPushButton {\n"
@@ -417,11 +433,11 @@ class Ui_MainWindow(object):
 
         self.set_date = QDateEdit(self.widget)
         self.set_date.setObjectName(u"set_date")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.Fixed)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.set_date.sizePolicy().hasHeightForWidth())
-        self.set_date.setSizePolicy(sizePolicy2)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.Fixed)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.set_date.sizePolicy().hasHeightForWidth())
+        self.set_date.setSizePolicy(sizePolicy3)
         self.set_date.setMinimumSize(QSize(111, 25))
         self.set_date.setMaximumSize(QSize(102, 25))
         self.set_date.setSizeIncrement(QSize(0, 0))
@@ -536,7 +552,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -565,7 +581,7 @@ class Ui_MainWindow(object):
                         " \u0440\u0430\u0437\u0434\u0435\u043b (\u0432\u0432\u043e\u0434 \u0434\u0430\u043d\u043d\u044b\u0445 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u0430\u0446\u0438\u0438)</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">3. \u0412 \u0433\u0440\u0430\u0444\u0435 (\u0440\u0430\u0437\u0434\u0435\u043b\u044b) \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u043c \u0444\u0430\u0439\u043b\u044b</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">\u043d\u0430 \u044d\u0442\u043e\u043c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430</span></p></body></html>", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:10pt;\">\u0421\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 \u043c\u043e\u0439 </span><a href=\"https://github.com/WarvickFurry/Downloader_gif.git\"><span style=\" text-decoration: underline; color:#297acc;\">GitHub</span></a></p></body></html>", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"https://github.com/WarvickFurry/Downloader_gif.git\"><span style=\" font-size:12pt; text-decoration: underline; color:#297acc;\">GitHub</span></a></p></body></html>", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f", None))
         self.test_pushButton.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043f\u0430\u043f\u043a\u0443", None))
         self.text_autTags.setDocumentTitle("")

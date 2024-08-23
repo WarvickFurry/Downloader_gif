@@ -133,7 +133,8 @@ class MainWindow(QMainWindow):
             saved_index = self.db.load_setting("mine_tab_cur_index")
             if saved_index is not None:
                 self.ui.tabWidget.setCurrentIndex(int(saved_index))
-
+        else:
+            self.ui.tabWidget.setCurrentIndex(0)
 
     def str_to_bool(self, s):
         return s.lower() in ('true', '1', 'yes')
