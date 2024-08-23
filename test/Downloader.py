@@ -118,15 +118,14 @@ class MainWindow(QMainWindow):
 
 ##########################__DB__#####################################
 
+
         if self.Dialog_settings.ui.autosave_keep_checkBox.isChecked():
             self.ui.keep.clicked.connect(self.save_cur_bool)
 
             saved_bool = self.db.load_setting("mine_keep_bool")
             if saved_bool is not None:
-                if saved_bool == "True":
-                    self.ui.keep.setChecked(True)
-                else:
-                    self.ui.keep.setChecked(False)
+                self.ui.keep.setChecked(self.str_to_bool("True"))
+
 
         if self.Dialog_settings.ui.autosave_tab_minewindow_checkBox.isChecked():
             self.ui.tabWidget.currentChanged.connect(self.save_cur_tab_index)
@@ -136,6 +135,8 @@ class MainWindow(QMainWindow):
                 self.ui.tabWidget.setCurrentIndex(int(saved_index))
 
 
+    def str_to_bool(self, s):
+        return s.lower() in ('true', '1', 'yes')
 
     def save_cur_bool(self, s_boolian):
         self.db.save_setting("mine_keep_bool", s_boolian)
@@ -202,7 +203,7 @@ class MainWindow(QMainWindow):
                 raise ValueError("Не удалось получить информацию о группе. Проверьте правильность токена доступа.")
         except vk_api.exceptions.VkApiError as e:
             print(f"VK API error in get_group_info: {e}")
-
+            self.Dialog_settings.clear_pole()
             self.show_warning()
             raise
         except Exception as e:
