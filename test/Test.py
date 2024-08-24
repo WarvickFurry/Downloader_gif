@@ -42,8 +42,8 @@ class Dialog_settings(QDialog):
         self.ui.autosave_tab_minewindow_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.autosave_keep_checkBox.stateChanged.connect(self.save_checkbox)
 
-        #self.ui.spinBox.valueChanged.connect(self.auto_save_spinbox)
-        #self.ui.spinBox.valueChanged.connect(self.on_spinbox_value_changed)
+        self.ui.spinBox.valueChanged.connect(self.auto_save_spinbox)
+        self.ui.spinBox.valueChanged.connect(self.on_spinbox_value_changed)
 
 
 
