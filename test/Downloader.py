@@ -8,7 +8,7 @@ import json
 import vk_api
 from datetime import datetime, timedelta, date
 
-from variable.var import download_link_gif
+from var import tag_sorting
 from winsound import SND_ALIAS, PlaySound
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
@@ -25,11 +25,12 @@ class download_link(QThread):
 
     def __init__(self, link):
         super().__init__()
+        self.sort_system = tag_sorting()
         self.link = link
 
     def run(self):
         try:
-            download_link_gif(self.link)
+            self.sort_system.download_link_gif(self.link)
         except Exception as e:
             print(f"Error in download_link_gif: {e}")
 
