@@ -7,6 +7,8 @@ from PySide6.QtWidgets import QDialog, QApplication, QMessageBox, QListWidgetIte
 from PySide6.QtCore import Slot, Signal, Qt
 
 from SQLite import db_init
+from json_updater import JSONUpdater
+
 
 from ui.settings.settings_dialog import Ui_Dialog_settings
 #from custom_widgets import CustomWidgets
@@ -18,6 +20,7 @@ class Dialog_settings(QDialog):
         super(Dialog_settings, self).__init__(parent)
 
         self.db = db_init() #  init DB
+        self.updater = JSONUpdater("config.json")
 
         self.ui = Ui_Dialog_settings()
         self.ui.setupUi(self)
@@ -183,29 +186,8 @@ class Dialog_settings(QDialog):
                 "7": "01:00"
             }
         }
-        self.update_json_file(config)
+        self.updater.update_json_file(config)
 
-    def merge_dicts(self,target, source):
-        for key, value in source.items():
-            if isinstance(value, dict) and key in target:
-                self.merge_dicts(target[key], value)
-            elif key not in target:
-                target[key] = value
-
-    def update_json_file(self, new_data):
-        file_path = "config.json"
-        # Шаг 1: Прочитать существующий JSON файл
-        try:
-            data = self.load_data_from_json()
-        except FileNotFoundError:
-            # Если файла нет, создаем пустой словарь
-            data = {}
-
-        # Шаг 2: Добавить только новые данные
-        self.merge_dicts(data, new_data)
-
-        # Шаг 3: Сохранить обновленный JSON обратно в файл
-        self.write_data_to_json(data)
 
 
 
