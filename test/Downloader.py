@@ -108,8 +108,8 @@ class MainWindow(QMainWindow):
 
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        gif_path = os.path.join(current_dir, "temp", "equestria.gif")
-        self.movie = QMovie(gif_path)
+        self.gif_path = os.path.join(current_dir, "temp", "equestria.gif")
+        self.movie = QMovie(self.gif_path)
 
 
         self.ui.button_clear_gif.clicked.connect(lambda: (self.movie.stop(),self.ui.button_play_pause.setChecked(False),self.ui.button_play_pause.setText("Play") , self.ui.label_movie.clear()))
@@ -424,6 +424,7 @@ class MainWindow(QMainWindow):
 
     def web_view(self):
         try:
+            self.movie = QMovie(self.gif_path)
             self.ui.label_movie.setMovie(self.movie)
 
             #self.ui.webEngineView.setUrl(local_url)
