@@ -511,151 +511,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
            <layout class="QHBoxLayout" name="horizontalLayout_9">
             <item>
              <layout class="QGridLayout" name="gridLayout_2">
-              <item row="0" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <property name="spacing">
-                 <number>10</number>
-                </property>
-                <item>
-                 <spacer name="horizontalSpacer_7">
-                  <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                 <widget class="QPushButton" name="button_play_pause">
-                  <property name="minimumSize">
-                   <size>
-                    <width>100</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="sizeIncrement">
-                   <size>
-                    <width>137</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="acceptDrops">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	font: 700 8pt &quot;Segoe UI&quot;;
-	padding-bottom: 2px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	background-color: rgb(39, 39, 42);
-}
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
-                  </property>
-                  <property name="text">
-                   <string>Play</string>
-                  </property>
-                  <property name="icon">
-                   <iconset resource="icons/res.qrc">
-                    <normaloff>:/icon/play_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>
-                    <normalon>:/icon/pause_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normalon>:/icon/play_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
-                  </property>
-                  <property name="checkable">
-                   <bool>true</bool>
-                  </property>
-                  <property name="checked">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item alignment="Qt::AlignmentFlag::AlignLeft">
-                 <widget class="QPushButton" name="button_clear_gif">
-                  <property name="minimumSize">
-                   <size>
-                    <width>100</width>
-                    <height>25</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	font: 700 8pt &quot;Segoe UI&quot;;
-	padding-bottom: 2px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	background-color: rgb(39, 39, 42);
-}
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
-                  </property>
-                  <property name="text">
-                   <string>Clear</string>
-                  </property>
-                  <property name="icon">
-                   <iconset resource="icons/res.qrc">
-                    <normaloff>:/icon/stop_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/stop_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_5">
-                  <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-               </layout>
-              </item>
               <item row="1" column="0">
-               <widget class="QScrollArea" name="scrollArea">
-                <property name="widgetResizable">
-                 <bool>true</bool>
+               <widget class="QWebEngineView" name="webEngineView">
+                <property name="url">
+                 <url>
+                  <string>about:blank</string>
+                 </url>
                 </property>
-                <widget class="QWidget" name="scrollAreaWidgetContents">
-                 <property name="geometry">
-                  <rect>
-                   <x>0</x>
-                   <y>0</y>
-                   <width>518</width>
-                   <height>290</height>
-                  </rect>
-                 </property>
-                 <layout class="QGridLayout" name="gridLayout_4">
-                  <item row="0" column="0">
-                   <widget class="QLabel" name="label_movie">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="text">
-                     <string/>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
                </widget>
               </item>
              </layout>
@@ -822,13 +684,13 @@ font: 14pt &quot;Segoe UI&quot;;</string>
                <property name="minimumSize">
                 <size>
                  <width>111</width>
-                 <height>25</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>102</width>
-                 <height>25</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="sizeIncrement">
@@ -855,6 +717,7 @@ QCalendarWidget QAbstractItemView:enabled {
 QDateTimeEdit {
 	 min-width: 105px;
     border: 3px solid rgb(85, 123, 226); 
+	font: 14pt &quot;Segoe UI&quot;;
 }
 QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {
     qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка назад */
@@ -1047,6 +910,13 @@ font: 14pt &quot;Segoe UI&quot;;
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="icons/res.qrc"/>
  </resources>

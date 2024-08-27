@@ -15,11 +15,12 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWebEngineWidgets import QWebEngineView
 from PySide6.QtWidgets import (QApplication, QComboBox, QDateEdit, QGridLayout,
     QHBoxLayout, QLabel, QLayout, QLineEdit,
-    QMainWindow, QProgressBar, QPushButton, QScrollArea,
-    QSizePolicy, QSpacerItem, QTabWidget, QTextEdit,
-    QVBoxLayout, QWidget)
+    QMainWindow, QProgressBar, QPushButton, QSizePolicy,
+    QSpacerItem, QTabWidget, QTextEdit, QVBoxLayout,
+    QWidget)
 import res_rc
 
 class Ui_MainWindow(object):
@@ -340,103 +341,22 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.horizontalLayout_3 = QHBoxLayout()
-        self.horizontalLayout_3.setSpacing(10)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.horizontalSpacer_7 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.webEngineView = QWebEngineView(self.tab_3)
+        self.webEngineView.setObjectName(u"webEngineView")
+        self.webEngineView.setUrl(QUrl(u"about:blank"))
 
-        self.horizontalLayout_3.addItem(self.horizontalSpacer_7)
-
-        self.button_play_pause = QPushButton(self.tab_3)
-        self.button_play_pause.setObjectName(u"button_play_pause")
-        self.button_play_pause.setMinimumSize(QSize(100, 0))
-        self.button_play_pause.setSizeIncrement(QSize(137, 0))
-        self.button_play_pause.setAcceptDrops(False)
-        self.button_play_pause.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 700 8pt \"Segoe UI\";\n"
-"	padding-bottom: 2px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	background-color: rgb(39, 39, 42);\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
-        icon3 = QIcon()
-        icon3.addFile(u":/icon/play_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        icon3.addFile(u":/icon/pause_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.On)
-        self.button_play_pause.setIcon(icon3)
-        self.button_play_pause.setCheckable(True)
-        self.button_play_pause.setChecked(False)
-
-        self.horizontalLayout_3.addWidget(self.button_play_pause, 0, Qt.AlignmentFlag.AlignHCenter)
-
-        self.button_clear_gif = QPushButton(self.tab_3)
-        self.button_clear_gif.setObjectName(u"button_clear_gif")
-        self.button_clear_gif.setMinimumSize(QSize(100, 25))
-        self.button_clear_gif.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 700 8pt \"Segoe UI\";\n"
-"	padding-bottom: 2px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	background-color: rgb(39, 39, 42);\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
-        icon4 = QIcon()
-        icon4.addFile(u":/icon/stop_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.button_clear_gif.setIcon(icon4)
-
-        self.horizontalLayout_3.addWidget(self.button_clear_gif, 0, Qt.AlignmentFlag.AlignLeft)
-
-        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.horizontalLayout_3.addItem(self.horizontalSpacer_5)
-
-
-        self.gridLayout_2.addLayout(self.horizontalLayout_3, 0, 0, 1, 1)
-
-        self.scrollArea = QScrollArea(self.tab_3)
-        self.scrollArea.setObjectName(u"scrollArea")
-        self.scrollArea.setWidgetResizable(True)
-        self.scrollAreaWidgetContents = QWidget()
-        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 518, 290))
-        self.gridLayout_4 = QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.label_movie = QLabel(self.scrollAreaWidgetContents)
-        self.label_movie.setObjectName(u"label_movie")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.MinimumExpanding)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.label_movie.sizePolicy().hasHeightForWidth())
-        self.label_movie.setSizePolicy(sizePolicy1)
-
-        self.gridLayout_4.addWidget(self.label_movie, 0, 0, 1, 1)
-
-        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
-
-        self.gridLayout_2.addWidget(self.scrollArea, 1, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.webEngineView, 1, 0, 1, 1)
 
 
         self.horizontalLayout_9.addLayout(self.gridLayout_2)
 
         self.widget_3 = QWidget(self.tab_3)
         self.widget_3.setObjectName(u"widget_3")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.widget_3.sizePolicy().hasHeightForWidth())
-        self.widget_3.setSizePolicy(sizePolicy2)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.widget_3.sizePolicy().hasHeightForWidth())
+        self.widget_3.setSizePolicy(sizePolicy1)
         self.gridLayout_3 = QGridLayout(self.widget_3)
         self.gridLayout_3.setSpacing(6)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
@@ -444,11 +364,11 @@ class Ui_MainWindow(object):
         self.test_pushButton = QPushButton(self.widget_3)
         self.test_pushButton.setObjectName(u"test_pushButton")
         self.test_pushButton.setEnabled(True)
-        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.test_pushButton.sizePolicy().hasHeightForWidth())
-        self.test_pushButton.setSizePolicy(sizePolicy3)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.test_pushButton.sizePolicy().hasHeightForWidth())
+        self.test_pushButton.setSizePolicy(sizePolicy2)
         self.test_pushButton.setMinimumSize(QSize(172, 35))
         self.test_pushButton.setMaximumSize(QSize(172, 35))
         self.test_pushButton.setStyleSheet(u"QPushButton {\n"
@@ -464,9 +384,9 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "	background-color: rgba(85, 123, 226, 200);\n"
 "}")
-        icon5 = QIcon()
-        icon5.addFile(u":/icon/folder_open_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.test_pushButton.setIcon(icon5)
+        icon3 = QIcon()
+        icon3.addFile(u":/icon/folder_open_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.test_pushButton.setIcon(icon3)
         self.test_pushButton.setIconSize(QSize(24, 24))
 
         self.gridLayout_3.addWidget(self.test_pushButton, 0, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
@@ -503,13 +423,13 @@ class Ui_MainWindow(object):
 
         self.set_date = QDateEdit(self.widget)
         self.set_date.setObjectName(u"set_date")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.Fixed)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.set_date.sizePolicy().hasHeightForWidth())
-        self.set_date.setSizePolicy(sizePolicy4)
-        self.set_date.setMinimumSize(QSize(111, 25))
-        self.set_date.setMaximumSize(QSize(102, 25))
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.Fixed)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.set_date.sizePolicy().hasHeightForWidth())
+        self.set_date.setSizePolicy(sizePolicy3)
+        self.set_date.setMinimumSize(QSize(111, 30))
+        self.set_date.setMaximumSize(QSize(102, 30))
         self.set_date.setSizeIncrement(QSize(0, 0))
         self.set_date.setMouseTracking(True)
         self.set_date.setStyleSheet(u"QDateTimeEdit::drop-down {\n"
@@ -526,12 +446,13 @@ class Ui_MainWindow(object):
 "QDateTimeEdit {\n"
 "	 min-width: 105px;\n"
 "    border: 3px solid rgb(85, 123, 226); \n"
+"	font: 14pt \"Segoe UI\";\n"
 "}\n"
 "QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {\n"
 "    qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* \u0421\u0442\u0440\u0435\u043b\u043a\u0430 \u043d\u0430\u0437\u0430\u0434 */\n"
-"    width: 30px; /* \u0428\u0438\u0440\u0438\u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
-"    "
-                        "height: 30px; /* \u0412\u044b\u0441\u043e\u0442\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
+"    width: 30px; /* \u0428\u0438\u0440\u0438\u043d\u0430 \u043a\u043d\u043e"
+                        "\u043f\u043a\u0438 */\n"
+"    height: 30px; /* \u0412\u044b\u0441\u043e\u0442\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
 "}\n"
 "QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {\n"
 "    qproperty-icon: url(:/icon/arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* \u0421\u0442\u0440\u0435\u043b\u043a\u0430 \u0432\u043f\u0435\u0440\u0435\u0434 */\n"
@@ -571,9 +492,9 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "	background-color: rgba(85, 123, 226, 200);\n"
 "}")
-        icon6 = QIcon()
-        icon6.addFile(u":/icon/publish_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.put_aside_pushButton.setIcon(icon6)
+        icon4 = QIcon()
+        icon4.addFile(u":/icon/publish_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.put_aside_pushButton.setIcon(icon4)
         self.put_aside_pushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_2.addWidget(self.put_aside_pushButton, 0, Qt.AlignmentFlag.AlignVCenter)
@@ -652,9 +573,6 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">\u043d\u0430 \u044d\u0442\u043e\u043c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430</span></p></body></html>", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"https://github.com/WarvickFurry/Downloader_gif.git\"><span style=\" font-size:12pt; text-decoration: underline; color:#297acc;\">GitHub</span></a></p></body></html>", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f", None))
-        self.button_play_pause.setText(QCoreApplication.translate("MainWindow", u"Play", None))
-        self.button_clear_gif.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
-        self.label_movie.setText("")
         self.test_pushButton.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043f\u0430\u043f\u043a\u0443", None))
         self.text_autTags.setDocumentTitle("")
         self.text_autTags.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0421\u043f\u0438\u0441\u043e\u043a \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u043c\u044b\u0445 \u0442\u0435\u0433\u043e\u0432", None))
