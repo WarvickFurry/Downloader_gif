@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="icon">
+    <file>file_open_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>pause_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>play_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>stop_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>
     <file>arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
     <file>arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
     <file>add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</file>

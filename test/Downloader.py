@@ -13,6 +13,7 @@ from winsound import SND_ALIAS, PlaySound
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
 from PySide6.QtCore import QThread, Signal, QTimer, Qt
+from PySide6.QtGui import QMovie
 
 from ui.mine import Ui_MainWindow
 from Test import Dialog_settings
@@ -106,6 +107,19 @@ class MainWindow(QMainWindow):
         self.ui.label_2.setOpenExternalLinks(True)
 
 
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        gif_path = os.path.join(current_dir, "temp", "equestria.gif")
+        self.movie = QMovie(gif_path)
+
+
+        self.ui.button_clear_gif.clicked.connect(lambda: (self.movie.stop(),self.ui.button_play_pause.setChecked(False),self.ui.button_play_pause.setText("Play") , self.ui.label_movie.clear()))
+        self.ui.button_play_pause.clicked.connect(self.movie_start_stop)
+
+
+        # self.web_view()
+        # self.movie.start()
+
+
         # Переменная для хранения предыдущего выбранного времени
         self.previous_time = None
         # Переменная для отслеживания переключений дней
@@ -116,6 +130,10 @@ class MainWindow(QMainWindow):
         self.a = 0
 
         self.get_id()
+
+
+
+
 
 ##########################__DB__#####################################
 
@@ -281,7 +299,8 @@ class MainWindow(QMainWindow):
                 copyright=self.source_url  # Указание на источник поста
             )
             self.ui.text_autTags.setText("")
-            self.ui.webEngineView.setUrl("")
+
+            #self.ui.webEngineView.setUrl("")
             if self.Dialog_settings.ui.notifications_checkBox.isChecked():
                 PlaySound("SystemExclamation", SND_ALIAS)
 
@@ -405,13 +424,20 @@ class MainWindow(QMainWindow):
 
     def web_view(self):
         try:
-            current_dir = os.path.dirname(os.path.abspath(__file__))
-            gif_path = os.path.join(current_dir, "temp", "equestria.gif")
-            local_url = f"file:///{gif_path}"
-            local_url = local_url.replace("\\", "/")
-            self.ui.webEngineView.setUrl(local_url)
+            self.ui.label_movie.setMovie(self.movie)
+
+            #self.ui.webEngineView.setUrl(local_url)
         except Exception as e:
             print(f"Error in web_view: {e}")
+
+    def movie_start_stop(self):
+        if self.ui.button_play_pause.isChecked():
+            self.ui.button_play_pause.setText("Pause")
+            self.web_view()
+            self.movie.start()
+        else:
+            self.ui.button_play_pause.setText("Play")
+            self.movie.stop()
 
     def link(self):
         try:
@@ -431,7 +457,8 @@ class MainWindow(QMainWindow):
                 api_url = link.replace("https://derpibooru.org/images/", "https://derpibooru.org/api/v1/json/images/")
                 response = requests.get(api_url).json()
                 new_url = response['image']['representations']['full']
-                self.ui.webEngineView.setUrl(new_url)
+
+                #self.ui.webEngineView.setUrl(new_url)
                 filename = 'equestria.gif'
 
                 self.thread = DownloadThread(new_url, filename)
@@ -460,6 +487,8 @@ class MainWindow(QMainWindow):
                 if self.Dialog_settings.ui.soun_end_download_checkBox.isChecked():
                     PlaySound("SystemExclamation", SND_ALIAS)
                 if self.Dialog_settings.ui.auto_swap_tab_checkBox.isChecked():  # проверка на состояния чекбокса
+                    self.web_view()
+                    self.movie.start()
                     self.ui.tabWidget.setCurrentIndex(2)
 
             self.a += 1
@@ -507,7 +536,7 @@ class MainWindow(QMainWindow):
         except Exception as e:
             print(f"Error in write_data_to_json: {e}")
 
-    ################ end json ######################
+    ################ end json #####################
 
 
 if __name__ == "__main__":
