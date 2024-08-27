@@ -424,6 +424,8 @@ class MainWindow(QMainWindow):
 
     def web_view(self):
         try:
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            self.gif_path = os.path.join(current_dir, "temp", "equestria.gif")
             self.movie = QMovie(self.gif_path)
             self.ui.label_movie.setMovie(self.movie)
 
