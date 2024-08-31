@@ -35,6 +35,11 @@ QPushButton:hover {
 }
 QPushButton:pressed {
 	background-color: rgba(85, 123, 226, 200);
+}
+QToolTip {
+    background-color: rgb(39, 39, 42);
+	color: rgb(255, 255, 255);
+	font: 10pt &quot;Segoe UI&quot;;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -176,7 +181,7 @@ QTabBar::tab:selected {
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>-69</y>
+                <y>0</y>
                 <width>363</width>
                 <height>481</height>
                </rect>
@@ -189,6 +194,9 @@ QTabBar::tab:selected {
                    <width>360</width>
                    <height>16777215</height>
                   </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Автомотическое переключения окна после откладывания поста&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QCheckBox:hover {
@@ -224,6 +232,9 @@ QCheckBox::indicator {
                    <height>16777215</height>
                   </size>
                  </property>
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Автомотическое переключение даты и времени после нажатия кнопки&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QCheckBox:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -251,6 +262,9 @@ QCheckBox::indicator {
                </item>
                <item>
                 <widget class="QCheckBox" name="blur_token_checkBox">
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Скрывает токен и айди группы под точечки&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QCheckBox:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -333,6 +347,9 @@ QCheckBox::indicator {
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Воспроизводится звук после того как пост был отложен&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">QCheckBox:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -370,6 +387,9 @@ QCheckBox::indicator {
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Воспроизводится звук после скачки гифки&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">QCheckBox:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -402,6 +422,9 @@ QCheckBox::indicator {
                       <width>360</width>
                       <height>16777215</height>
                      </size>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Появляется окошко с уведомлением об успешном откладывании поста&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QCheckBox:hover {
@@ -488,6 +511,9 @@ QCheckBox::indicator {
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сохраняет последний выбранный таб в настройках&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">QCheckBox:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -525,6 +551,9 @@ QCheckBox::indicator {
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сохраняет последний выбранный таб в гланом окне&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">QCheckBox:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -558,6 +587,9 @@ QCheckBox::indicator {
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сохраняет состояние&lt;br/&gt;перелючателя закрепления&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">QCheckBox:hover {
 	background-color: rgba(85, 123, 226, 70);
@@ -576,7 +608,12 @@ QCheckBox::indicator {
     height: 25px;
 	left: 5px;
 	top: 2px;
- }</string>
+ }
+QWidget {
+background-color: rgb(39, 39, 42);
+color: rgb(255, 255, 255);
+}
+</string>
                     </property>
                     <property name="text">
                      <string>Закрепление</string>
@@ -967,6 +1004,8 @@ QPushButton:pressed {
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../icons/res.qrc"/>
+ </resources>
  <connections/>
 </ui>

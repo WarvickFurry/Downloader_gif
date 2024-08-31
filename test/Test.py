@@ -36,10 +36,13 @@ class Dialog_settings(QDialog):
         self.ui.auto_swap_time_data_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.notifications_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.infoBox_checkBox.stateChanged.connect(self.save_checkbox)
+
+
         self.ui.soun_end_download_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.blur_token_checkBox.stateChanged.connect(self.save_checkbox)
-
         self.ui.blur_token_checkBox.stateChanged.connect(self.blur)
+
+
 
         self.ui.autosave_tab_settings_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.autosave_tab_minewindow_checkBox.stateChanged.connect(self.save_checkbox)
@@ -225,7 +228,6 @@ class Dialog_settings(QDialog):
         self.ui.autosave_tab_settings_checkBox.setChecked(config["settings"]["autosave_tab_settings"])
         self.ui.autosave_tab_minewindow_checkBox.setChecked(config["settings"]["autosave_tab_minewindow"])
         self.ui.autosave_keep_checkBox.setChecked(config["settings"]["autosave_keep"])
-
 
 
     def save_settings(self):

@@ -19,6 +19,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QDialog, QGroupBox,
     QHBoxLayout, QLabel, QLayout, QLineEdit,
     QPushButton, QScrollArea, QSizePolicy, QSpacerItem,
     QSpinBox, QTabWidget, QVBoxLayout, QWidget)
+import res_rc
 
 class Ui_Dialog_settings(object):
     def setupUi(self, Dialog_settings):
@@ -46,6 +47,11 @@ class Ui_Dialog_settings(object):
 "}\n"
 "QPushButton:pressed {\n"
 "	background-color: rgba(85, 123, 226, 200);\n"
+"}\n"
+"QToolTip {\n"
+"    background-color: rgb(39, 39, 42);\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 10pt \"Segoe UI\";\n"
 "}")
         self.verticalLayout_6 = QVBoxLayout(Dialog_settings)
         self.verticalLayout_6.setSpacing(0)
@@ -138,7 +144,7 @@ class Ui_Dialog_settings(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, -69, 363, 481))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 363, 481))
         self.verticalLayout_8 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.auto_swap_tab_checkBox = QCheckBox(self.scrollAreaWidgetContents)
@@ -418,7 +424,12 @@ class Ui_Dialog_settings(object):
 "    height: 25px;\n"
 "	left: 5px;\n"
 "	top: 2px;\n"
-" }")
+" }\n"
+"QWidget {\n"
+"background-color: rgb(39, 39, 42);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"")
 
         self.verticalLayout_11.addWidget(self.autosave_keep_checkBox)
 
@@ -685,16 +696,43 @@ class Ui_Dialog_settings(object):
 
     def retranslateUi(self, Dialog_settings):
         Dialog_settings.setWindowTitle(QCoreApplication.translate("Dialog_settings", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", None))
+#if QT_CONFIG(tooltip)
+        self.auto_swap_tab_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0410\u0432\u0442\u043e\u043c\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u043e\u043a\u043d\u0430 \u043f\u043e\u0441\u043b\u0435 \u043e\u0442\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u043d\u0438\u044f \u043f\u043e\u0441\u0442\u0430</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.auto_swap_tab_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0410\u0432\u0442\u043e \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043e\u043a\u043d\u0430", None))
+#if QT_CONFIG(tooltip)
+        self.auto_swap_time_data_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0410\u0432\u0442\u043e\u043c\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0434\u0430\u0442\u044b \u0438 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043f\u043e\u0441\u043b\u0435 \u043d\u0430\u0436\u0430\u0442\u0438\u044f \u043a\u043d\u043e\u043f\u043a\u0438</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.auto_swap_time_data_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0410\u0432\u0442\u043e \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0434\u0430\u0442\u044b \u0438 \u0432\u0440\u0435\u043c\u0435\u043d\u0438", None))
+#if QT_CONFIG(tooltip)
+        self.blur_token_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0421\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u043e\u043a\u0435\u043d \u0438 \u0430\u0439\u0434\u0438 \u0433\u0440\u0443\u043f\u043f\u044b \u043f\u043e\u0434 \u0442\u043e\u0447\u0435\u0447\u043a\u0438</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.blur_token_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0430\u0431\u043b\u044e\u0440\u0438\u0432\u0430\u043d\u0438\u0435 \u0442\u043e\u043a\u0435\u043d\u0430", None))
         self.verticalGroupBox.setTitle(QCoreApplication.translate("Dialog_settings", u"\u0423\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u044f", None))
+#if QT_CONFIG(tooltip)
+        self.notifications_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0412\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0441\u044f \u0437\u0432\u0443\u043a \u043f\u043e\u0441\u043b\u0435 \u0442\u043e\u0433\u043e \u043a\u0430\u043a \u043f\u043e\u0441\u0442 \u0431\u044b\u043b \u043e\u0442\u043b\u043e\u0436\u0435\u043d</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.notifications_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0423\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u043b\u0435 \u043e\u0442\u043b\u043e\u0436\u043a\u0438", None))
+#if QT_CONFIG(tooltip)
+        self.soun_end_download_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0412\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0441\u044f \u0437\u0432\u0443\u043a \u043f\u043e\u0441\u043b\u0435 \u0441\u043a\u0430\u0447\u043a\u0438 \u0433\u0438\u0444\u043a\u0438</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.soun_end_download_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0432\u0443\u043a \u043f\u043e\u0441\u043b\u0435 \u0441\u043a\u0430\u0447\u043a\u0438", None))
+#if QT_CONFIG(tooltip)
+        self.infoBox_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u041f\u043e\u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043e\u043a\u043e\u0448\u043a\u043e \u0441 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435\u043c \u043e\u0431 \u0443\u0441\u043f\u0435\u0448\u043d\u043e\u043c \u043e\u0442\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u043d\u0438\u0438 \u043f\u043e\u0441\u0442\u0430</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.infoBox_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0418\u043d\u0444\u043e\u0431\u043b\u043e\u043a \u043f\u043e\u0441\u043b\u0435 \u043e\u0442\u043b\u043e\u0436\u043a\u0438", None))
         self.verticalGroupBox_2.setTitle(QCoreApplication.translate("Dialog_settings", u"\u0410\u0432\u0442\u043e \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u0432 \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0443\u044e \u0411\u0414", None))
+#if QT_CONFIG(tooltip)
+        self.autosave_tab_settings_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u0442\u0430\u0431 \u0432 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u0445</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.autosave_tab_settings_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u0442\u0430\u0431 \u0432 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u0445", None))
+#if QT_CONFIG(tooltip)
+        self.autosave_tab_minewindow_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u0442\u0430\u0431 \u0432 \u0433\u043b\u0430\u043d\u043e\u043c \u043e\u043a\u043d\u0435</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.autosave_tab_minewindow_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u0442\u0430\u0431 \u0432 \u0433\u043b\u0430\u0432\u043d\u043e\u043c \u043e\u043a\u043d\u0435", None))
+#if QT_CONFIG(tooltip)
+        self.autosave_keep_checkBox.setToolTip(QCoreApplication.translate("Dialog_settings", u"<html><head/><body><p>\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442 \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435<br/>\u043f\u0435\u0440\u0435\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u044f \u0437\u0430\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u044f</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
         self.autosave_keep_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0430\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435", None))
         self.label_3.setText(QCoreApplication.translate("Dialog_settings", u"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043a \u0441\u043f\u0438\u0441\u043a\u0443", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("Dialog_settings", u"  \u0420\u0430\u0437\u043d\u044b\u0435 \u0442\u043e\u0433\u043b\u044b  ", None))

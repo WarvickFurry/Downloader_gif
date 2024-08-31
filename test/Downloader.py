@@ -296,6 +296,7 @@ class MainWindow(QMainWindow):
 
             if self.Dialog_settings.ui.infoBox_checkBox.isChecked():
                 QMessageBox.information(self, "Информация!", "Пост отложен!")
+
         except vk_api.exceptions.VkApiError as e:
             print(f"VK API error in schedule_post: {e}")
         except Exception as e:
