@@ -72,11 +72,6 @@ class Dialog_settings(QDialog):
     def save_cur_index(self,index):
         self.db.save_setting("tab_index",index)
 
-########################### ОЗУ ###########################################
-
-
-
-
 
 
 ######################################################################

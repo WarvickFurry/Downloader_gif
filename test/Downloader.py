@@ -5,9 +5,6 @@ import subprocess
 import requests
 import json
 
-import multiprocessing as mp
-import numpy as np
-
 import vk_api
 from datetime import datetime, timedelta, date
 
