@@ -53,26 +53,29 @@ class tag_sorting:
 
 
 
-    def tag_filer(self, cat, only_one, gif_tags):
+    def tag_filer(self, cat,only_one, gif_tags):
         aut = []
         a = 0
         a1 = 0
+        eg = 0
         for d in range(len(only_one)):
             c = self.cat_table(only_one[d])
             for e in range(len(c)):
                 if list(filter(lambda x: c[e] in x, gif_tags)):
                     if aut.count(only_one[d][0]) < 1:
                         a1 += 1
-
                 if a1 != 0:
                     aut.insert(0, only_one[d][0])
                     a1 = 0
-
         for i in range(len(cat)):
-            t = self.cat_table(cat[i])  # список категорий
-            for j in range(len(t)):
-                # print(j,t[j])
+            t = self.cat_table(cat[i])  #список категорий
 
+            for j in range(len(t)):
+                if bool(list(filter(lambda x: t[j] in x, gif_tags))):
+                    if any("sunset_shimmer" in tag for tag in list(filter(lambda x: t[j] in x, gif_tags)))  and "#equestria_girls@equestriagif" == cat[i][0]:
+                        j -= 1
+                        if any("equestria_girls" in tag for tag in list(filter(lambda x: t[j] in x, gif_tags))):
+                            eg += 1
                 if bool(list(filter(lambda x: t[j] in x, gif_tags))):
                     if cat[i][0] == "#oc@equestriagif":
                         if any("oc" in tag for tag in list(filter(lambda x: t[j] in x, gif_tags))) and any("oc:" in tag for tag in list(filter(lambda x: t[j] in x, gif_tags))):
@@ -86,7 +89,6 @@ class tag_sorting:
                         else:
                             i += 1
                     else:
-
                         if cat[i][j] not in aut:
                             if j == 0 and cat[i][j] not in aut:
                                 a += 1
@@ -94,11 +96,12 @@ class tag_sorting:
                                 aut += [cat[i][j]]
                         if [cat[i][0]] != [cat[i][j]]:
                             a += 1
-
             if a != 0:
                 aut.insert(0, cat[i][0])
                 a = 0
-        if "#equestria_girls@equestriagif" in aut and "#sunset_shimmer@equestriagif" in aut:
+
+        if eg != 0:
+            eg = 0
             aut.remove("#other_ponies@equestriagif")
 
         return aut

@@ -44,6 +44,7 @@ class Dialog_settings(QDialog):
 
 
 
+
         self.ui.autosave_tab_settings_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.autosave_tab_minewindow_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.autosave_keep_checkBox.stateChanged.connect(self.save_checkbox)
@@ -70,6 +71,8 @@ class Dialog_settings(QDialog):
 
     def save_cur_index(self,index):
         self.db.save_setting("tab_index",index)
+
+########################### ОЗУ ###########################################
 
 
 
