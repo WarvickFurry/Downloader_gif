@@ -158,7 +158,7 @@ class MainWindow(QMainWindow):
 
 #################################__Style__#####################################
     def set_style(self):
-        self.load_style("ui/style/mine.qss")
+        self.load_style("ui/style/minecraft.qss")
 
     def load_style(self, style_file):
         file = QFile(style_file)
