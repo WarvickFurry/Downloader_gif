@@ -1,0 +1,72 @@
+QWidget#centralwidget {
+	background-image: url(:/icon/1678847827_bogatyr-club-p-fon-zemlyanoi-foni-oboi-1.png);
+}
+QWidget#horizontalWidget {
+	background-image: url();
+	background-color: rgb(0, 0, 0, 255);
+}
+QWidget#verticalWidget_2 {
+	background-image: url();
+	background-color: rgb(0, 0, 0, 255);
+}
+QWidget#tab_1 {
+	background-image: url(:/icon/1678847827_bogatyr-club-p-fon-zemlyanoi-foni-oboi-1.png);
+}
+QWidget#tab_2 {
+	background-image: url(:/icon/1678847827_bogatyr-club-p-fon-zemlyanoi-foni-oboi-1.png);
+}
+QWidget#tab_3 {
+	background-image: url(:/icon/1678847827_bogatyr-club-p-fon-zemlyanoi-foni-oboi-1.png);
+}
+QWidget#progressBar {
+	background-image: url();
+	background-color: rgb(39, 39, 42);
+}
+
+QWidget#textEdit_2 {
+	background-image: url();
+	background-color: rgb(39, 39, 42);
+}
+QWidget#text_autTags {
+	background-image: url();
+	background-color: rgb(39, 39, 42);
+}
+QWidget#set_date {
+	background-image: url();
+	background-color: rgb(39, 39, 42);
+}
+QWidget#set_time {
+	background-image: url();
+	background-color: rgb(39, 39, 42);
+}
+
+QWidget {
+	background-image: url();
+	background-color: rgb(0, 0, 0, 255);
+color: rgb(255, 255, 255);
+font: 10pt "Segoe UI";
+}
+
+QLineEdit {
+	background-image: url();
+	background-color: rgb(39, 39, 42);
+}
+
+QPushButton {
+	background-image: url();
+	background-color: rgb(39, 39, 42);
+	color: rgb(255, 255, 255);
+	font: 700 10pt "Segoe UI";
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	padding-right: 5px;
+	padding-left: 5px;
+	
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
