@@ -1,3 +1,4 @@
 @echo off
-python test\Downloader.py
+cd /d "%~dp0test"
+python Downloader.py
 pause

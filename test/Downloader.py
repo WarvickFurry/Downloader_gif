@@ -159,21 +159,6 @@ class MainWindow(QMainWindow):
 #################################__Style__#####################################
     def set_style(self):
         try:
-            # Получаем текущий рабочий каталог
-            current_working_dir = Path(os.getcwd())
-
-            # Определяем путь к папке Downloader_gif относительно текущего рабочего каталога
-            root_dir = current_working_dir / 'Downloader_gif'
-
-            # Определяем путь к файлу стилей относительно текущего рабочего каталога
-            relative_path = root_dir / 'test' / 'ui' / 'style' / 'minecraft.qss'
-
-            # Преобразуем путь в строку и заменяем обратные слеши на прямые
-            absolute_path_str = str(relative_path).replace('\\', '/')
-
-            print(f"Абсолютный путь к файлу стилей: {absolute_path_str}")
-
-            # Загружаем стиль с использованием абсолютного пути
             self.load_style("ui/style/minecraft.qss")
 
         except Exception as e:
