@@ -174,7 +174,7 @@ class MainWindow(QMainWindow):
             print(f"Абсолютный путь к файлу стилей: {absolute_path_str}")
 
             # Загружаем стиль с использованием абсолютного пути
-            self.load_style(absolute_path_str)
+            self.load_style("ui/style/minecraft.qss")
 
         except Exception as e:
             print(f"Произошла ошибка в функции set_style: {e}")
