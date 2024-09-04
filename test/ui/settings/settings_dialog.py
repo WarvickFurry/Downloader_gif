@@ -25,8 +25,17 @@ class Ui_Dialog_settings(object):
     def setupUi(self, Dialog_settings):
         if not Dialog_settings.objectName():
             Dialog_settings.setObjectName(u"Dialog_settings")
-        Dialog_settings.resize(698, 461)
-        Dialog_settings.setStyleSheet(u"QWidget {\n"
+        Dialog_settings.resize(941, 532)
+        Dialog_settings.setStyleSheet(u"\n"
+"QToolTip {\n"
+"    background-color: #27272A;  /* \u0426\u0432\u0435\u0442 \u0444\u043e\u043d\u0430 \u0442\u0443\u043b\u0442\u0438\u043f\u0430 */\n"
+"    color: #FFFFFF;               /* \u0426\u0432\u0435\u0442 \u0442\u0435\u043a\u0441\u0442\u0430 */\n"
+"    border: 0px solid;    /* \u0413\u0440\u0430\u043d\u0438\u0446\u0430 \u0432\u043e\u043a\u0440\u0443\u0433 \u0442\u0443\u043b\u0442\u0438\u043f\u0430 */\n"
+"    padding: 0px;               /* \u0412\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0435 \u043e\u0442\u0441\u0442\u0443\u043f\u044b */\n"
+"    border-radius: 0px;         /* \u0417\u0430\u043a\u0440\u0443\u0433\u043b\u0435\u043d\u043d\u044b\u0435 \u0443\u0433\u043b\u044b */\n"
+"    font-size: 14px;            /* \u0420\u0430\u0437\u043c\u0435\u0440 \u0448\u0440\u0438\u0444\u0442\u0430 */\n"
+"}\n"
+"QWidget {\n"
 "background-color: rgb(39, 39, 42);\n"
 "color: rgb(255, 255, 255);\n"
 "font: 10pt \"Segoe UI\";\n"
@@ -34,7 +43,8 @@ class Ui_Dialog_settings(object):
 "\n"
 "QPushButton {\n"
 "	color: rgb(255, 255, 255);\n"
-"	font: 700 10pt \"Segoe UI\";\n"
+"	font: 700 10pt \"Segoe"
+                        " UI\";\n"
 "	padding-bottom: 5px;\n"
 "	border: 3px solid rgb(85, 123, 226);\n"
 "	border-radius: 6px;\n"
@@ -48,19 +58,45 @@ class Ui_Dialog_settings(object):
 "QPushButton:pressed {\n"
 "	background-color: rgba(85, 123, 226, 200);\n"
 "}\n"
-"QToolTip {\n"
-"    background-color: rgb(39, 39, 42);\n"
+"\n"
+"QCheckBox:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+" QCheckBox {\n"
 "	color: rgb(255, 255, 255);\n"
-"	font: 10pt \"Segoe UI\";\n"
-"}")
-        self.verticalLayout_6 = QVBoxLayout(Dialog_settings)
-        self.verticalLayout_6.setSpacing(0)
-        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
-        self.tabWidget = QTabWidget(Dialog_settings)
-        self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setMinimumSize(QSize(0, 0))
-        self.tabWidget.setStyleSheet(u"QTabWidget::pane { /* \u0420\u0430\u043c\u043a\u0430 \u0432\u0438\u0434\u0436\u0435\u0442\u0430 \u0441\u043e \u0432\u043a\u043b\u0430\u0434\u043a\u0430\u043c\u0438 */\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"	font: 700 13pt \"Segoe UI\";\n"
+"	padding-bottom: 4px;\n"
+"	spacing: 0px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator {\n"
+"    width: 25px;\n"
+"    height: 25px;\n"
+"	left: 5px;\n"
+"	top: 2px;\n"
+" }\n"
+"\n"
+" QGroupBox {\n"
+"\n"
+"	 color: rgb(255, 255, 255);\n"
+"   	 border: 3px solid rgb(85, 123, 226);\n"
+"	 border-radius: 6px;\n"
+"	 font: 700 10pt \"Segoe UI\";\n"
+"     margin-top: 1ex; /* \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432"
+                        "\u043e \u0432\u0432\u0435\u0440\u0445\u0443 \u0434\u043b\u044f \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0430 */\n"
+" }\n"
+" QGroupBox::title {\n"
+"	left: 6px;\n"
+"	border-radius: 0px;\n"
+"    border-right: 0px solid rgb(255, 255, 255);\n"
+"	border-top: 3px solid rgb(85, 123, 226);\n"
+"	border-left: 0px solid rgb(85, 123, 226);\n"
+"	border-bottom: 0px solid rgb(255, 255, 255);\n"
+" }\n"
+"\n"
+"QTabWidget::pane { /* \u0420\u0430\u043c\u043a\u0430 \u0432\u0438\u0434\u0436\u0435\u0442\u0430 \u0441\u043e \u0432\u043a\u043b\u0430\u0434\u043a\u0430\u043c\u0438 */\n"
 "     /* border-top: 2px solid rgb(85, 123, 226); */\n"
 "}\n"
 "\n"
@@ -75,7 +111,8 @@ class Ui_Dialog_settings(object):
 "	min-height: 10px;\n"
 "    padding: 2px;\n"
 "    border-right: 0px solid rgb(85, 123, 226);\n"
-"	border-top: 2px solid rgb(85, 123, 226);\n"
+"	borde"
+                        "r-top: 2px solid rgb(85, 123, 226);\n"
 "	border-left: 1px solid rgb(85, 123, 226);\n"
 "	border-bottom: 2px solid rgb(85, 123, 226);\n"
 "	border-right: 1px solid rgb(85, 123, 226);\n"
@@ -86,8 +123,7 @@ class Ui_Dialog_settings(object):
 "	border-top-left-radius: 3px;\n"
 "	border-top: 2px solid rgb(85, 123, 226);\n"
 "	border-left: 2px solid rgb(85, 123, 226);\n"
-"	borde"
-                        "r-bottom: 2px solid rgb(85, 123, 226);\n"
+"	border-bottom: 2px solid rgb(85, 123, 226);\n"
 "	border-right: 1px solid rgb(85, 123, 226);\n"
 "}\n"
 "\n"
@@ -100,13 +136,13 @@ class Ui_Dialog_settings(object):
 "	border-bottom: 2px solid rgb(85, 123, 226);\n"
 "}\n"
 "QTabBar::tab:first:selected {\n"
-"    margin-left: 0; /* \u043f\u0435\u0440\u0432\u0430\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430\u0434\u043a\u0430 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043b\u0435\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
+"    margin-left: 0; /* \u043f\u0435\u0440\u0432\u0430\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430\u0434\u043a\u0430 \u043d\u0438\u0447\u0435"
+                        "\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043b\u0435\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
 "	border-top-right-radius: 3px;\n"
 "}\n"
 "\n"
 "QTabBar::tab:last:selected {\n"
-"    margin-right: 0; /* \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430"
-                        "\u0434\u043a\u0430 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043f\u0440\u0430\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
+"    margin-right: 0; /* \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430\u0434\u043a\u0430 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043f\u0440\u0430\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
 "	border-top-left-radius: 3px;\n"
 "}\n"
 "\n"
@@ -118,12 +154,56 @@ class Ui_Dialog_settings(object):
 "     margin-top: 2px; /* \u0434\u0435\u043b\u0430\u0435\u043c \u043d\u0435\u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0435 \u0432\u043a\u043b\u0430\u0434\u043a\u0438 \u043c\u0435\u043d\u044c\u0448\u0435 */\n"
 "}\n"
 "\n"
-"QTabBar::tab:selected {\n"
+"QTabBar::tab:sele"
+                        "cted {\n"
 "	background-color: rgba(85, 123, 226, 130);\n"
 "	border-top-left-radius: 3px;\n"
 "	border-top-right-radius: 3px;\n"
 "}\n"
+"\n"
+"QLineEdit {\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 12pt \"Segoe UI\";\n"
+"	border-radius: 6;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	padding-bottom: 5px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	\n"
+"}\n"
+"\n"
+"QMenu {\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(39, 39, 42);\n"
+"	selection-color: rgb(255, 255, 255);\n"
+"	selection-background-color: rgba(85, 123, 226, 250);\n"
+"\n"
+"}\n"
+"\n"
+"QScrollArea {\n"
+"	border: 0px solid rgb(85, 123, 226);\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton#pushButton_minecraft {\n"
+"	border: 0px solid rgb(85, 123, 226);\n"
+"}\n"
+"\n"
+"QPushButton#pushButton_minecraft:hover {\n"
+"	icon: url(:/icon/gas-kvas-com-p-znachok-mainkrafta-na-prozrachnom-fone-35.png);\n"
+"	background-color: rgb(39, 39, 42);\n"
+"}\n"
+"QPushButton#pushButton_minecraft:pressed {\n"
+"	background-color: rgb(39, 39, 42);\n"
+"}\n"
 "")
+        self.verticalLayout_6 = QVBoxLayout(Dialog_settings)
+        self.verticalLayout_6.setSpacing(0)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.tabWidget = QTabWidget(Dialog_settings)
+        self.tabWidget.setObjectName(u"tabWidget")
+        self.tabWidget.setMinimumSize(QSize(0, 0))
+        self.tabWidget.setStyleSheet(u"")
         self.tab_3 = QWidget()
         self.tab_3.setObjectName(u"tab_3")
         self.verticalLayout_12 = QVBoxLayout(self.tab_3)
@@ -140,108 +220,32 @@ class Ui_Dialog_settings(object):
         self.scrollArea = QScrollArea(self.tab_3)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setMaximumSize(QSize(380, 16777215))
-        self.scrollArea.setStyleSheet(u"	border: 0px solid rgb(85, 123, 226);")
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 358, 481))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 380, 483))
         self.verticalLayout_8 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.auto_swap_tab_checkBox = QCheckBox(self.scrollAreaWidgetContents)
         self.auto_swap_tab_checkBox.setObjectName(u"auto_swap_tab_checkBox")
         self.auto_swap_tab_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.auto_swap_tab_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_8.addWidget(self.auto_swap_tab_checkBox)
 
         self.auto_swap_time_data_checkBox = QCheckBox(self.scrollAreaWidgetContents)
         self.auto_swap_time_data_checkBox.setObjectName(u"auto_swap_time_data_checkBox")
         self.auto_swap_time_data_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.auto_swap_time_data_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_8.addWidget(self.auto_swap_time_data_checkBox)
 
         self.blur_token_checkBox = QCheckBox(self.scrollAreaWidgetContents)
         self.blur_token_checkBox.setObjectName(u"blur_token_checkBox")
-        self.blur_token_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_8.addWidget(self.blur_token_checkBox)
 
         self.verticalGroupBox = QGroupBox(self.scrollAreaWidgetContents)
         self.verticalGroupBox.setObjectName(u"verticalGroupBox")
         self.verticalGroupBox.setMaximumSize(QSize(360, 16777215))
-        self.verticalGroupBox.setStyleSheet(u"\n"
-" QGroupBox {\n"
-"\n"
-"	 color: rgb(255, 255, 255);\n"
-"   	 border: 3px solid rgb(85, 123, 226);\n"
-"	 border-radius: 6px;\n"
-"	 font: 700 10pt \"Segoe UI\";\n"
-"     margin-top: 1ex; /* \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u043e \u0432\u0432\u0435\u0440\u0445\u0443 \u0434\u043b\u044f \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0430 */\n"
-" }\n"
-" QGroupBox::title {\n"
-"	left: 6px;\n"
-"	border-radius: 0px;\n"
-"    border-right: 0px solid rgb(255, 255, 255);\n"
-"	border-top: 3px solid rgb(85, 123, 226);\n"
-"	border-left: 0px solid rgb(85, 123, 226);\n"
-"	border-bottom: 0px solid rgb(255, 255, 255);\n"
-" }\n"
-"\n"
-"\n"
-"")
         self.verticalLayout_10 = QVBoxLayout(self.verticalGroupBox)
         self.verticalLayout_10.setSpacing(10)
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
@@ -249,76 +253,18 @@ class Ui_Dialog_settings(object):
         self.notifications_checkBox = QCheckBox(self.verticalGroupBox)
         self.notifications_checkBox.setObjectName(u"notifications_checkBox")
         self.notifications_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.notifications_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}\n"
-"\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_10.addWidget(self.notifications_checkBox)
 
         self.soun_end_download_checkBox = QCheckBox(self.verticalGroupBox)
         self.soun_end_download_checkBox.setObjectName(u"soun_end_download_checkBox")
         self.soun_end_download_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.soun_end_download_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_10.addWidget(self.soun_end_download_checkBox)
 
         self.infoBox_checkBox = QCheckBox(self.verticalGroupBox)
         self.infoBox_checkBox.setObjectName(u"infoBox_checkBox")
         self.infoBox_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.infoBox_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_10.addWidget(self.infoBox_checkBox)
 
@@ -328,26 +274,7 @@ class Ui_Dialog_settings(object):
         self.verticalGroupBox_2 = QGroupBox(self.scrollAreaWidgetContents)
         self.verticalGroupBox_2.setObjectName(u"verticalGroupBox_2")
         self.verticalGroupBox_2.setMaximumSize(QSize(360, 16777215))
-        self.verticalGroupBox_2.setStyleSheet(u"\n"
-" QGroupBox {\n"
-"\n"
-"	 color: rgb(255, 255, 255);\n"
-"   	 border: 3px solid rgb(85, 123, 226);\n"
-"	 border-radius: 6px;\n"
-"	 font: 700 10pt \"Segoe UI\";\n"
-"     margin-top: 1ex; /* \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u043c \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u043e \u0432\u0432\u0435\u0440\u0445\u0443 \u0434\u043b\u044f \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0430 */\n"
-" }\n"
-" QGroupBox::title {\n"
-"	left: 6px;\n"
-"	border-radius: 0px;\n"
-"    border-right: 0px solid rgb(255, 255, 255);\n"
-"	border-top: 3px solid rgb(85, 123, 226);\n"
-"	border-left: 0px solid rgb(85, 123, 226);\n"
-"	border-bottom: 0px solid rgb(255, 255, 255);\n"
-" }\n"
-"\n"
-"\n"
-"")
+        self.verticalGroupBox_2.setStyleSheet(u"")
         self.verticalLayout_11 = QVBoxLayout(self.verticalGroupBox_2)
         self.verticalLayout_11.setSpacing(10)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
@@ -355,81 +282,19 @@ class Ui_Dialog_settings(object):
         self.autosave_tab_settings_checkBox = QCheckBox(self.verticalGroupBox_2)
         self.autosave_tab_settings_checkBox.setObjectName(u"autosave_tab_settings_checkBox")
         self.autosave_tab_settings_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.autosave_tab_settings_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}\n"
-"\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_11.addWidget(self.autosave_tab_settings_checkBox)
 
         self.autosave_tab_minewindow_checkBox = QCheckBox(self.verticalGroupBox_2)
         self.autosave_tab_minewindow_checkBox.setObjectName(u"autosave_tab_minewindow_checkBox")
         self.autosave_tab_minewindow_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.autosave_tab_minewindow_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }")
 
         self.verticalLayout_11.addWidget(self.autosave_tab_minewindow_checkBox)
 
         self.autosave_keep_checkBox = QCheckBox(self.verticalGroupBox_2)
         self.autosave_keep_checkBox.setObjectName(u"autosave_keep_checkBox")
         self.autosave_keep_checkBox.setMaximumSize(QSize(360, 16777215))
-        self.autosave_keep_checkBox.setStyleSheet(u"QCheckBox:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-" QCheckBox {\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	font: 700 13pt \"Segoe UI\";\n"
-"	padding-bottom: 4px;\n"
-"	spacing: 0px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator {\n"
-"    width: 25px;\n"
-"    height: 25px;\n"
-"	left: 5px;\n"
-"	top: 2px;\n"
-" }\n"
-"QWidget {\n"
-"background-color: rgb(39, 39, 42);\n"
-"color: rgb(255, 255, 255);\n"
-"}\n"
-"")
+        self.autosave_keep_checkBox.setStyleSheet(u"")
 
         self.verticalLayout_11.addWidget(self.autosave_keep_checkBox)
 
@@ -453,7 +318,6 @@ class Ui_Dialog_settings(object):
         self.verticalLayout_7.setContentsMargins(-1, 10, -1, -1)
         self.label_3 = QLabel(self.tab_3)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setStyleSheet(u"font: 700 12pt \"Segoe UI\";")
 
         self.verticalLayout_7.addWidget(self.label_3, 0, Qt.AlignmentFlag.AlignHCenter)
 
@@ -483,16 +347,6 @@ class Ui_Dialog_settings(object):
         self.pushButton_minecraft = QPushButton(self.tab_3)
         self.pushButton_minecraft.setObjectName(u"pushButton_minecraft")
         self.pushButton_minecraft.setMinimumSize(QSize(24, 45))
-        self.pushButton_minecraft.setStyleSheet(u"QPushButton {\n"
-"	border: 0px solid rgb(85, 123, 226);\n"
-"}\n"
-"QPushButton:hover {\n"
-"	icon: url(:/icon/gas-kvas-com-p-znachok-mainkrafta-na-prozrachnom-fone-35.png);\n"
-"	background-color: rgb(39, 39, 42);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgb(39, 39, 42);\n"
-"}")
         self.pushButton_minecraft.setIconSize(QSize(24, 24))
         self.pushButton_minecraft.setCheckable(True)
 
@@ -510,7 +364,12 @@ class Ui_Dialog_settings(object):
         self.tabWidget.addTab(self.tab_3, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
-        self.tab_2.setStyleSheet(u"font: 12pt \"Segoe UI\";")
+        font = QFont()
+        font.setFamilies([u"Segoe UI"])
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        self.tab_2.setFont(font)
         self.horizontalLayout_3 = QHBoxLayout(self.tab_2)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.widget = QWidget(self.tab_2)
@@ -538,24 +397,6 @@ class Ui_Dialog_settings(object):
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.token_group_lineEdit = QLineEdit(self.widget_2)
         self.token_group_lineEdit.setObjectName(u"token_group_lineEdit")
-        self.token_group_lineEdit.setStyleSheet(u"QLineEdit {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 12pt \"Segoe UI\";\n"
-"	border-radius: 6;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	padding-bottom: 5px;\n"
-"	color: rgb(255, 255, 255);\n"
-"	\n"
-"}\n"
-"\n"
-"QMenu {\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(39, 39, 42);\n"
-"	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-color: rgba(85, 123, 226, 250);\n"
-"\n"
-"}\n"
-"")
         self.token_group_lineEdit.setEchoMode(QLineEdit.EchoMode.Normal)
         self.token_group_lineEdit.setClearButtonEnabled(False)
 
@@ -584,24 +425,6 @@ class Ui_Dialog_settings(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.token_lineEdit = QLineEdit(self.widget1)
         self.token_lineEdit.setObjectName(u"token_lineEdit")
-        self.token_lineEdit.setStyleSheet(u"QLineEdit {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 12pt \"Segoe UI\";\n"
-"	border-radius: 6;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	padding-bottom: 5px;\n"
-"	color: rgb(255, 255, 255);\n"
-"	\n"
-"}\n"
-"\n"
-"QMenu {\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(39, 39, 42);\n"
-"	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-color: rgba(85, 123, 226, 250);\n"
-"\n"
-"}\n"
-"")
 
         self.horizontalLayout.addWidget(self.token_lineEdit, 0, Qt.AlignmentFlag.AlignTop)
 
@@ -628,23 +451,6 @@ class Ui_Dialog_settings(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.id_group_lineEdit = QLineEdit(self.widget2)
         self.id_group_lineEdit.setObjectName(u"id_group_lineEdit")
-        self.id_group_lineEdit.setStyleSheet(u"QLineEdit {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 12pt \"Segoe UI\";\n"
-"	border-radius: 6;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	padding-bottom: 5px;\n"
-"	color: rgb(255, 255, 255);\n"
-"}\n"
-"\n"
-"QMenu {\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(39, 39, 42);\n"
-"	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-color: rgba(85, 123, 226, 250);\n"
-"\n"
-"}\n"
-"")
 
         self.horizontalLayout_2.addWidget(self.id_group_lineEdit, 0, Qt.AlignmentFlag.AlignTop)
 
@@ -664,37 +470,11 @@ class Ui_Dialog_settings(object):
 
         self.save_setings = QPushButton(self.widget)
         self.save_setings.setObjectName(u"save_setings")
-        self.save_setings.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 700 10pt \"Segoe UI\";\n"
-"	padding-bottom: 5px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
 
         self.horizontalLayout_5.addWidget(self.save_setings)
 
         self.clear_pole_pushButton = QPushButton(self.widget)
         self.clear_pole_pushButton.setObjectName(u"clear_pole_pushButton")
-        self.clear_pole_pushButton.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 700 10pt \"Segoe UI\";\n"
-"	padding-bottom: 5px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
 
         self.horizontalLayout_5.addWidget(self.clear_pole_pushButton)
 
@@ -769,6 +549,9 @@ class Ui_Dialog_settings(object):
         self.label.setText(QCoreApplication.translate("Dialog_settings", u"Access token", None))
         self.token_lineEdit.setPlaceholderText(QCoreApplication.translate("Dialog_settings", u"(\u041d\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0432\u0432\u043e\u0434\u0438\u0442\u044c \u043f\u043e\u043a\u0430 \u043d\u0435\u0442 \u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u0430 \u043d\u0430 \u0442\u043e\u043a\u0435\u043d \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f)", None))
         self.label_2.setText(QCoreApplication.translate("Dialog_settings", u"id \u0433\u0440\u0443\u043f\u043f\u044b", None))
+#if QT_CONFIG(tooltip)
+        self.id_group_lineEdit.setToolTip("")
+#endif // QT_CONFIG(tooltip)
         self.id_group_lineEdit.setPlaceholderText(QCoreApplication.translate("Dialog_settings", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 id \u0440\u0443\u043f\u043f\u044b ", None))
         self.save_setings.setText(QCoreApplication.translate("Dialog_settings", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
         self.clear_pole_pushButton.setText(QCoreApplication.translate("Dialog_settings", u"\u041e\u0447\u0438\u0441\u0442\u0438\u0442\u044c \u043f\u043e\u043b\u044f", None))

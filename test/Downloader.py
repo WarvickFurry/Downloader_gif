@@ -190,10 +190,11 @@ class MainWindow(QMainWindow):
         if config["settings"]["group_token"] != "":
             try:
                 self.group_token = config["settings"]["group_token"]
-                self.group_id, self.group_screen_name = self.get_group_info()
+                self.group_id, self.group_screen_name, group_members_count, group_name = self.get_group_info()
                 config["settings"]["id"] = str(self.group_id)
                 self.write_data_to_json(config)
                 self.Dialog_settings.load_settings()
+                self.Dialog_settings.ui.id_group_lineEdit.setToolTip(f"Имя группы: {group_name} \nПодписчики: {group_members_count}")
             except Exception as e:
                 print(f"Error in get_id: {e}")
 
@@ -230,7 +231,10 @@ class MainWindow(QMainWindow):
             if group_info:
                 group_id = group_info[0]['id']
                 group_screen_name = group_info[0]['screen_name']
-                return group_id, group_screen_name
+                group_info1 = vk.groups.getById(group_id=group_id, fields='description,members_count')
+                group_members_count = group_info1[0].get('members_count', 'Количество участников неизвестно')
+                group_name = group_info1[0]['name']
+                return group_id, group_screen_name, group_members_count, group_name
             else:
                 raise ValueError("Не удалось получить информацию о группе. Проверьте правильность токена доступа.")
         except vk_api.exceptions.VkApiError as e:

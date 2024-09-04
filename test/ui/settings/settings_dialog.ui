@@ -6,15 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>698</width>
-    <height>461</height>
+    <width>941</width>
+    <height>532</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Настройки</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget {
+   <string notr="true">
+QToolTip {
+    background-color: #27272A;  /* Цвет фона тултипа */
+    color: #FFFFFF;               /* Цвет текста */
+    border: 0px solid;    /* Граница вокруг тултипа */
+    padding: 0px;               /* Внутренние отступы */
+    border-radius: 0px;         /* Закругленные углы */
+    font-size: 14px;            /* Размер шрифта */
+}
+QWidget {
 background-color: rgb(39, 39, 42);
 color: rgb(255, 255, 255);
 font: 10pt &quot;Segoe UI&quot;;
@@ -36,38 +45,44 @@ QPushButton:hover {
 QPushButton:pressed {
 	background-color: rgba(85, 123, 226, 200);
 }
-QToolTip {
-    background-color: rgb(39, 39, 42);
+
+QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
 	color: rgb(255, 255, 255);
-	font: 10pt &quot;Segoe UI&quot;;
-}</string>
-  </property>
-  <layout class="QVBoxLayout" name="verticalLayout_6">
-   <property name="spacing">
-    <number>0</number>
-   </property>
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
-   <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
-    <number>0</number>
-   </property>
-   <item>
-    <widget class="QTabWidget" name="tabWidget">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QTabWidget::pane { /* Рамка виджета со вкладками */
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt &quot;Segoe UI&quot;;
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }
+
+ QGroupBox {
+
+	 color: rgb(255, 255, 255);
+   	 border: 3px solid rgb(85, 123, 226);
+	 border-radius: 6px;
+	 font: 700 10pt &quot;Segoe UI&quot;;
+     margin-top: 1ex; /* оставляем пространство вверху для заголовка */
+ }
+ QGroupBox::title {
+	left: 6px;
+	border-radius: 0px;
+    border-right: 0px solid rgb(255, 255, 255);
+	border-top: 3px solid rgb(85, 123, 226);
+	border-left: 0px solid rgb(85, 123, 226);
+	border-bottom: 0px solid rgb(255, 255, 255);
+ }
+
+QTabWidget::pane { /* Рамка виджета со вкладками */
      /* border-top: 2px solid rgb(85, 123, 226); */
 }
 
@@ -128,7 +143,69 @@ QTabBar::tab:selected {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 }
+
+QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Segoe UI&quot;;
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+	
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
+
+QScrollArea {
+	border: 0px solid rgb(85, 123, 226);
+}
+
+
+QPushButton#pushButton_minecraft {
+	border: 0px solid rgb(85, 123, 226);
+}
+
+QPushButton#pushButton_minecraft:hover {
+	icon: url(:/icon/gas-kvas-com-p-znachok-mainkrafta-na-prozrachnom-fone-35.png);
+	background-color: rgb(39, 39, 42);
+}
+QPushButton#pushButton_minecraft:pressed {
+	background-color: rgb(39, 39, 42);
+}
 </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
      <property name="currentIndex">
       <number>0</number>
@@ -171,9 +248,6 @@ QTabBar::tab:selected {
                <height>16777215</height>
               </size>
              </property>
-             <property name="styleSheet">
-              <string notr="true">	border: 0px solid rgb(85, 123, 226);</string>
-             </property>
              <property name="widgetResizable">
               <bool>true</bool>
              </property>
@@ -182,8 +256,8 @@ QTabBar::tab:selected {
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>358</width>
-                <height>481</height>
+                <width>380</width>
+                <height>483</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -197,27 +271,6 @@ QTabBar::tab:selected {
                  </property>
                  <property name="toolTip">
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Автомотическое переключения окна после откладывания поста&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
                  </property>
                  <property name="text">
                   <string>Авто переключение окна</string>
@@ -235,26 +288,6 @@ QCheckBox::indicator {
                  <property name="toolTip">
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Автомотическое переключение даты и времени после нажатия кнопки&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
-                 <property name="styleSheet">
-                  <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
-                 </property>
                  <property name="text">
                   <string>Авто переключение даты и времени</string>
                  </property>
@@ -264,26 +297,6 @@ QCheckBox::indicator {
                 <widget class="QCheckBox" name="blur_token_checkBox">
                  <property name="toolTip">
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Скрывает токен и айди группы под точечки&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
                  </property>
                  <property name="text">
                   <string>Заблюривание токена</string>
@@ -297,28 +310,6 @@ QCheckBox::indicator {
                    <width>360</width>
                    <height>16777215</height>
                   </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">
- QGroupBox {
-
-	 color: rgb(255, 255, 255);
-   	 border: 3px solid rgb(85, 123, 226);
-	 border-radius: 6px;
-	 font: 700 10pt &quot;Segoe UI&quot;;
-     margin-top: 1ex; /* оставляем пространство вверху для заголовка */
- }
- QGroupBox::title {
-	left: 6px;
-	border-radius: 0px;
-    border-right: 0px solid rgb(255, 255, 255);
-	border-top: 3px solid rgb(85, 123, 226);
-	border-left: 0px solid rgb(85, 123, 226);
-	border-bottom: 0px solid rgb(255, 255, 255);
- }
-
-
-</string>
                  </property>
                  <property name="title">
                   <string>Уведомления</string>
@@ -350,30 +341,6 @@ QCheckBox::indicator {
                     <property name="toolTip">
                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Воспроизводится звук после того как пост был отложен&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
-                    <property name="styleSheet">
-                     <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}
-
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
-                    </property>
                     <property name="text">
                      <string>Уведомление после отложки</string>
                     </property>
@@ -390,26 +357,6 @@ QCheckBox::indicator {
                     <property name="toolTip">
                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Воспроизводится звук после скачки гифки&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
-                    <property name="styleSheet">
-                     <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
-                    </property>
                     <property name="text">
                      <string>Звук после скачки</string>
                     </property>
@@ -425,26 +372,6 @@ QCheckBox::indicator {
                     </property>
                     <property name="toolTip">
                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Появляется окошко с уведомлением об успешном откладывании поста&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
                     </property>
                     <property name="text">
                      <string>Инфоблок после отложки</string>
@@ -463,26 +390,7 @@ QCheckBox::indicator {
                   </size>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">
- QGroupBox {
-
-	 color: rgb(255, 255, 255);
-   	 border: 3px solid rgb(85, 123, 226);
-	 border-radius: 6px;
-	 font: 700 10pt &quot;Segoe UI&quot;;
-     margin-top: 1ex; /* оставляем пространство вверху для заголовка */
- }
- QGroupBox::title {
-	left: 6px;
-	border-radius: 0px;
-    border-right: 0px solid rgb(255, 255, 255);
-	border-top: 3px solid rgb(85, 123, 226);
-	border-left: 0px solid rgb(85, 123, 226);
-	border-bottom: 0px solid rgb(255, 255, 255);
- }
-
-
-</string>
+                  <string notr="true"/>
                  </property>
                  <property name="title">
                   <string>Авто сохранение в локальную БД</string>
@@ -514,30 +422,6 @@ QCheckBox::indicator {
                     <property name="toolTip">
                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сохраняет последний выбранный таб в настройках&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
-                    <property name="styleSheet">
-                     <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}
-
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
-                    </property>
                     <property name="text">
                      <string>Текущий таб в настройках</string>
                     </property>
@@ -553,26 +437,6 @@ QCheckBox::indicator {
                     </property>
                     <property name="toolTip">
                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сохраняет последний выбранный таб в гланом окне&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }</string>
                     </property>
                     <property name="text">
                      <string>Текущий таб в главном окне</string>
@@ -591,29 +455,7 @@ QCheckBox::indicator {
                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сохраняет состояние&lt;br/&gt;перелючателя закрепления&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">QCheckBox:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
- QCheckBox {
-	color: rgb(255, 255, 255);
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	font: 700 13pt &quot;Segoe UI&quot;;
-	padding-bottom: 4px;
-	spacing: 0px;
-}
-
-QCheckBox::indicator {
-    width: 25px;
-    height: 25px;
-	left: 5px;
-	top: 2px;
- }
-QWidget {
-background-color: rgb(39, 39, 42);
-color: rgb(255, 255, 255);
-}
-</string>
+                     <string notr="true"/>
                     </property>
                     <property name="text">
                      <string>Закрепление</string>
@@ -652,9 +494,6 @@ color: rgb(255, 255, 255);
            </property>
            <item alignment="Qt::AlignmentFlag::AlignHCenter">
             <widget class="QLabel" name="label_3">
-             <property name="styleSheet">
-              <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;</string>
-             </property>
              <property name="text">
               <string>Добавление времени к списку</string>
              </property>
@@ -721,18 +560,6 @@ color: rgb(255, 255, 255);
                  <height>45</height>
                 </size>
                </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton {
-	border: 0px solid rgb(85, 123, 226);
-}
-QPushButton:hover {
-	icon: url(:/icon/gas-kvas-com-p-znachok-mainkrafta-na-prozrachnom-fone-35.png);
-	background-color: rgb(39, 39, 42);
-}
-QPushButton:pressed {
-	background-color: rgb(39, 39, 42);
-}</string>
-               </property>
                <property name="text">
                 <string/>
                </property>
@@ -756,8 +583,13 @@ QPushButton:pressed {
       </layout>
      </widget>
      <widget class="QWidget" name="tab_2">
-      <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
       </property>
       <attribute name="title">
        <string>   Ввод данных авторизации   </string>
@@ -813,26 +645,6 @@ QPushButton:pressed {
               <layout class="QHBoxLayout" name="horizontalLayout_6">
                <item alignment="Qt::AlignmentFlag::AlignTop">
                 <widget class="QLineEdit" name="token_group_lineEdit">
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit {
-	color: rgb(255, 255, 255);
-	font: 12pt &quot;Segoe UI&quot;;
-	border-radius: 6;
-	border: 3px solid rgb(85, 123, 226);
-	padding-bottom: 5px;
-	color: rgb(255, 255, 255);
-	
-}
-
-QMenu {
-	color: rgb(255, 255, 255);
-	background-color: rgb(39, 39, 42);
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgba(85, 123, 226, 250);
-
-}
-</string>
-                 </property>
                  <property name="echoMode">
                   <enum>QLineEdit::EchoMode::Normal</enum>
                  </property>
@@ -878,26 +690,6 @@ QMenu {
               <layout class="QHBoxLayout" name="horizontalLayout">
                <item alignment="Qt::AlignmentFlag::AlignTop">
                 <widget class="QLineEdit" name="token_lineEdit">
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit {
-	color: rgb(255, 255, 255);
-	font: 12pt &quot;Segoe UI&quot;;
-	border-radius: 6;
-	border: 3px solid rgb(85, 123, 226);
-	padding-bottom: 5px;
-	color: rgb(255, 255, 255);
-	
-}
-
-QMenu {
-	color: rgb(255, 255, 255);
-	background-color: rgb(39, 39, 42);
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgba(85, 123, 226, 250);
-
-}
-</string>
-                 </property>
                  <property name="placeholderText">
                   <string>(Не требуется вводить пока нет функционала на токен пользователя)</string>
                  </property>
@@ -937,24 +729,8 @@ QMenu {
               <layout class="QHBoxLayout" name="horizontalLayout_2">
                <item alignment="Qt::AlignmentFlag::AlignTop">
                 <widget class="QLineEdit" name="id_group_lineEdit">
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit {
-	color: rgb(255, 255, 255);
-	font: 12pt &quot;Segoe UI&quot;;
-	border-radius: 6;
-	border: 3px solid rgb(85, 123, 226);
-	padding-bottom: 5px;
-	color: rgb(255, 255, 255);
-}
-
-QMenu {
-	color: rgb(255, 255, 255);
-	background-color: rgb(39, 39, 42);
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgba(85, 123, 226, 250);
-
-}
-</string>
+                 <property name="toolTip">
+                  <string/>
                  </property>
                  <property name="placeholderText">
                   <string>Введите id руппы </string>
@@ -989,21 +765,6 @@ QMenu {
             </item>
             <item>
              <widget class="QPushButton" name="save_setings">
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	font: 700 10pt &quot;Segoe UI&quot;;
-	padding-bottom: 5px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-}
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
-              </property>
               <property name="text">
                <string>Сохранить</string>
               </property>
@@ -1011,21 +772,6 @@ QPushButton:pressed {
             </item>
             <item>
              <widget class="QPushButton" name="clear_pole_pushButton">
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	font: 700 10pt &quot;Segoe UI&quot;;
-	padding-bottom: 5px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-}
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
-              </property>
               <property name="text">
                <string>Очистить поля</string>
               </property>
