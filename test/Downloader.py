@@ -157,6 +157,8 @@ class MainWindow(QMainWindow):
         self.db.save_setting("mine_tab_cur_index", index)
 
 #################################__Style__#####################################
+    def set_style(self):
+        self.load_style("ui/style/mine.qss")
 
     def load_style(self, style_file):
         file = QFile(style_file)
@@ -167,11 +169,8 @@ class MainWindow(QMainWindow):
         stream = QTextStream(file)
         self.setStyleSheet(stream.readAll())
 
-    def set_style(self):
-        if self.Dialog_settings.ui.pushButton_minecraft.isChecked():
-            self.load_style("ui/style/mine.qss")
-        else:
-            self.load_style("")
+
+
 ######################################################################
 
 
