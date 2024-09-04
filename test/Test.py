@@ -200,7 +200,7 @@ class Dialog_settings(QDialog):
                 "7": "01:00"
             }
         }
-        #self.updater.update_json_file(config)
+        self.updater.update_json_file(config)
 
 
 
