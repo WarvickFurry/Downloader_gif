@@ -83,7 +83,7 @@ class Dialog_settings(QDialog):
         if saved_index is not None:
             self.ui.comboBox_style.setCurrentIndex(int(saved_index))
 
-        saved_index2 = self.db.load_setting("tab_style")
+        saved_index2 = self.db.load_setting("tab_style2")
         if saved_index2 is not None:
             self.ui.comboBox_style_2.setCurrentIndex(int(saved_index2))
 
