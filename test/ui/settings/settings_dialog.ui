@@ -178,7 +178,11 @@ QPushButton#pushButton_minecraft:hover {
 QPushButton#pushButton_minecraft:pressed {
 	background-color: rgb(39, 39, 42);
 }
-</string>
+QComboBox {
+border: 3px solid rgb(85, 123, 226); 
+font: 14pt &quot;Segoe UI&quot;;
+padding-bottom: 3px;
+}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_6">
    <property name="spacing">
@@ -522,6 +526,25 @@ QPushButton#pushButton_minecraft:pressed {
              <property name="minimum">
               <number>-99</number>
              </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Стиль главного окна</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="topMargin">
+               <number>21</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QComboBox" name="comboBox_style"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
             </widget>
            </item>
            <item>

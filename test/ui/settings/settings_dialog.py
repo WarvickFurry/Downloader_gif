@@ -15,10 +15,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QDialog, QGroupBox,
-    QHBoxLayout, QLabel, QLayout, QLineEdit,
-    QPushButton, QScrollArea, QSizePolicy, QSpacerItem,
-    QSpinBox, QTabWidget, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog,
+    QGroupBox, QHBoxLayout, QLabel, QLayout,
+    QLineEdit, QPushButton, QScrollArea, QSizePolicy,
+    QSpacerItem, QSpinBox, QTabWidget, QVBoxLayout,
+    QWidget)
 import res_rc
 
 class Ui_Dialog_settings(object):
@@ -195,7 +196,12 @@ class Ui_Dialog_settings(object):
 "QPushButton#pushButton_minecraft:pressed {\n"
 "	background-color: rgb(39, 39, 42);\n"
 "}\n"
-"")
+"QComboBox {\n"
+"border: 3px sol"
+                        "id rgb(85, 123, 226); \n"
+"font: 14pt \"Segoe UI\";\n"
+"padding-bottom: 3px;\n"
+"}")
         self.verticalLayout_6 = QVBoxLayout(Dialog_settings)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
@@ -333,6 +339,24 @@ class Ui_Dialog_settings(object):
         self.spinBox.setMinimum(-99)
 
         self.verticalLayout_7.addWidget(self.spinBox, 0, Qt.AlignmentFlag.AlignHCenter)
+
+        self.groupBox = QGroupBox(self.tab_3)
+        self.groupBox.setObjectName(u"groupBox")
+        self.verticalLayout = QVBoxLayout(self.groupBox)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(-1, 21, -1, -1)
+        self.horizontalLayout_8 = QHBoxLayout()
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.comboBox_style = QComboBox(self.groupBox)
+        self.comboBox_style.setObjectName(u"comboBox_style")
+
+        self.horizontalLayout_8.addWidget(self.comboBox_style)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout_8)
+
+
+        self.verticalLayout_7.addWidget(self.groupBox)
 
         self.verticalSpacer_2 = QSpacerItem(287, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
@@ -542,6 +566,7 @@ class Ui_Dialog_settings(object):
 #endif // QT_CONFIG(tooltip)
         self.autosave_keep_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0430\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435", None))
         self.label_3.setText(QCoreApplication.translate("Dialog_settings", u"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043a \u0441\u043f\u0438\u0441\u043a\u0443", None))
+        self.groupBox.setTitle(QCoreApplication.translate("Dialog_settings", u"\u0421\u0442\u0438\u043b\u044c \u0433\u043b\u0430\u0432\u043d\u043e\u0433\u043e \u043e\u043a\u043d\u0430", None))
         self.pushButton_minecraft.setText("")
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("Dialog_settings", u"  \u0420\u0430\u0437\u043d\u044b\u0435 \u0442\u043e\u0433\u043b\u044b  ", None))
         self.label_5.setText(QCoreApplication.translate("Dialog_settings", u"Group token", None))

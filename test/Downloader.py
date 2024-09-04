@@ -98,12 +98,18 @@ class MainWindow(QMainWindow):
         self.ui.keep.clicked.connect(self.toggle_always_on_top)
 
         self.Dialog_settings.ui.pushButton_minecraft.clicked.connect(self.set_style)
+        self.Dialog_settings.ui.comboBox_style.currentIndexChanged.connect(self.load_custom_style)
 
+
+        style = self.Dialog_settings.ui.comboBox_style.currentText()
+        if style is not None:
+            self.load_custom_style()
 
         self.ui.settings.clicked.connect(self.open_settings)
         self.ui.put_aside_pushButton.clicked.connect(self.posting)
         self.ui.set_date.setDate(date.today())
         self.ui.set_date.setCalendarPopup(True)
+
 
 
         self.ui.label_2.setOpenExternalLinks(True)
@@ -177,11 +183,13 @@ class MainWindow(QMainWindow):
         except Exception as e:
             print(f"Произошла ошибка в функции load_style: {e}")
 
-    ######################################################################
 
+    def load_custom_style(self):
+        style = self.Dialog_settings.ui.comboBox_style.currentText()
+        self.load_style(f"ui/style/mine_window/{style}")
 
+######################################################################
 
-#####################################################################
 
 
 ##################### данные для вк апи ##############################

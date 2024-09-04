@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>880</width>
+    <width>862</width>
     <height>508</height>
    </rect>
   </property>
@@ -41,132 +41,8 @@ QPushButton:hover {
 }
 QPushButton:pressed {
 	background-color: rgba(85, 123, 226, 200);
-}</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_8">
-    <property name="spacing">
-     <number>0</number>
-    </property>
-    <property name="leftMargin">
-     <number>0</number>
-    </property>
-    <property name="topMargin">
-     <number>4</number>
-    </property>
-    <property name="rightMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <property name="spacing">
-       <number>8</number>
-      </property>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <property name="sizeConstraint">
-         <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
-        </property>
-        <property name="leftMargin">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
-        <item alignment="Qt::AlignmentFlag::AlignLeft">
-         <widget class="QPushButton" name="settings">
-          <property name="minimumSize">
-           <size>
-            <width>100</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	font: 700 8pt &quot;Segoe UI&quot;;
-	padding-bottom: 2px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	background-color: rgb(39, 39, 42);
 }
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
-          </property>
-          <property name="text">
-           <string>Настройки</string>
-          </property>
-          <property name="icon">
-           <iconset resource="icons/res.qrc">
-            <normaloff>:/icon/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
-          </property>
-         </widget>
-        </item>
-        <item alignment="Qt::AlignmentFlag::AlignRight">
-         <widget class="QPushButton" name="keep">
-          <property name="minimumSize">
-           <size>
-            <width>100</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="sizeIncrement">
-           <size>
-            <width>137</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="acceptDrops">
-           <bool>false</bool>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	font: 700 8pt &quot;Segoe UI&quot;;
-	padding-bottom: 2px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-	background-color: rgb(39, 39, 42);
-}
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
-          </property>
-          <property name="text">
-           <string>Закрепить</string>
-          </property>
-          <property name="icon">
-           <iconset resource="icons/res.qrc">
-            <normaloff>:/icon/keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>
-            <normalon>:/icon/keep_off_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normalon>:/icon/keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
-          </property>
-          <property name="checkable">
-           <bool>true</bool>
-          </property>
-          <property name="checked">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QTabWidget" name="tabWidget">
-        <property name="styleSheet">
-         <string notr="true">QTabWidget::pane { /* Рамка виджета со вкладками */
+QTabWidget::pane { /* Рамка виджета со вкладками */
      /* border-top: 2px solid rgb(85, 123, 226); */
 }
 
@@ -227,7 +103,247 @@ QTabBar::tab:selected {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 }
+
+QComboBox {
+border: 3px solid rgb(85, 123, 226); 
+font: 14pt &quot;Segoe UI&quot;;
+
+}
+QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    background-color: rgb(39, 39, 42); /* Обычный цвет фона (белый) */
+	alternate-background-color: rgb(39, 39, 42);
+    color: #FFFFFF; /* Обычный цвет текста (черный) */
+}
+QDateTimeEdit {
+	 min-width: 105px;
+    border: 3px solid rgb(85, 123, 226); 
+	font: 14pt &quot;Segoe UI&quot;;
+}
+QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {
+    qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка назад */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+}
+QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {
+    qproperty-icon: url(:/icon/arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка вперед */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+}
+
+QPushButton#put_aside_pushButton {
+	color: rgb(255, 255, 255);
+	height: 30px;
+	width: 130px;
+	max-height: 30px;
+	max-width: 130px;
+	min-height: 30px;
+	min-width: 130px;
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton#put_aside_pushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#put_aside_pushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QTextEdit {
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QTextEdit#textEdit_2 {
+	border: 0px solid rgb(85, 123, 226);
+}
+
+QPushButton#test_pushButton {
+	color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton#test_pushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#test_pushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QProgressBar {
+     border: 3px solid rgb(85, 123, 226);
+     border-radius: 8px;
+     text-align: center;
+	color: rgb(255, 255, 255);
+}
+QProgressBar::chunk {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.323864 rgba(60, 143, 241, 255), stop:1 rgba(0, 81, 224, 255));
+	border-radius: 4px;
+	
+}
+QPushButton#download_button {
+	color: rgb(255, 255, 255);
+	height: 30px;
+	width: 130px;
+	max-height: 30px;
+	max-width: 130px;
+	min-height: 30px;
+	min-width: 130px;
+	font: 700 12pt &quot;Segoe UI&quot;;
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton#download_button:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#download_button:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QPushButton#settings {
+	color: rgb(255, 255, 255);
+	font: 700 8pt &quot;Segoe UI&quot;;
+	padding-bottom: 2px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	background-color: rgb(39, 39, 42);
+}
+QPushButton#settings:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#settings:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QPushButton#keep {
+	color: rgb(255, 255, 255);
+	font: 700 8pt &quot;Segoe UI&quot;;
+	padding-bottom: 2px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	background-color: rgb(39, 39, 42);
+}
+QPushButton#keep:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#keep:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;Segoe UI&quot;;
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
 </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>4</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>8</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item alignment="Qt::AlignmentFlag::AlignLeft">
+         <widget class="QPushButton" name="settings">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Настройки</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/res.qrc">
+            <normaloff>:/icon/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="keep">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>137</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Закрепить</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/res.qrc">
+            <normaloff>:/icon/keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normaloff>
+            <normalon>:/icon/keep_off_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</normalon>:/icon/keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="styleSheet">
+         <string notr="true"/>
         </property>
         <property name="currentIndex">
          <number>0</number>
@@ -281,25 +397,6 @@ QTabBar::tab:selected {
                    <height>16777215</height>
                   </size>
                  </property>
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit {
-	color: rgb(255, 255, 255);
-	font: 16pt &quot;Segoe UI&quot;;
-	border-radius: 6;
-	border: 3px solid rgb(85, 123, 226);
-	padding-bottom: 5px;
-	color: rgb(255, 255, 255);
-}
-
-QMenu {
-	color: rgb(255, 255, 255);
-	background-color: rgb(39, 39, 42);
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgba(85, 123, 226, 250);
-
-}
-</string>
-                 </property>
                  <property name="placeholderText">
                   <string>Введите ссылку на  дерпибуру</string>
                  </property>
@@ -307,26 +404,11 @@ QMenu {
                </item>
                <item>
                 <widget class="QPushButton" name="download_button">
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	height: 30px;
-	width: 130px;
-	max-height: 30px;
-	max-width: 130px;
-	min-height: 30px;
-	min-width: 130px;
-	font: 700 12pt &quot;Segoe UI&quot;;
-	padding-bottom: 5px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-}
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
+                 <property name="minimumSize">
+                  <size>
+                   <width>146</width>
+                   <height>41</height>
+                  </size>
                  </property>
                  <property name="text">
                   <string>скачать</string>
@@ -389,20 +471,6 @@ font: 12pt &quot;Segoe UI&quot;;</string>
                    <height>30</height>
                   </size>
                  </property>
-                 <property name="styleSheet">
-                  <string notr="true">QProgressBar {
-     border: 3px solid rgb(85, 123, 226);
-     border-radius: 8px;
-     text-align: center;
-	color: rgb(255, 255, 255);
-}
-QProgressBar::chunk {
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.323864 rgba(60, 143, 241, 255), stop:1 rgba(0, 81, 224, 255));
-	border-radius: 4px;
-	
-}
-</string>
-                 </property>
                  <property name="value">
                   <number>0</number>
                  </property>
@@ -438,10 +506,6 @@ QProgressBar::chunk {
          <layout class="QVBoxLayout" name="verticalLayout_9">
           <item>
            <widget class="QTextEdit" name="textEdit_2">
-            <property name="styleSheet">
-             <string notr="true">	border: 0px solid rgb(85, 123, 226);
-</string>
-            </property>
             <property name="html">
              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -449,7 +513,7 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Чтоб загрузить гифку нужно:&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;1. В настройках сообщества включить сообщения (сообщения → Сообщения сообщества: Включены)&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;2. В графе (работа с AIP) создаём ключ со всеми разрешениями, данный ключ в водим в приложение в раздел (ввод данных авторизации)&lt;/span&gt;&lt;/p&gt;
@@ -553,30 +617,15 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  </property>
                  <property name="minimumSize">
                   <size>
-                   <width>172</width>
-                   <height>35</height>
+                   <width>0</width>
+                   <height>0</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>172</width>
-                   <height>35</height>
+                   <width>16777215</width>
+                   <height>16777215</height>
                   </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	padding-bottom: 5px;
-	border: 3px solid rgb(85, 123, 226);
-	border-radius: 6px;
-}
-QPushButton:hover {
-	background-color: rgba(85, 123, 226, 70);
-}
-QPushButton:pressed {
-	background-color: rgba(85, 123, 226, 200);
-}</string>
                  </property>
                  <property name="text">
                   <string>Открыть папку</string>
@@ -607,9 +656,13 @@ QPushButton:pressed {
                    <height>16777215</height>
                   </size>
                  </property>
-                 <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-font: 14pt &quot;Segoe UI&quot;;</string>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>14</pointsize>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
                  </property>
                  <property name="horizontalScrollBarPolicy">
                   <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
@@ -706,34 +759,7 @@ font: 14pt &quot;Segoe UI&quot;;</string>
                 <bool>true</bool>
                </property>
                <property name="styleSheet">
-                <string notr="true">QDateTimeEdit::drop-down {
-    subcontrol-origin: padding;
-    subcontrol-position: top right;
-
-}
-
-QCalendarWidget QAbstractItemView:enabled {
-    background-color: rgb(39, 39, 42); /* Обычный цвет фона (белый) */
-	alternate-background-color: rgb(39, 39, 42);
-    color: #FFFFFF; /* Обычный цвет текста (черный) */
-}
-QDateTimeEdit {
-	 min-width: 105px;
-    border: 3px solid rgb(85, 123, 226); 
-	font: 14pt &quot;Segoe UI&quot;;
-}
-QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {
-    qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка назад */
-    width: 30px; /* Ширина кнопки */
-    height: 30px; /* Высота кнопки */
-}
-QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {
-    qproperty-icon: url(:/icon/arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка вперед */
-    width: 30px; /* Ширина кнопки */
-    height: 30px; /* Высота кнопки */
-}
-
-</string>
+                <string notr="true"/>
                </property>
                <property name="accelerated">
                 <bool>true</bool>
@@ -832,13 +858,6 @@ QPushButton:pressed {
                  <width>99</width>
                  <height>30</height>
                 </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">
-QComboBox {
-border: 3px solid rgb(85, 123, 226); 
-font: 14pt &quot;Segoe UI&quot;;
-}</string>
                </property>
                <property name="editable">
                 <bool>true</bool>

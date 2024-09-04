@@ -34,6 +34,7 @@ class Dialog_settings(QDialog):
         self.load_settings()
 
         self.blur()
+        self.custom_style()
 
         self.ui.auto_swap_tab_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.auto_swap_time_data_checkBox.stateChanged.connect(self.save_checkbox)
@@ -63,6 +64,7 @@ class Dialog_settings(QDialog):
 
 
 ################################__DB__######################################
+        self.ui.comboBox_style.currentIndexChanged.connect(self.save_set_style)
 
         if self.ui.autosave_tab_settings_checkBox.isChecked():
             self.ui.tabWidget.currentChanged.connect(self.save_cur_index)
@@ -72,11 +74,29 @@ class Dialog_settings(QDialog):
             if saved_index is not None:
                 self.ui.tabWidget.setCurrentIndex(int(saved_index))
 
+        saved_index = self.db.load_setting("tab_style")
+        if saved_index is not None:
+            self.ui.comboBox_style.setCurrentIndex(int(saved_index))
 
     def save_cur_index(self,index):
         self.db.save_setting("tab_index",index)
+    def save_set_style(self):
+        self.db.save_setting("tab_style",self.ui.comboBox_style.currentIndex())
+
+
 
 #################################__Style__#####################################
+    def custom_style(self):
+        pass
+        # Путь к папке, где будем искать .qss файлы
+        search_directory = 'ui/style/mine_window'
+
+        # Найти все файлы с расширением .qss
+        qss_files = [file for file in os.listdir(search_directory) if file.endswith('.qss')]
+
+        # Добавить найденные файлы в QComboBox
+        self.ui.comboBox_style.addItems(qss_files)
+
 
     def load_style(self, style_file):
         file = QFile(style_file)

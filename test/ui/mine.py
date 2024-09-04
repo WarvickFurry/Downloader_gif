@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(880, 508)
+        MainWindow.resize(862, 508)
         MainWindow.setBaseSize(QSize(880, 510))
         MainWindow.setStyleSheet(u"QWidget {\n"
 "background-color: rgb(39, 39, 42);\n"
@@ -50,7 +50,224 @@ class Ui_MainWindow(object):
 "}\n"
 "QPushButton:pressed {\n"
 "	background-color: rgba(85, 123, 226, 200);\n"
-"}")
+"}\n"
+"QTabWidget::pane { /* \u0420\u0430\u043c\u043a\u0430 \u0432\u0438\u0434\u0436\u0435\u0442\u0430 \u0441\u043e \u0432\u043a\u043b\u0430\u0434\u043a\u0430\u043c\u0438 */\n"
+"     /* border-top: 2px solid rgb(85, 123, 226); */\n"
+"}\n"
+"\n"
+"QTabWidget::tab-bar {\n"
+"    left: 6px; /* \u0441\u0434\u0432\u0438\u0433\u0430\u0435\u043c \u0432\u043f\u0440\u0430\u0432\u043e \u043d\u0430 5px */\n"
+"}\n"
+"\n"
+"QTabBar::tab {\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(39, 39, 42);\n"
+"    min-widt"
+                        "h: 80px;\n"
+"	min-height: 10px;\n"
+"    padding: 2px;\n"
+"    border-right: 0px solid rgb(85, 123, 226);\n"
+"	border-top: 2px solid rgb(85, 123, 226);\n"
+"	border-left: 1px solid rgb(85, 123, 226);\n"
+"	border-bottom: 2px solid rgb(85, 123, 226);\n"
+"	border-right: 1px solid rgb(85, 123, 226);\n"
+"}\n"
+"\n"
+"QTabBar::tab:first {\n"
+"    border-right: 0px solid rgb(85, 123, 226);\n"
+"	border-top-left-radius: 3px;\n"
+"	border-top: 2px solid rgb(85, 123, 226);\n"
+"	border-left: 2px solid rgb(85, 123, 226);\n"
+"	border-bottom: 2px solid rgb(85, 123, 226);\n"
+"	border-right: 1px solid rgb(85, 123, 226);\n"
+"}\n"
+"\n"
+"QTabBar::tab:last {\n"
+"    border-left: 0px solid rgb(85, 123, 226);\n"
+"	border-top-right-radius: 3px;\n"
+"	border-top: 2px solid rgb(85, 123, 226);\n"
+"	border-right: 2px solid rgb(85, 123, 226);\n"
+"	border-left: 1px solid rgb(85, 123, 226);\n"
+"	border-bottom: 2px solid rgb(85, 123, 226);\n"
+"}\n"
+"QTabBar::tab:first:selected {\n"
+"    margin-left: 0; /* \u043f\u0435\u0440\u0432\u0430\u044f \u0432"
+                        "\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430\u0434\u043a\u0430 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043b\u0435\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
+"	border-top-right-radius: 3px;\n"
+"}\n"
+"\n"
+"QTabBar::tab:last:selected {\n"
+"    margin-right: 0; /* \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430\u0434\u043a\u0430 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043f\u0440\u0430\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
+"	border-top-left-radius: 3px;\n"
+"}\n"
+"\n"
+"QTabBar::tab:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"\n"
+"QTabBar::tab:!selected {\n"
+"     margin-top: 2px; /* \u0434\u0435\u043b\u0430\u0435\u043c \u043d\u0435\u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0435"
+                        " \u0432\u043a\u043b\u0430\u0434\u043a\u0438 \u043c\u0435\u043d\u044c\u0448\u0435 */\n"
+"}\n"
+"\n"
+"QTabBar::tab:selected {\n"
+"	background-color: rgba(85, 123, 226, 130);\n"
+"	border-top-left-radius: 3px;\n"
+"	border-top-right-radius: 3px;\n"
+"}\n"
+"\n"
+"QComboBox {\n"
+"border: 3px solid rgb(85, 123, 226); \n"
+"font: 14pt \"Segoe UI\";\n"
+"\n"
+"}\n"
+"QDateTimeEdit::drop-down {\n"
+"    subcontrol-origin: padding;\n"
+"    subcontrol-position: top right;\n"
+"\n"
+"}\n"
+"\n"
+"QCalendarWidget QAbstractItemView:enabled {\n"
+"    background-color: rgb(39, 39, 42); /* \u041e\u0431\u044b\u0447\u043d\u044b\u0439 \u0446\u0432\u0435\u0442 \u0444\u043e\u043d\u0430 (\u0431\u0435\u043b\u044b\u0439) */\n"
+"	alternate-background-color: rgb(39, 39, 42);\n"
+"    color: #FFFFFF; /* \u041e\u0431\u044b\u0447\u043d\u044b\u0439 \u0446\u0432\u0435\u0442 \u0442\u0435\u043a\u0441\u0442\u0430 (\u0447\u0435\u0440\u043d\u044b\u0439) */\n"
+"}\n"
+"QDateTimeEdit {\n"
+"	 min-width: 105px;\n"
+"    border: 3px solid rgb(85, 123, 226); \n"
+"	font:"
+                        " 14pt \"Segoe UI\";\n"
+"}\n"
+"QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {\n"
+"    qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* \u0421\u0442\u0440\u0435\u043b\u043a\u0430 \u043d\u0430\u0437\u0430\u0434 */\n"
+"    width: 30px; /* \u0428\u0438\u0440\u0438\u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
+"    height: 30px; /* \u0412\u044b\u0441\u043e\u0442\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
+"}\n"
+"QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {\n"
+"    qproperty-icon: url(:/icon/arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* \u0421\u0442\u0440\u0435\u043b\u043a\u0430 \u0432\u043f\u0435\u0440\u0435\u0434 */\n"
+"    width: 30px; /* \u0428\u0438\u0440\u0438\u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
+"    height: 30px; /* \u0412\u044b\u0441\u043e\u0442\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
+"}\n"
+"\n"
+"QPushButton#put_aside_pushButton {\n"
+"	color: rgb(255, 255, 255);\n"
+""
+                        "	height: 30px;\n"
+"	width: 130px;\n"
+"	max-height: 30px;\n"
+"	max-width: 130px;\n"
+"	min-height: 30px;\n"
+"	min-width: 130px;\n"
+"	font: 700 12pt \"Segoe UI\";\n"
+"	padding-bottom: 5px;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"}\n"
+"QPushButton#put_aside_pushButton:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"QPushButton#put_aside_pushButton:pressed {\n"
+"	background-color: rgba(85, 123, 226, 200);\n"
+"}\n"
+"QTextEdit {\n"
+"	font: 14pt \"Segoe UI\";\n"
+"}\n"
+"\n"
+"QTextEdit#textEdit_2 {\n"
+"	border: 0px solid rgb(85, 123, 226);\n"
+"}\n"
+"\n"
+"QPushButton#test_pushButton {\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 700 12pt \"Segoe UI\";\n"
+"	padding-bottom: 5px;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"}\n"
+"QPushButton#test_pushButton:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"QPushButton#test_pushButton:pressed {\n"
+"	background-color: rgba(85, 123, 226, 200);\n"
+"}\n"
+"QProgressBar {\n"
+"     border: 3px so"
+                        "lid rgb(85, 123, 226);\n"
+"     border-radius: 8px;\n"
+"     text-align: center;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"QProgressBar::chunk {\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.323864 rgba(60, 143, 241, 255), stop:1 rgba(0, 81, 224, 255));\n"
+"	border-radius: 4px;\n"
+"	\n"
+"}\n"
+"QPushButton#download_button {\n"
+"	color: rgb(255, 255, 255);\n"
+"	height: 30px;\n"
+"	width: 130px;\n"
+"	max-height: 30px;\n"
+"	max-width: 130px;\n"
+"	min-height: 30px;\n"
+"	min-width: 130px;\n"
+"	font: 700 12pt \"Segoe UI\";\n"
+"	padding-bottom: 5px;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"}\n"
+"QPushButton#download_button:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"QPushButton#download_button:pressed {\n"
+"	background-color: rgba(85, 123, 226, 200);\n"
+"}\n"
+"QPushButton#settings {\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 700 8pt \"Segoe UI\";\n"
+"	padding-bottom: 2px;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: "
+                        "6px;\n"
+"	background-color: rgb(39, 39, 42);\n"
+"}\n"
+"QPushButton#settings:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"QPushButton#settings:pressed {\n"
+"	background-color: rgba(85, 123, 226, 200);\n"
+"}\n"
+"QPushButton#keep {\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 700 8pt \"Segoe UI\";\n"
+"	padding-bottom: 2px;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	border-radius: 6px;\n"
+"	background-color: rgb(39, 39, 42);\n"
+"}\n"
+"QPushButton#keep:hover {\n"
+"	background-color: rgba(85, 123, 226, 70);\n"
+"}\n"
+"QPushButton#keep:pressed {\n"
+"	background-color: rgba(85, 123, 226, 200);\n"
+"}\n"
+"QLineEdit {\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 16pt \"Segoe UI\";\n"
+"	border-radius: 6;\n"
+"	border: 3px solid rgb(85, 123, 226);\n"
+"	padding-bottom: 5px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"QMenu {\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(39, 39, 42);\n"
+"	selection-color: rgb(255, 255, 255);\n"
+"	selection-background-color: rgba(85, 123, 226, 250);\n"
+"\n"
+""
+                        "}\n"
+"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_8 = QVBoxLayout(self.centralwidget)
@@ -67,21 +284,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setContentsMargins(0, 0, -1, -1)
         self.settings = QPushButton(self.centralwidget)
         self.settings.setObjectName(u"settings")
-        self.settings.setMinimumSize(QSize(100, 25))
-        self.settings.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 700 8pt \"Segoe UI\";\n"
-"	padding-bottom: 2px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	background-color: rgb(39, 39, 42);\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
+        self.settings.setMinimumSize(QSize(0, 0))
         icon = QIcon()
         icon.addFile(u":/icon/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.settings.setIcon(icon)
@@ -90,23 +293,9 @@ class Ui_MainWindow(object):
 
         self.keep = QPushButton(self.centralwidget)
         self.keep.setObjectName(u"keep")
-        self.keep.setMinimumSize(QSize(100, 0))
+        self.keep.setMinimumSize(QSize(0, 0))
         self.keep.setSizeIncrement(QSize(137, 0))
         self.keep.setAcceptDrops(False)
-        self.keep.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 700 8pt \"Segoe UI\";\n"
-"	padding-bottom: 2px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"	background-color: rgb(39, 39, 42);\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
         icon1 = QIcon()
         icon1.addFile(u":/icon/keep_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         icon1.addFile(u":/icon/keep_off_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.On)
@@ -121,70 +310,7 @@ class Ui_MainWindow(object):
 
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setStyleSheet(u"QTabWidget::pane { /* \u0420\u0430\u043c\u043a\u0430 \u0432\u0438\u0434\u0436\u0435\u0442\u0430 \u0441\u043e \u0432\u043a\u043b\u0430\u0434\u043a\u0430\u043c\u0438 */\n"
-"     /* border-top: 2px solid rgb(85, 123, 226); */\n"
-"}\n"
-"\n"
-"QTabWidget::tab-bar {\n"
-"    left: 6px; /* \u0441\u0434\u0432\u0438\u0433\u0430\u0435\u043c \u0432\u043f\u0440\u0430\u0432\u043e \u043d\u0430 5px */\n"
-"}\n"
-"\n"
-"QTabBar::tab {\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(39, 39, 42);\n"
-"    min-width: 80px;\n"
-"	min-height: 10px;\n"
-"    padding: 2px;\n"
-"    border-right: 0px solid rgb(85, 123, 226);\n"
-"	border-top: 2px solid rgb(85, 123, 226);\n"
-"	border-left: 1px solid rgb(85, 123, 226);\n"
-"	border-bottom: 2px solid rgb(85, 123, 226);\n"
-"	border-right: 1px solid rgb(85, 123, 226);\n"
-"}\n"
-"\n"
-"QTabBar::tab:first {\n"
-"    border-right: 0px solid rgb(85, 123, 226);\n"
-"	border-top-left-radius: 3px;\n"
-"	border-top: 2px solid rgb(85, 123, 226);\n"
-"	border-left: 2px solid rgb(85, 123, 226);\n"
-"	borde"
-                        "r-bottom: 2px solid rgb(85, 123, 226);\n"
-"	border-right: 1px solid rgb(85, 123, 226);\n"
-"}\n"
-"\n"
-"QTabBar::tab:last {\n"
-"    border-left: 0px solid rgb(85, 123, 226);\n"
-"	border-top-right-radius: 3px;\n"
-"	border-top: 2px solid rgb(85, 123, 226);\n"
-"	border-right: 2px solid rgb(85, 123, 226);\n"
-"	border-left: 1px solid rgb(85, 123, 226);\n"
-"	border-bottom: 2px solid rgb(85, 123, 226);\n"
-"}\n"
-"QTabBar::tab:first:selected {\n"
-"    margin-left: 0; /* \u043f\u0435\u0440\u0432\u0430\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430\u0434\u043a\u0430 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043b\u0435\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
-"	border-top-right-radius: 3px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:last:selected {\n"
-"    margin-right: 0; /* \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u0432\u043a\u043b\u0430"
-                        "\u0434\u043a\u0430 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u043f\u0440\u0430\u0432\u0430 \u043e\u0442 \u0441\u0435\u0431\u044f */\n"
-"	border-top-left-radius: 3px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"\n"
-"QTabBar::tab:!selected {\n"
-"     margin-top: 2px; /* \u0434\u0435\u043b\u0430\u0435\u043c \u043d\u0435\u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0435 \u0432\u043a\u043b\u0430\u0434\u043a\u0438 \u043c\u0435\u043d\u044c\u0448\u0435 */\n"
-"}\n"
-"\n"
-"QTabBar::tab:selected {\n"
-"	background-color: rgba(85, 123, 226, 130);\n"
-"	border-top-left-radius: 3px;\n"
-"	border-top-right-radius: 3px;\n"
-"}\n"
-"")
+        self.tabWidget.setStyleSheet(u"")
         self.tab_1 = QWidget()
         self.tab_1.setObjectName(u"tab_1")
         self.verticalLayout_7 = QVBoxLayout(self.tab_1)
@@ -204,47 +330,12 @@ class Ui_MainWindow(object):
         self.lineEdit_.setObjectName(u"lineEdit_")
         self.lineEdit_.setMinimumSize(QSize(0, 41))
         self.lineEdit_.setMaximumSize(QSize(16777215, 16777215))
-        self.lineEdit_.setStyleSheet(u"QLineEdit {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 16pt \"Segoe UI\";\n"
-"	border-radius: 6;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	padding-bottom: 5px;\n"
-"	color: rgb(255, 255, 255);\n"
-"}\n"
-"\n"
-"QMenu {\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(39, 39, 42);\n"
-"	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-color: rgba(85, 123, 226, 250);\n"
-"\n"
-"}\n"
-"")
 
         self.horizontalLayout.addWidget(self.lineEdit_, 0, Qt.AlignmentFlag.AlignBottom)
 
         self.download_button = QPushButton(self.horizontalWidget)
         self.download_button.setObjectName(u"download_button")
-        self.download_button.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	height: 30px;\n"
-"	width: 130px;\n"
-"	max-height: 30px;\n"
-"	max-width: 130px;\n"
-"	min-height: 30px;\n"
-"	min-width: 130px;\n"
-"	font: 700 12pt \"Segoe UI\";\n"
-"	padding-bottom: 5px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
+        self.download_button.setMinimumSize(QSize(146, 41))
         icon2 = QIcon()
         icon2.addFile(u":/icon/download_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.download_button.setIcon(icon2)
@@ -273,18 +364,6 @@ class Ui_MainWindow(object):
         self.progressBar.setMinimumSize(QSize(0, 30))
         self.progressBar.setMaximumSize(QSize(16777215, 30))
         self.progressBar.setSizeIncrement(QSize(600, 30))
-        self.progressBar.setStyleSheet(u"QProgressBar {\n"
-"     border: 3px solid rgb(85, 123, 226);\n"
-"     border-radius: 8px;\n"
-"     text-align: center;\n"
-"	color: rgb(255, 255, 255);\n"
-"}\n"
-"QProgressBar::chunk {\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.323864 rgba(60, 143, 241, 255), stop:1 rgba(0, 81, 224, 255));\n"
-"	border-radius: 4px;\n"
-"	\n"
-"}\n"
-"")
         self.progressBar.setValue(0)
 
         self.verticalLayout_3.addWidget(self.progressBar, 0, Qt.AlignmentFlag.AlignTop)
@@ -306,8 +385,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.textEdit_2 = QTextEdit(self.tab_2)
         self.textEdit_2.setObjectName(u"textEdit_2")
-        self.textEdit_2.setStyleSheet(u"	border: 0px solid rgb(85, 123, 226);\n"
-"")
         self.textEdit_2.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
 
         self.verticalLayout_9.addWidget(self.textEdit_2)
@@ -370,21 +447,8 @@ class Ui_MainWindow(object):
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.test_pushButton.sizePolicy().hasHeightForWidth())
         self.test_pushButton.setSizePolicy(sizePolicy2)
-        self.test_pushButton.setMinimumSize(QSize(172, 35))
-        self.test_pushButton.setMaximumSize(QSize(172, 35))
-        self.test_pushButton.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 700 12pt \"Segoe UI\";\n"
-"	padding-bottom: 5px;\n"
-"	border: 3px solid rgb(85, 123, 226);\n"
-"	border-radius: 6px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgba(85, 123, 226, 70);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	background-color: rgba(85, 123, 226, 200);\n"
-"}")
+        self.test_pushButton.setMinimumSize(QSize(0, 0))
+        self.test_pushButton.setMaximumSize(QSize(16777215, 16777215))
         icon3 = QIcon()
         icon3.addFile(u":/icon/folder_open_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.test_pushButton.setIcon(icon3)
@@ -396,8 +460,12 @@ class Ui_MainWindow(object):
         self.text_autTags.setObjectName(u"text_autTags")
         self.text_autTags.setMinimumSize(QSize(310, 0))
         self.text_autTags.setMaximumSize(QSize(16777215, 16777215))
-        self.text_autTags.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"font: 14pt \"Segoe UI\";")
+        font = QFont()
+        font.setFamilies([u"Segoe UI"])
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        self.text_autTags.setFont(font)
         self.text_autTags.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         self.text_autTags.setLineWrapMode(QTextEdit.LineWrapMode.NoWrap)
         self.text_autTags.setTabStopDistance(1000.000000000000000)
@@ -433,35 +501,7 @@ class Ui_MainWindow(object):
         self.set_date.setMaximumSize(QSize(102, 30))
         self.set_date.setSizeIncrement(QSize(0, 0))
         self.set_date.setMouseTracking(True)
-        self.set_date.setStyleSheet(u"QDateTimeEdit::drop-down {\n"
-"    subcontrol-origin: padding;\n"
-"    subcontrol-position: top right;\n"
-"\n"
-"}\n"
-"\n"
-"QCalendarWidget QAbstractItemView:enabled {\n"
-"    background-color: rgb(39, 39, 42); /* \u041e\u0431\u044b\u0447\u043d\u044b\u0439 \u0446\u0432\u0435\u0442 \u0444\u043e\u043d\u0430 (\u0431\u0435\u043b\u044b\u0439) */\n"
-"	alternate-background-color: rgb(39, 39, 42);\n"
-"    color: #FFFFFF; /* \u041e\u0431\u044b\u0447\u043d\u044b\u0439 \u0446\u0432\u0435\u0442 \u0442\u0435\u043a\u0441\u0442\u0430 (\u0447\u0435\u0440\u043d\u044b\u0439) */\n"
-"}\n"
-"QDateTimeEdit {\n"
-"	 min-width: 105px;\n"
-"    border: 3px solid rgb(85, 123, 226); \n"
-"	font: 14pt \"Segoe UI\";\n"
-"}\n"
-"QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {\n"
-"    qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* \u0421\u0442\u0440\u0435\u043b\u043a\u0430 \u043d\u0430\u0437\u0430\u0434 */\n"
-"    width: 30px; /* \u0428\u0438\u0440\u0438\u043d\u0430 \u043a\u043d\u043e"
-                        "\u043f\u043a\u0438 */\n"
-"    height: 30px; /* \u0412\u044b\u0441\u043e\u0442\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
-"}\n"
-"QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {\n"
-"    qproperty-icon: url(:/icon/arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* \u0421\u0442\u0440\u0435\u043b\u043a\u0430 \u0432\u043f\u0435\u0440\u0435\u0434 */\n"
-"    width: 30px; /* \u0428\u0438\u0440\u0438\u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
-"    height: 30px; /* \u0412\u044b\u0441\u043e\u0442\u0430 \u043a\u043d\u043e\u043f\u043a\u0438 */\n"
-"}\n"
-"\n"
-"")
+        self.set_date.setStyleSheet(u"")
         self.set_date.setAccelerated(True)
         self.set_date.setCalendarPopup(True)
 
@@ -516,11 +556,6 @@ class Ui_MainWindow(object):
         self.set_time.setObjectName(u"set_time")
         self.set_time.setMinimumSize(QSize(99, 30))
         self.set_time.setMaximumSize(QSize(99, 30))
-        self.set_time.setStyleSheet(u"\n"
-"QComboBox {\n"
-"border: 3px solid rgb(85, 123, 226); \n"
-"font: 14pt \"Segoe UI\";\n"
-"}")
         self.set_time.setEditable(True)
         self.set_time.setFrame(True)
 
@@ -564,7 +599,7 @@ class Ui_MainWindow(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">\u0427\u0442\u043e\u0431 \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0433\u0438\u0444\u043a\u0443 \u043d\u0443\u0436\u043d\u043e:</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">1. \u0412 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a"
                         "\u0430\u0445 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0432\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f (\u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u2192 \u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430: \u0412\u043a\u043b\u044e\u0447\u0435\u043d\u044b)</span></p>\n"

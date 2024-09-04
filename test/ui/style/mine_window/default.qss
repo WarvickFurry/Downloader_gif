@@ -1,0 +1,230 @@
+QWidget {
+background-color: rgb(39, 39, 42);
+color: rgb(255, 255, 255);
+font: 10pt "Segoe UI";
+}
+
+QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 10pt "Segoe UI";
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	padding-right: 5px;
+	padding-left: 5px;
+	
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QTabWidget::pane { /* Рамка виджета со вкладками */
+     /* border-top: 2px solid rgb(85, 123, 226); */
+}
+
+QTabWidget::tab-bar {
+    left: 6px; /* сдвигаем вправо на 5px */
+}
+
+QTabBar::tab {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+    min-width: 80px;
+	min-height: 10px;
+    padding: 2px;
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:first {
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top-left-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 2px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:last {
+    border-left: 0px solid rgb(85, 123, 226);
+	border-top-right-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-right: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+}
+QTabBar::tab:first:selected {
+    margin-left: 0; /* первая выбранная вкладка ничего не перекрывает слева от себя */
+	border-top-right-radius: 3px;
+}
+
+QTabBar::tab:last:selected {
+    margin-right: 0; /* последняя выбранная вкладка ничего не перекрывает справа от себя */
+	border-top-left-radius: 3px;
+}
+
+QTabBar::tab:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+
+QTabBar::tab:!selected {
+     margin-top: 2px; /* делаем невыбранные вкладки меньше */
+}
+
+QTabBar::tab:selected {
+	background-color: rgba(85, 123, 226, 130);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+QComboBox {
+border: 3px solid rgb(85, 123, 226); 
+font: 14pt "Segoe UI";
+
+}
+QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    background-color: rgb(39, 39, 42); /* Обычный цвет фона (белый) */
+	alternate-background-color: rgb(39, 39, 42);
+    color: #FFFFFF; /* Обычный цвет текста (черный) */
+}
+QDateTimeEdit {
+	 min-width: 105px;
+    border: 3px solid rgb(85, 123, 226); 
+	font: 14pt "Segoe UI";
+}
+QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_prevmonth {
+    qproperty-icon: url(:/icon/arrow_circle_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка назад */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+}
+QDateTimeEdit QCalendarWidget QToolButton#qt_calendar_nextmonth {
+    qproperty-icon: url(:/icon/arrow_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg); /* Стрелка вперед */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+}
+
+QPushButton#put_aside_pushButton {
+	color: rgb(255, 255, 255);
+	height: 30px;
+	width: 130px;
+	max-height: 30px;
+	max-width: 130px;
+	min-height: 30px;
+	min-width: 130px;
+	font: 700 12pt "Segoe UI";
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton#put_aside_pushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#put_aside_pushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QTextEdit {
+	font: 14pt "Segoe UI";
+}
+
+QTextEdit#textEdit_2 {
+	border: 0px solid rgb(85, 123, 226);
+}
+
+QPushButton#test_pushButton {
+	color: rgb(255, 255, 255);
+	font: 700 12pt "Segoe UI";
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton#test_pushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#test_pushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QProgressBar {
+     border: 3px solid rgb(85, 123, 226);
+     border-radius: 8px;
+     text-align: center;
+	color: rgb(255, 255, 255);
+}
+QProgressBar::chunk {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.323864 rgba(60, 143, 241, 255), stop:1 rgba(0, 81, 224, 255));
+	border-radius: 4px;
+	
+}
+QPushButton#download_button {
+	color: rgb(255, 255, 255);
+	height: 30px;
+	width: 130px;
+	max-height: 30px;
+	max-width: 130px;
+	min-height: 30px;
+	min-width: 130px;
+	font: 700 12pt "Segoe UI";
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+}
+QPushButton#download_button:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#download_button:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QPushButton#settings {
+	color: rgb(255, 255, 255);
+	font: 700 8pt "Segoe UI";
+	padding-bottom: 2px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	background-color: rgb(39, 39, 42);
+}
+QPushButton#settings:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#settings:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QPushButton#keep {
+	color: rgb(255, 255, 255);
+	font: 700 8pt "Segoe UI";
+	padding-bottom: 2px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	background-color: rgb(39, 39, 42);
+}
+QPushButton#keep:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton#keep:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 16pt "Segoe UI";
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
