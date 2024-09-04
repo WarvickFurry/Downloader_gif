@@ -1,0 +1,169 @@
+
+QToolTip {
+    background-color: #27272A;  /* Цвет фона тултипа */
+    color: #FFFFFF;               /* Цвет текста */
+    border: 0px solid;    /* Граница вокруг тултипа */
+    padding: 0px;               /* Внутренние отступы */
+    border-radius: 0px;         /* Закругленные углы */
+    font-size: 14px;            /* Размер шрифта */
+}
+QWidget {
+background-color: rgb(39, 39, 42);
+color: rgb(255, 255, 255);
+font: 10pt "Segoe UI";
+}
+
+QPushButton {
+	color: rgb(255, 255, 255);
+	font: 700 10pt "Segoe UI";
+	padding-bottom: 5px;
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	padding-right: 8;
+	padding-left: 8;
+	
+}
+QPushButton:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+QPushButton:pressed {
+	background-color: rgba(85, 123, 226, 200);
+}
+
+QCheckBox:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+ QCheckBox {
+	color: rgb(255, 255, 255);
+	border: 3px solid rgb(85, 123, 226);
+	border-radius: 6px;
+	font: 700 13pt "Segoe UI";
+	padding-bottom: 4px;
+	spacing: 0px;
+}
+
+QCheckBox::indicator {
+    width: 25px;
+    height: 25px;
+	left: 5px;
+	top: 2px;
+ }
+
+ QGroupBox {
+
+	 color: rgb(255, 255, 255);
+   	 border: 3px solid rgb(85, 123, 226);
+	 border-radius: 6px;
+	 font: 700 10pt "Segoe UI";
+     margin-top: 1ex; /* оставляем пространство вверху для заголовка */
+ }
+ QGroupBox::title {
+	left: 6px;
+	border-radius: 0px;
+    border-right: 0px solid rgb(255, 255, 255);
+	border-top: 3px solid rgb(85, 123, 226);
+	border-left: 0px solid rgb(85, 123, 226);
+	border-bottom: 0px solid rgb(255, 255, 255);
+ }
+
+QTabWidget::pane { /* Рамка виджета со вкладками */
+     /* border-top: 2px solid rgb(85, 123, 226); */
+}
+
+QTabWidget::tab-bar {
+    left: 6px; /* сдвигаем вправо на 5px */
+}
+
+QTabBar::tab {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+    min-width: 80px;
+	min-height: 10px;
+    padding: 2px;
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:first {
+    border-right: 0px solid rgb(85, 123, 226);
+	border-top-left-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-left: 2px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+	border-right: 1px solid rgb(85, 123, 226);
+}
+
+QTabBar::tab:last {
+    border-left: 0px solid rgb(85, 123, 226);
+	border-top-right-radius: 3px;
+	border-top: 2px solid rgb(85, 123, 226);
+	border-right: 2px solid rgb(85, 123, 226);
+	border-left: 1px solid rgb(85, 123, 226);
+	border-bottom: 2px solid rgb(85, 123, 226);
+}
+QTabBar::tab:first:selected {
+    margin-left: 0; /* первая выбранная вкладка ничего не перекрывает слева от себя */
+	border-top-right-radius: 3px;
+}
+
+QTabBar::tab:last:selected {
+    margin-right: 0; /* последняя выбранная вкладка ничего не перекрывает справа от себя */
+	border-top-left-radius: 3px;
+}
+
+QTabBar::tab:hover {
+	background-color: rgba(85, 123, 226, 70);
+}
+
+QTabBar::tab:!selected {
+     margin-top: 2px; /* делаем невыбранные вкладки меньше */
+}
+
+QTabBar::tab:selected {
+	background-color: rgba(85, 123, 226, 130);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+QLineEdit {
+	color: rgb(255, 255, 255);
+	font: 12pt "Segoe UI";
+	border-radius: 6;
+	border: 3px solid rgb(85, 123, 226);
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+	
+}
+
+QMenu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 42);
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgba(85, 123, 226, 250);
+
+}
+
+QScrollArea {
+	border: 0px solid rgb(85, 123, 226);
+}
+
+
+QPushButton#pushButton_minecraft {
+	border: 0px solid rgb(85, 123, 226);
+}
+
+QPushButton#pushButton_minecraft:hover {
+	icon: url(:/icon/gas-kvas-com-p-znachok-mainkrafta-na-prozrachnom-fone-35.png);
+	background-color: rgb(39, 39, 42);
+}
+QPushButton#pushButton_minecraft:pressed {
+	background-color: rgb(39, 39, 42);
+}
+QComboBox {
+border: 3px solid rgb(85, 123, 226); 
+font: 14pt "Segoe UI";
+padding-bottom: 3px;
+}
