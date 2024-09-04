@@ -19,7 +19,7 @@ from ui.mine import Ui_MainWindow
 from Test import Dialog_settings
 
 from SQLite import db_init
-
+from pathlib import Path
 
 class download_link(QThread):
     finished = Signal()
@@ -158,20 +158,41 @@ class MainWindow(QMainWindow):
 
 #################################__Style__#####################################
     def set_style(self):
-        self.load_style("../test/ui/style/minecraft.qss")
+        try:
+            # Получаем текущий рабочий каталог
+            current_working_dir = Path(os.getcwd())
+
+            # Определяем путь к папке Downloader_gif относительно текущего рабочего каталога
+            root_dir = current_working_dir / 'Downloader_gif'
+
+            # Определяем путь к файлу стилей относительно текущего рабочего каталога
+            relative_path = root_dir / 'test' / 'ui' / 'style' / 'minecraft.qss'
+
+            # Преобразуем путь в строку и заменяем обратные слеши на прямые
+            absolute_path_str = str(relative_path).replace('\\', '/')
+
+            print(f"Абсолютный путь к файлу стилей: {absolute_path_str}")
+
+            # Загружаем стиль с использованием абсолютного пути
+            self.load_style(absolute_path_str)
+
+        except Exception as e:
+            print(f"Произошла ошибка в функции set_style: {e}")
 
     def load_style(self, style_file):
-        file = QFile(style_file)
-        if not file.open(QFile.ReadOnly | QFile.Text):
-            print("Не удалось открыть файл стилей")
-            return
+        try:
+            file = QFile(style_file)
+            if not file.open(QFile.ReadOnly | QFile.Text):
+                print(f"Не удалось открыть файл стилей по пути: {style_file}")
+                return
 
-        stream = QTextStream(file)
-        self.setStyleSheet(stream.readAll())
+            stream = QTextStream(file)
+            self.setStyleSheet(stream.readAll())
 
+        except Exception as e:
+            print(f"Произошла ошибка в функции load_style: {e}")
 
-
-######################################################################
+    ######################################################################
 
 
 
