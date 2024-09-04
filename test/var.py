@@ -10,10 +10,10 @@ class tag_sorting:
         self.updater = JSONUpdater("config.json")
         self.updater.update_json_file(self.data)
 
-        config = self.load_data_from_json()
-        data = [v for key, v in config["category"]["mine_cat"].items() if key != "type"]
-        data2 = [v for key, v in config["category"]["only_one"].items() if key != "type"]
-        self.tag_filer(data, data2, self.download_link_gif("https://derpibooru.org/images/3393194"))
+        #config = self.load_data_from_json()
+        #data = [v for key, v in config["category"]["mine_cat"].items() if key != "type"]
+        #data2 = [v for key, v in config["category"]["only_one"].items() if key != "type"]
+        #self.tag_filer(data, data2, self.download_link_gif("https://derpibooru.org/images/3393194"))
 
 
 
