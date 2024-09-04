@@ -106,7 +106,7 @@ class Dialog_settings(QDialog):
 
         # Найти все файлы с расширением .qss
         qss_files = [file for file in os.listdir(search_directory) if file.endswith('.qss')]
-        qss_files2 = [file for file in os.listdir(search_directory) if file.endswith('.qss')]
+        qss_files2 = [file for file in os.listdir(search_directory2) if file.endswith('.qss')]
 
         # Добавить найденные файлы в QComboBox
         self.ui.comboBox_style.addItems(qss_files)
