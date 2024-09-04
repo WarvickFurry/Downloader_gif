@@ -12,9 +12,8 @@ from var import tag_sorting
 from winsound import SND_ALIAS, PlaySound
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
-from PySide6.QtCore import QThread, Signal, QTimer, Qt
+from PySide6.QtCore import QThread, Signal, QTimer, Qt ,QFile, QTextStream
 #from PySide6.QtGui import QMovie
-from PySide6.QtCore import QFile, QTextStream
 
 from ui.mine import Ui_MainWindow
 from Test import Dialog_settings
