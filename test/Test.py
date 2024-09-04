@@ -46,6 +46,10 @@ class Dialog_settings(QDialog):
         self.ui.blur_token_checkBox.stateChanged.connect(self.save_checkbox)
         self.ui.blur_token_checkBox.stateChanged.connect(self.blur)
 
+        self.ui.comboBox_style_2.currentIndexChanged.connect(self.load_custom_style)
+        style = self.ui.comboBox_style_2.currentText()
+        if style is not None:
+            self.load_custom_style()
 
 
 
@@ -65,6 +69,7 @@ class Dialog_settings(QDialog):
 
 ################################__DB__######################################
         self.ui.comboBox_style.currentIndexChanged.connect(self.save_set_style)
+        self.ui.comboBox_style_2.currentIndexChanged.connect(self.save_set_style2)
 
         if self.ui.autosave_tab_settings_checkBox.isChecked():
             self.ui.tabWidget.currentChanged.connect(self.save_cur_index)
@@ -78,11 +83,18 @@ class Dialog_settings(QDialog):
         if saved_index is not None:
             self.ui.comboBox_style.setCurrentIndex(int(saved_index))
 
+        saved_index2 = self.db.load_setting("tab_style")
+        if saved_index2 is not None:
+            self.ui.comboBox_style_2.setCurrentIndex(int(saved_index2))
+
     def save_cur_index(self,index):
         self.db.save_setting("tab_index",index)
+
     def save_set_style(self):
         self.db.save_setting("tab_style",self.ui.comboBox_style.currentIndex())
 
+    def save_set_style2(self):
+        self.db.save_setting("tab_style2",self.ui.comboBox_style_2.currentIndex())
 
 
 #################################__Style__#####################################
@@ -90,22 +102,34 @@ class Dialog_settings(QDialog):
         pass
         # Путь к папке, где будем искать .qss файлы
         search_directory = 'ui/style/mine_window'
+        search_directory2 = 'ui/style/setting_window'
 
         # Найти все файлы с расширением .qss
         qss_files = [file for file in os.listdir(search_directory) if file.endswith('.qss')]
+        qss_files2 = [file for file in os.listdir(search_directory) if file.endswith('.qss')]
 
         # Добавить найденные файлы в QComboBox
         self.ui.comboBox_style.addItems(qss_files)
+        self.ui.comboBox_style_2.addItems(qss_files2)
 
 
     def load_style(self, style_file):
-        file = QFile(style_file)
-        if not file.open(QFile.ReadOnly | QFile.Text):
-            print("Не удалось открыть файл стилей")
-            return
+        try:
+            file = QFile(style_file)
+            if not file.open(QFile.ReadOnly | QFile.Text):
+                print(f"Не удалось открыть файл стилей по пути: {style_file}")
+                return
 
-        stream = QTextStream(file)
-        self.setStyleSheet(stream.readAll())
+            stream = QTextStream(file)
+            self.setStyleSheet(stream.readAll())
+
+        except Exception as e:
+            print(f"Произошла ошибка в функции load_style: {e}")
+
+
+    def load_custom_style(self):
+        style = self.ui.comboBox_style_2.currentText()
+        self.load_style(f"ui/style/setting_window/{style}")
 
 ######################################################################
 

@@ -358,6 +358,24 @@ class Ui_Dialog_settings(object):
 
         self.verticalLayout_7.addWidget(self.groupBox)
 
+        self.groupBox_2 = QGroupBox(self.tab_3)
+        self.groupBox_2.setObjectName(u"groupBox_2")
+        self.verticalLayout_13 = QVBoxLayout(self.groupBox_2)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.verticalLayout_13.setContentsMargins(-1, 21, -1, -1)
+        self.horizontalLayout_9 = QHBoxLayout()
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.comboBox_style_2 = QComboBox(self.groupBox_2)
+        self.comboBox_style_2.setObjectName(u"comboBox_style_2")
+
+        self.horizontalLayout_9.addWidget(self.comboBox_style_2)
+
+
+        self.verticalLayout_13.addLayout(self.horizontalLayout_9)
+
+
+        self.verticalLayout_7.addWidget(self.groupBox_2)
+
         self.verticalSpacer_2 = QSpacerItem(287, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_7.addItem(self.verticalSpacer_2)
@@ -567,6 +585,7 @@ class Ui_Dialog_settings(object):
         self.autosave_keep_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0430\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435", None))
         self.label_3.setText(QCoreApplication.translate("Dialog_settings", u"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043a \u0441\u043f\u0438\u0441\u043a\u0443", None))
         self.groupBox.setTitle(QCoreApplication.translate("Dialog_settings", u"\u0421\u0442\u0438\u043b\u044c \u0433\u043b\u0430\u0432\u043d\u043e\u0433\u043e \u043e\u043a\u043d\u0430", None))
+        self.groupBox_2.setTitle(QCoreApplication.translate("Dialog_settings", u"\u0421\u0442\u0438\u043b\u044c \u043e\u043a\u043d\u0430 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043a", None))
         self.pushButton_minecraft.setText("")
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("Dialog_settings", u"  \u0420\u0430\u0437\u043d\u044b\u0435 \u0442\u043e\u0433\u043b\u044b  ", None))
         self.label_5.setText(QCoreApplication.translate("Dialog_settings", u"Group token", None))

@@ -548,6 +548,25 @@ padding-bottom: 3px;
             </widget>
            </item>
            <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="title">
+              <string>Стиль окна настроек</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <property name="topMargin">
+               <number>21</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QComboBox" name="comboBox_style_2"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
             <spacer name="verticalSpacer_2">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
