@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 
 from PySide6.QtWidgets import QDialog, QApplication, QMessageBox, QListWidgetItem, QAbstractItemView, QLineEdit
 from PySide6.QtCore import Slot, Signal, Qt
+from PySide6.QtCore import QFile, QTextStream
 
 from SQLite import db_init
 from json_updater import JSONUpdater
@@ -18,6 +19,8 @@ class Dialog_settings(QDialog):
     save_button_signal = Signal(str)
     def __init__(self, parent=None):
         super(Dialog_settings, self).__init__(parent)
+
+
 
         self.db = db_init() #  init DB
         self.updater = JSONUpdater("config.json")
@@ -58,6 +61,7 @@ class Dialog_settings(QDialog):
         self.ui.save_setings.clicked.connect(self.emit_signal_save_button)
         self.ui.clear_pole_pushButton.clicked.connect(self.clear_pole)
 
+
 ################################__DB__######################################
 
         if self.ui.autosave_tab_settings_checkBox.isChecked():
@@ -72,7 +76,16 @@ class Dialog_settings(QDialog):
     def save_cur_index(self,index):
         self.db.save_setting("tab_index",index)
 
+#################################__Style__#####################################
 
+    def load_style(self, style_file):
+        file = QFile(style_file)
+        if not file.open(QFile.ReadOnly | QFile.Text):
+            print("Не удалось открыть файл стилей")
+            return
+
+        stream = QTextStream(file)
+        self.setStyleSheet(stream.readAll())
 
 ######################################################################
 
@@ -187,7 +200,7 @@ class Dialog_settings(QDialog):
                 "7": "01:00"
             }
         }
-        self.updater.update_json_file(config)
+        #self.updater.update_json_file(config)
 
 
 

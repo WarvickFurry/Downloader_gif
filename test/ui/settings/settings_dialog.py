@@ -144,7 +144,7 @@ class Ui_Dialog_settings(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 363, 481))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 358, 481))
         self.verticalLayout_8 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.auto_swap_tab_checkBox = QCheckBox(self.scrollAreaWidgetContents)
@@ -474,6 +474,33 @@ class Ui_Dialog_settings(object):
 
         self.verticalLayout_7.addItem(self.verticalSpacer_2)
 
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_7.addItem(self.horizontalSpacer_3)
+
+        self.pushButton_minecraft = QPushButton(self.tab_3)
+        self.pushButton_minecraft.setObjectName(u"pushButton_minecraft")
+        self.pushButton_minecraft.setMinimumSize(QSize(24, 45))
+        self.pushButton_minecraft.setStyleSheet(u"QPushButton {\n"
+"	border: 0px solid rgb(85, 123, 226);\n"
+"}\n"
+"QPushButton:hover {\n"
+"	icon: url(:/icon/gas-kvas-com-p-znachok-mainkrafta-na-prozrachnom-fone-35.png);\n"
+"	background-color: rgb(39, 39, 42);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(39, 39, 42);\n"
+"}")
+        self.pushButton_minecraft.setIconSize(QSize(24, 24))
+        self.pushButton_minecraft.setCheckable(True)
+
+        self.horizontalLayout_7.addWidget(self.pushButton_minecraft)
+
+
+        self.verticalLayout_7.addLayout(self.horizontalLayout_7)
+
 
         self.horizontalLayout_4.addLayout(self.verticalLayout_7)
 
@@ -735,6 +762,7 @@ class Ui_Dialog_settings(object):
 #endif // QT_CONFIG(tooltip)
         self.autosave_keep_checkBox.setText(QCoreApplication.translate("Dialog_settings", u"\u0417\u0430\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435", None))
         self.label_3.setText(QCoreApplication.translate("Dialog_settings", u"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043a \u0441\u043f\u0438\u0441\u043a\u0443", None))
+        self.pushButton_minecraft.setText("")
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("Dialog_settings", u"  \u0420\u0430\u0437\u043d\u044b\u0435 \u0442\u043e\u0433\u043b\u044b  ", None))
         self.label_5.setText(QCoreApplication.translate("Dialog_settings", u"Group token", None))
         self.token_group_lineEdit.setPlaceholderText(QCoreApplication.translate("Dialog_settings", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u043e\u043a\u0435\u043d \u043e\u0442 \u0441\u0432\u043e\u0435\u0439 \u0433\u0440\u0443\u043f\u043f\u044b \u0432\u043a", None))

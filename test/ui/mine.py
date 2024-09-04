@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(880, 510)
+        MainWindow.resize(880, 508)
         MainWindow.setBaseSize(QSize(880, 510))
         MainWindow.setStyleSheet(u"QWidget {\n"
 "background-color: rgb(39, 39, 42);\n"
@@ -53,9 +53,13 @@ class Ui_MainWindow(object):
 "}")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.gridLayout = QGridLayout(self.centralwidget)
-        self.gridLayout.setObjectName(u"gridLayout")
-        self.gridLayout.setContentsMargins(1, 4, 1, 1)
+        self.verticalLayout_8 = QVBoxLayout(self.centralwidget)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.verticalLayout_8.setContentsMargins(0, 4, 0, 0)
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setSpacing(8)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setSpacing(0)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
@@ -113,11 +117,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.addWidget(self.keep, 0, Qt.AlignmentFlag.AlignRight)
 
 
-        self.gridLayout.addLayout(self.horizontalLayout_4, 0, 0, 1, 1)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_4)
 
-        self.verticalLayout_2 = QVBoxLayout()
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(-1, 10, -1, -1)
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
         self.tabWidget.setStyleSheet(u"QTabWidget::pane { /* \u0420\u0430\u043c\u043a\u0430 \u0432\u0438\u0434\u0436\u0435\u0442\u0430 \u0441\u043e \u0432\u043a\u043b\u0430\u0434\u043a\u0430\u043c\u0438 */\n"
@@ -537,7 +538,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addWidget(self.tabWidget)
 
 
-        self.gridLayout.addLayout(self.verticalLayout_2, 1, 0, 1, 1)
+        self.verticalLayout_8.addLayout(self.verticalLayout_2)
 
         MainWindow.setCentralWidget(self.centralwidget)
 

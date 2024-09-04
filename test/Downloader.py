@@ -14,6 +14,7 @@ from winsound import SND_ALIAS, PlaySound
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
 from PySide6.QtCore import QThread, Signal, QTimer, Qt
 #from PySide6.QtGui import QMovie
+from PySide6.QtCore import QFile, QTextStream
 
 from ui.mine import Ui_MainWindow
 from Test import Dialog_settings
@@ -86,6 +87,7 @@ class MainWindow(QMainWindow):
 
 
 
+
         if not os.path.exists("config.json"):
             self.Dialog_settings.default_settings()
 
@@ -96,6 +98,7 @@ class MainWindow(QMainWindow):
         self.ui.test_pushButton.clicked.connect(self.open_temp_folder)
         self.ui.keep.clicked.connect(self.toggle_always_on_top)
 
+        self.Dialog_settings.ui.pushButton_minecraft.clicked.connect(self.set_style)
 
 
         self.ui.settings.clicked.connect(self.open_settings)
@@ -154,15 +157,30 @@ class MainWindow(QMainWindow):
     def save_cur_tab_index(self, index):
         self.db.save_setting("mine_tab_cur_index", index)
 
+#################################__Style__#####################################
 
+    def load_style(self, style_file):
+        file = QFile(style_file)
+        if not file.open(QFile.ReadOnly | QFile.Text):
+            print("Не удалось открыть файл стилей")
+            return
 
+        stream = QTextStream(file)
+        self.setStyleSheet(stream.readAll())
+
+    def set_style(self):
+        if self.Dialog_settings.ui.pushButton_minecraft.isChecked():
+            self.load_style("ui/style/mine.qss")
+        else:
+            self.load_style("")
+######################################################################
 
 
 
 #####################################################################
 
 
-            ##################### данные для вк апи ##############################
+##################### данные для вк апи ##############################
     def get_id(self):
         config = self.load_data_from_json()
         if config["settings"]["group_token"] != "":

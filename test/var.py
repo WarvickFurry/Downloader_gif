@@ -5,9 +5,10 @@ from json_updater import JSONUpdater
 
 class tag_sorting:
     def __init__(self):
+        pass
         # Создаем экземпляр класса и сразу обновляем JSON файл.
-        self.updater = JSONUpdater("config.json")
-        self.updater.update_json_file(self.data)
+        #self.updater = JSONUpdater("config.json")
+        #self.updater.update_json_file(self.data)
 
         #config = self.load_data_from_json()
         #data = [v for key, v in config["category"]["mine_cat"].items() if key != "type"]
@@ -29,6 +30,7 @@ class tag_sorting:
         # self.tag_filer(data, data2, self.read_tags(requests.get("https://derpibooru.org/api/v1/json/images/" + link.replace("https://derpibooru.org/images/", "")).json()['image']['tags']))
         if not os.path.isdir('temp'):
             os.mkdir('temp')
+
         self.write_tags1(self.tag_filer(data, data2, self.read_tags(requests.get("https://derpibooru.org/api/v1/json/images/" + link.replace("https://derpibooru.org/images/", "")).json()['image']['tags'])), "temp/autTags")
 
 

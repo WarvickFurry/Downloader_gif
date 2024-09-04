@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6bd21ca6-b6c6-4f4c-b8dd-3e9be99e71fb" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Downloader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/res_rc.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/res_rc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/icons/res.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/icons/res.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/mine.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/mine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/mine.ui" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/mine.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/settings/settings_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/settings/settings_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ui/settings/settings_dialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/test/ui/settings/settings_dialog.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/var.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,56 +73,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python tests.Doctests in vk_api.executor": "Run",
-    "Python.Downloader.executor": "Run",
-    "Python.Test.executor": "Run",
-    "Python.Test2.executor": "Run",
-    "Python.Ui_progressbar_widget.executor": "Run",
-    "Python.add_window.executor": "Run",
-    "Python.camera.executor": "Run",
-    "Python.cat_widget.executor": "Run",
-    "Python.custom_widgets.executor": "Run",
-    "Python.decoder.executor": "Debug",
-    "Python.docrunner.executor": "Run",
-    "Python.eiifje.executor": "Run",
-    "Python.gen_ui_to_py.executor": "Debug",
-    "Python.generator_ui2py.executor": "Run",
-    "Python.main.executor": "Debug",
-    "Python.message.executor": "Run",
-    "Python.mine.executor": "Run",
-    "Python.post.executor": "Run",
-    "Python.start_up.executor": "Run",
-    "Python.str_to_json.executor": "Run",
-    "Python.temp.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test_bd.executor": "Run",
-    "Python.test_lists.executor": "Run",
-    "Python.test_mine_window.executor": "Run",
-    "Python.testcode.executor": "Run",
-    "Python.tlist.executor": "Run",
-    "Python.tokenize.executor": "Run",
-    "Python.var.executor": "Run",
-    "Python.var1.executor": "Run",
-    "Python.vk_download.executor": "Run",
-    "Python.vk_like_add.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Warwick/Desktop/py/Downloader_gif",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "settings.editor.splitter.proportion": "0.2609582",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Doctests in vk_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Downloader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ui_progressbar_widget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.add_window.executor&quot;: &quot;Run&quot;,
+    &quot;Python.camera.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cat_widget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.custom_widgets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.decoder.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.docrunner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eiifje.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen_ui_to_py.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.generator_ui2py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.message.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mine.executor&quot;: &quot;Run&quot;,
+    &quot;Python.post.executor&quot;: &quot;Run&quot;,
+    &quot;Python.start_up.executor&quot;: &quot;Run&quot;,
+    &quot;Python.str_to_json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_bd.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_mine_window.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testcode.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tlist.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tokenize.executor&quot;: &quot;Run&quot;,
+    &quot;Python.var.executor&quot;: &quot;Run&quot;,
+    &quot;Python.var1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vk_download.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vk_like_add.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Warwick/Desktop/py/Downloader_gif&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2609582&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="QodanaHighlightedReportService">
     <option name="localRunNotPublishedPersistedInfo">
       <LocalReportPersistedInfo>
@@ -336,7 +342,10 @@
       <workItem from="1725103274583" duration="405000" />
       <workItem from="1725106195260" duration="2123000" />
       <workItem from="1725122971837" duration="456000" />
-      <workItem from="1725302588935" duration="2610000" />
+      <workItem from="1725302588935" duration="3585000" />
+      <workItem from="1725344681603" duration="1274000" />
+      <workItem from="1725392262434" duration="713000" />
+      <workItem from="1725426508535" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -602,7 +611,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725123081026</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="update">
+      <option name="closed" value="true" />
+      <created>1725305640368</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1725305640368</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update">
+      <option name="closed" value="true" />
+      <created>1725305791477</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1725305791477</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,12 +660,12 @@
     <SUITE FILE_PATH="coverage/pythonProject$gen_ui_to_py.coverage" NAME="gen_ui_to_py Coverage Results" MODIFIED="1720704613599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
     <SUITE FILE_PATH="coverage/pythonProject$test_bd.coverage" NAME="test_bd Coverage Results" MODIFIED="1720631091956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$post.coverage" NAME="post Coverage Results" MODIFIED="1722452657635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Downloader_gif$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1725305289624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui/settings" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1725428577676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui/settings" />
     <SUITE FILE_PATH="coverage/pythonProject$start_up.coverage" NAME="start_up Coverage Results" MODIFIED="1720788848008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$Doctests_in_vk_api.coverage" NAME="Doctests in vk_api Coverage Results" MODIFIED="1723225239060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/vk_api" />
     <SUITE FILE_PATH="coverage/pythonProject$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1723298548406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Downloader_gif$test_bd.coverage" NAME="test_bd Coverage Results" MODIFIED="1724336368869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Downloader_gif$var.coverage" NAME="var Coverage Results" MODIFIED="1724673475730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$var.coverage" NAME="var Coverage Results" MODIFIED="1725305598143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Downloader_gif$str_to_json.coverage" NAME="str_to_json Coverage Results" MODIFIED="1724080186207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$tokenize.coverage" NAME="tokenize Coverage Results" MODIFIED="1720704628428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib" />
     <SUITE FILE_PATH="coverage/vk_download_py$generator_ui2py.coverage" NAME="generator_ui2py Coverage Results" MODIFIED="1724005669984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui/settings" />
@@ -648,7 +673,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$vk_like_add.coverage" NAME="vk_like_add Coverage Results" MODIFIED="1722620360157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/vk_download_py$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1724006153517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$Ui_progressbar_widget.coverage" NAME="Ui_progressbar_widget Coverage Results" MODIFIED="1721039164731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Downloader_gif$Test.coverage" NAME="Test Coverage Results" MODIFIED="1725305214820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$Test.coverage" NAME="Test Coverage Results" MODIFIED="1725305748440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Downloader_gif$custom_widgets.coverage" NAME="custom_widgets Coverage Results" MODIFIED="1724093387651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$message.coverage" NAME="message Coverage Results" MODIFIED="1722702915921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/pythonProject$testcode.coverage" NAME="testcode Coverage Results" MODIFIED="1723284965982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
@@ -660,7 +685,7 @@
     <SUITE FILE_PATH="coverage/Downloader_gif$mine.coverage" NAME="mine Coverage Results" MODIFIED="1724764563163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ui" />
     <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="test Coverage Results" MODIFIED="1719572783532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1721057252084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Downloader_gif$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1725305292213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Downloader_gif$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1725428585075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1720789055376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$camera.coverage" NAME="camera Coverage Results" MODIFIED="1722890128623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonProject$Test.coverage" NAME="Test Coverage Results" MODIFIED="1723287735717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
